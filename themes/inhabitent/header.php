@@ -24,7 +24,7 @@
 				<div class="site-branding">
 					<div class="header-logo-wrapper">
 						<a href="inhabitent/home">
-							<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-tent.svg" class="header-logo"/></a>
+							<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-tent.svg" class="header-logo" alt="Inhabitent logo"/></a>
 				  </div>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>

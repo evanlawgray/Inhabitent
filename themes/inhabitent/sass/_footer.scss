@@ -1,0 +1,33 @@
+.site-footer {
+	width: 100%;
+	color: white;
+	background: url("../../images/dark-wood.png") repeat-x center bottom;
+	background-size: 512px, 512px;
+
+	.footer-container {
+		margin: 0 auto;
+		display: flex; 
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+
+		div:nth-child(1), div:nth-child(2){
+			margin: 3rem 0 3rem;
+		}
+
+		div:nth-child(3) {
+			margin: 4rem 0 3rem;
+		}
+
+		.site-info {
+			width: 100%;
+			text-transform: uppercase;
+			padding: $base__space-unit 0;
+			text-align: center;
+
+			& p {
+				margin: 0 auto;
+			}
+		}
+	}
+}

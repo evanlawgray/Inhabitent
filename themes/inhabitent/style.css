@@ -452,6 +452,33 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.site-footer {
+  width: 100%;
+  color: white;
+  background: url("../../images/dark-wood.png") repeat-x center bottom;
+  background-size: 512px, 512px; }
+  .site-footer .footer-container {
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+    .site-footer .footer-container div:nth-child(1), .site-footer .footer-container div:nth-child(2) {
+      margin: 3rem 0 3rem; }
+    .site-footer .footer-container div:nth-child(3) {
+      margin: 4rem 0 3rem; }
+    .site-footer .footer-container .site-info {
+      width: 100%;
+      text-transform: uppercase;
+      padding: 1.5rem 0;
+      text-align: center; }
+      .site-footer .footer-container .site-info p {
+        margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
