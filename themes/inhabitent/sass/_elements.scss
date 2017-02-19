@@ -17,6 +17,10 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
+body:not(.home) .site .site-content {
+	padding-top: 60px;
+}
+
 blockquote, q {
 	quotes: "" "";
 

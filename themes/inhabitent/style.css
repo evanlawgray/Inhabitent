@@ -343,6 +343,9 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
+body:not(.home) .site .site-content {
+  padding-top: 60px; }
+
 blockquote, q {
   quotes: "" ""; }
   blockquote:before, blockquote:after, q:before, q:after {
@@ -470,7 +473,10 @@ a {
   height: 60px;
   padding-left: 10rem;
   padding-right: 10rem;
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, 0.75); }
   .site-header .site-branding {
     width: 50%;
     height: 100%;
@@ -494,8 +500,7 @@ a {
     display: inline-block;
     float: right;
     width: 50%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.25); }
+    height: 100%; }
     .site-header .main-navigation .menu-menu-1-container {
       height: 100%; }
       .site-header .main-navigation .menu-menu-1-container ul.menu {
@@ -787,5 +792,31 @@ body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, 
 body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
   width: 70%; }
 
-.entry-header img {
-  width: 730px; }
+.blog .entry-header {
+  position: relative; }
+  .blog .entry-header img {
+    width: 730px; }
+  .blog .entry-header .entry-title {
+    width: 550px;
+    height: auto;
+    line-height: 2.25rem;
+    background-color: #248A83;
+    padding: 0.75rem 1.5rem;
+    position: absolute;
+    top: 3%;
+    left: 0%; }
+    .blog .entry-header .entry-title a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: white; }
+  .blog .entry-header .entry-meta {
+    width: 450px;
+    height: auto;
+    color: white;
+    background-color: #248A83;
+    padding: 0.25rem 0.75rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: 1.18%;
+    right: 6.8%; }

@@ -32,6 +32,9 @@ a {
 	padding-left: 10rem;
 	padding-right: 10rem;
 	border-bottom: $basic__border;
+	position: fixed;
+	z-index: 10000;
+	 background-color: rgba(256, 256, 256, 0.75);
 
 	.site-branding {
 		width: 50%;
@@ -59,7 +62,6 @@ a {
 		float: right;
 		width: 50%;
 		height: 100%;
-	  background-color: rgba(256, 256, 256, 0.25);
 
 		.menu-menu-1-container {
 		  height: 100%;
