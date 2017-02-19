@@ -2,4 +2,43 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+// Journal Page
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content{
+	display: flex;
+	margin: 0 auto;
+	width: 1120px;
+}
+
+body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
+	width: 70%;
+}
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .widget-area {
+	width: 30%;
+	padding-left: 3.5rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	border-left: 1px solid #e1e1e1;
+}
+
+.entry-header img {
+	width: 730px;
+}
+
+.fa-phone:before {
+	content: "\f095";
+}
+
+.fa-envelope:before {
+	content: "\f0e0";
+}
+
+.fa-map-marker:before {
+	content: "\f041";
+} 

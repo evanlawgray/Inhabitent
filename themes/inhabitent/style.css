@@ -222,6 +222,37 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'merriweather';
+  src: url("merriweather-bold-webfont.eot");
+  src: url("merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-bold-webfont.woff2") format("woff2"), url("merriweather-bold-webfont.ttf") format("truetype"), url("merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("merriweather-bolditalic-webfont.eot");
+  src: url("merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-bolditalic-webfont.woff2") format("woff2"), url("merriweather-bolditalic-webfont.ttf") format("truetype"), url("merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("merriweather-light-webfont.eot");
+  src: url("merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-light-webfont.woff2") format("woff2"), url("merriweather-light-webfont.ttf") format("truetype"), url("merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("merriweather-lightitalic-webfont.eot");
+  src: url("merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-lightitalic-webfont.woff2") format("woff2"), url("merriweather-lightitalic-webfont.ttf") format("truetype"), url("merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: ''; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -333,7 +364,8 @@ img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Adhere to container width. */
+  display: inline; }
 
 table {
   margin: 0 0 1.5rem;
@@ -419,40 +451,77 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
+.site-header {
+  width: 100%;
+  height: 60px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  border-bottom: 1px solid #e1e1e1; }
+  .site-header .site-branding {
+    width: 50%;
+    height: 100%;
     margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    display: inline-block; }
+    .site-header .site-branding p.site-description {
+      display: none; }
+    .site-header .site-branding .header-logo-wrapper {
+      width: 50px;
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .site-header .main-navigation {
+    clear: both;
+    display: inline-block;
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25); }
+    .site-header .main-navigation .menu-menu-1-container {
+      height: 100%; }
+      .site-header .main-navigation .menu-menu-1-container ul.menu {
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        -ms-flex-align: center;
+            align-items: center; }
+        .site-header .main-navigation .menu-menu-1-container ul.menu ul {
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+          float: left;
+          position: absolute;
+          top: 1.5rem;
+          left: -999rem;
+          z-index: 99999; }
+          .site-header .main-navigation .menu-menu-1-container ul.menu ul ul {
+            left: -999rem;
+            top: 0; }
+          .site-header .main-navigation .menu-menu-1-container ul.menu ul li:hover > ul,
+          .site-header .main-navigation .menu-menu-1-container ul.menu ul li.focus > ul {
+            left: 100%; }
+          .site-header .main-navigation .menu-menu-1-container ul.menu ul a {
+            width: 200px; }
+        .site-header .main-navigation .menu-menu-1-container ul.menu li:hover > ul,
+        .site-header .main-navigation .menu-menu-1-container ul.menu li.focus > ul {
+          left: auto; }
+      .site-header .main-navigation .menu-menu-1-container li {
+        margin-left: 1rem;
+        margin-right: 1rem; }
+      .site-header .main-navigation .menu-menu-1-container a {
+        display: block;
+        text-decoration: none;
+        color: #248A83; }
 
 /* Small menu. */
 .menu-toggle,
@@ -493,6 +562,7 @@ a {
   position: absolute !important;
   height: 1px;
   width: 1px;
+  margin: 0;
   overflow: hidden; }
   .screen-reader-text:focus {
     background-color: #f1f1f1;
@@ -655,4 +725,34 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 1120px; }
+
+body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
+  width: 70%; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .widget-area {
+  width: 30%;
+  padding-left: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-left: 1px solid #e1e1e1; }
+
+.entry-header img {
+  width: 730px; }
+
+.fa-phone:before {
+  content: "\f095"; }
+
+.fa-envelope:before {
+  content: "\f0e0"; }
+
+.fa-map-marker:before {
+  content: "\f041"; }

@@ -26,72 +26,111 @@ a {
 
 /* Menus */
 
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
+.site-header {
 	width: 100%;
+	height: 60px;
+	padding-left: 10rem;
+	padding-right: 10rem;
+	border-bottom: $basic__border;
 
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+	.site-branding {
+		width: 50%;
+    height: 100%;
+    margin: 0;
+    display: inline-block;
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $base__space-unit;
-			left: -999rem;
-			z-index: 99999;
+    p.site-description {
+			display: none;
+		}
 
-			ul {
-				left: -999rem;
-				top: 0;
-			}
+    .header-logo-wrapper {
+    	width: 50px;
+    	height: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+    }
+	}
 
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
+	.main-navigation {
+		clear: both;
+		display: inline-block;
+		float: right;
+		width: 50%;
+		height: 100%;
+	  background-color: rgba(256, 256, 256, 0.25);
+
+		.menu-menu-1-container {
+		  height: 100%;
+
+			ul.menu {
+				height: 100%;
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+				display: flex;
+    		flex-flow: row nowrap;
+    		justify-content: flex-end;
+    		align-items: center;
+
+				ul {
+					box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+					float: left;
+					position: absolute;
+					top: $base__space-unit;
+					left: -999rem;
+					z-index: 99999;
+
+					ul {
+						left: -999rem;
+						top: 0;
+					}
+
+					li {
+						&:hover > ul,
+						&.focus > ul {
+							left: 100%;
+						}
+					}
+
+					a {
+						width: 200px;
+					}
+
+					:hover > a,
+					.focus > a {
+					}
+
+					a:hover,
+					a.focus {
+					}
+				}
+
+				li:hover > ul,
+				li.focus > ul {
+					left: auto;
 				}
 			}
+			li {
+				margin-left: 1rem;
+				margin-right: 1rem;
 
+				&:hover > a,
+				&.focus > a {
+				}
+			}
 			a {
-				width: 200px;
+				display: block;
+				text-decoration: none;
+				color: $color__green-brand;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
+			.current_page_item > a,
+			.current-menu-item > a,
+			.current_page_ancestor > a {
 			}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
 	}
 }
 

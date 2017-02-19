@@ -19,6 +19,8 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+$color__green-brand: #248A83;
+
 // Typography
 
 $font__main: sans-serif;
@@ -26,3 +28,7 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// Basic box properties
+
+$basic__border: 1px solid #e1e1e1;
