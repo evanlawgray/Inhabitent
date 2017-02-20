@@ -10,8 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<div class="hero-image-banner">
-		</div>
+		<div class="hero-image-banner"></div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
