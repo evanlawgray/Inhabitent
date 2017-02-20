@@ -456,9 +456,10 @@ textarea {
   width: 100%;
   color: white;
   background: url("../../images/dark-wood.png") repeat-x center bottom;
-  background-size: 512px, 512px; }
+  background-size: 500px, 500px; }
   .site-footer .footer-container {
     margin: 0 auto;
+    padding: 2.5rem 0 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -467,16 +468,42 @@ textarea {
         justify-content: space-around;
     -ms-flex-align: start;
         align-items: flex-start; }
-    .site-footer .footer-container div:nth-child(1), .site-footer .footer-container div:nth-child(2) {
-      margin: 3rem 0 3rem; }
-    .site-footer .footer-container div:nth-child(3) {
-      margin: 4rem 0 3rem; }
+    .site-footer .footer-container .footer-info-container {
+      width: 40%;
+      margin-left: 7rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+      .site-footer .footer-container .footer-info-container div:nth-child(1), .site-footer .footer-container .footer-info-container div:nth-child(2) {
+        margin: 1rem 3rem 2rem 1rem; }
+        .site-footer .footer-container .footer-info-container div:nth-child(1) h3, .site-footer .footer-container .footer-info-container div:nth-child(2) h3 {
+          color: #d99054; }
+        .site-footer .footer-container .footer-info-container div:nth-child(1) p, .site-footer .footer-container .footer-info-container div:nth-child(2) p {
+          letter-spacing: 0.3px; }
+        .site-footer .footer-container .footer-info-container div:nth-child(1) .day-of-week, .site-footer .footer-container .footer-info-container div:nth-child(2) .day-of-week {
+          font-weight: bold; }
+        .site-footer .footer-container .footer-info-container div:nth-child(1) a, .site-footer .footer-container .footer-info-container div:nth-child(2) a {
+          color: white;
+          text-decoration: none; }
+          .site-footer .footer-container .footer-info-container div:nth-child(1) a:hover, .site-footer .footer-container .footer-info-container div:nth-child(2) a:hover {
+            text-decoration: underline; }
+    .site-footer .footer-container .footer-branding {
+      width: 50%;
+      text-align: right; }
+      .site-footer .footer-container .footer-branding a {
+        height: auto; }
+        .site-footer .footer-container .footer-branding a img {
+          width: 278px;
+          margin-top: 2.5rem;
+          margin-right: 9rem; }
     .site-footer .footer-container .site-info {
       width: 100%;
       text-transform: uppercase;
       padding: 1.5rem 0;
       text-align: center; }
       .site-footer .footer-container .site-info p {
+        font-size: 0.97rem;
         margin: 0 auto; }
 
 /*--------------------------------------------------------------
@@ -803,8 +830,8 @@ object {
 /* Front page */
 .hero-image-banner {
   height: 100vh;
-  background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/home-hero.jpg") no-repeat center;
-  background-size: 300px, cover, cover; }
+  background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
+  background-size: 275px, cover, 100%; }
 
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
   display: -ms-flexbox;

@@ -2,22 +2,62 @@
 	width: 100%;
 	color: white;
 	background: url("../../images/dark-wood.png") repeat-x center bottom;
-	background-size: 512px, 512px;
+	background-size: 500px, 500px;
 
 	.footer-container {
 		margin: 0 auto;
+		padding: 2.5rem 0 0;
 		display: flex; 
 		flex-flow: row wrap;
 		justify-content: space-around;
 		align-items: flex-start;
 
-		div:nth-child(1), div:nth-child(2){
-			margin: 3rem 0 3rem;
+		.footer-info-container {
+			width: 40%;
+			margin-left: 7rem;
+			display: flex;
+			align-items: flex-start;
+
+			div:nth-child(1), div:nth-child(2){
+				margin: 1rem 3rem 2rem 1rem;
+
+				& h3 {
+					color: $color__orange-brand;
+				}
+
+				& p {
+					letter-spacing: 0.3px;
+				}
+
+				& .day-of-week {
+					font-weight: bold;
+				}
+
+				& a {
+					color: white;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		
+		.footer-branding {
+			width: 50%;
+			text-align: right;
+
+			& a {
+				height: auto;
+
+				& img {
+					width: 278px;
+					margin-top: 2.5rem;
+					margin-right: 9rem;
+				}
+			}
 		}
 
-		div:nth-child(3) {
-			margin: 4rem 0 3rem;
-		}
 
 		.site-info {
 			width: 100%;
@@ -26,6 +66,7 @@
 			text-align: center;
 
 			& p {
+				font-size: 0.97rem;
 				margin: 0 auto;
 			}
 		}

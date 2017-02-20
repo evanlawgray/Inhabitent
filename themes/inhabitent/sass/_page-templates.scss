@@ -7,10 +7,10 @@
 	height: 100vh;
 	background: url("../../images/inhabitent-logo-full.svg") no-repeat center,
 	  linear-gradient(
-	  rgba(0,0,0, 0.25) 0%,
-	  rgba(0,0,0, 0.25) 100%),
-		url("../../images/home-hero.jpg") no-repeat center;
-		background-size: 300px, cover, cover;
+	  rgba(0,0,0, 0.5) 0%,
+	  rgba(0,0,0, 0.5) 100%),
+		url("../../images/home-hero.jpg") no-repeat center top;
+		background-size: 275px, cover, 100%;
 
 }
 
