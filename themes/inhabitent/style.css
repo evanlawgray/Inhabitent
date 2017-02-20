@@ -519,7 +519,8 @@ a {
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
-    outline: 0; }
+    outline: 0;
+    color: #2f1339; }
 
 /* Menus */
 .site-header {
@@ -558,6 +559,9 @@ a {
     .site-header .main-navigation .menu-menu-1-container {
       height: 100%; }
       .site-header .main-navigation .menu-menu-1-container ul.menu {
+        font-family: 'novocento', Arial, serif;
+        font-weight: 100;
+        text-transform: uppercase;
         height: 100%;
         list-style: none;
         margin: 0;
@@ -589,12 +593,16 @@ a {
         .site-header .main-navigation .menu-menu-1-container ul.menu li.focus > ul {
           left: auto; }
       .site-header .main-navigation .menu-menu-1-container li {
-        margin-left: 1rem;
-        margin-right: 1rem; }
+        margin-left: 0.75rem;
+        margin-right: 0.75rem; }
       .site-header .main-navigation .menu-menu-1-container a {
         display: block;
         text-decoration: none;
         color: #248A83; }
+        .site-header .main-navigation .menu-menu-1-container a:hover, .site-header .main-navigation .menu-menu-1-container a:focus {
+          color: #2f1339; }
+        .site-header .main-navigation .menu-menu-1-container a:hover {
+          cursor: pointer; }
 
 /* Small menu. */
 .menu-toggle,

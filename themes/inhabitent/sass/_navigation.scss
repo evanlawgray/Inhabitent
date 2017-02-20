@@ -21,6 +21,7 @@ a {
 	&:hover,
 	&:active {
 		outline: 0;
+		color: $color__purple-brand;
 	}
 }
 
@@ -67,6 +68,9 @@ a {
 		  height: 100%;
 
 			ul.menu {
+				font-family: 'novocento', Arial, serif;
+				font-weight: 100;
+				text-transform: uppercase;
 				height: 100%;
 				list-style: none;
 				margin: 0;
@@ -115,8 +119,8 @@ a {
 				}
 			}
 			li {
-				margin-left: 1rem;
-				margin-right: 1rem;
+				margin-left: 0.75rem;
+				margin-right: 0.75rem;
 
 				&:hover > a,
 				&.focus > a {
@@ -126,6 +130,14 @@ a {
 				display: block;
 				text-decoration: none;
 				color: $color__green-brand;
+
+				&:hover, &:focus {
+					color: $color__purple-brand;
+				}
+
+				&:hover {
+					cursor: pointer;
+				}
 			}
 
 			.current_page_item > a,
