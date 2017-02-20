@@ -705,13 +705,15 @@ a {
   .widget-area .widget {
     margin: 0 0 3rem;
     line-height: 1.75rem; }
+    .widget-area .widget a {
+      text-decoration: none;
+      color: #248A83; }
+      .widget-area .widget a:hover {
+        color: #2f1339; }
     .widget-area .widget ul {
       list-style-type: none;
       margin-left: 0;
       padding-left: 0; }
-      .widget-area .widget ul li a {
-        text-decoration: none;
-        color: #248A83; }
     .widget-area .widget .widget-info {
       margin-bottom: 0.5rem; }
       .widget-area .widget .widget-info .fa-phone:before {
@@ -724,9 +726,6 @@ a {
         font-weight: bold; }
       .widget-area .widget .widget-info i {
         margin-right: 0.5rem; }
-      .widget-area .widget .widget-info span a {
-        text-decoration: none;
-        color: #248A83; }
   .widget-area select {
     max-width: 100%; }
 
@@ -867,6 +866,9 @@ body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
     position: absolute;
     top: 3%;
     left: 0%; }
+    .blog .entry-header .entry-title a:hover {
+      color: #f0e4d1;
+      cursor: pointer; }
     .blog .entry-header .entry-title a {
       text-decoration: none;
       font-size: 2rem;
