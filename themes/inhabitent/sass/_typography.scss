@@ -22,7 +22,21 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0.2rem;
 }
 
+.entry-header {
+	font-size: 1.25rem;
+}
+
+.contact-form-header {
+	font-size: 2rem;
+	color: $color__purple-brand;
+}
+
+
 /* Copy */
+
+.entry-content {
+	line-height: 1.8rem;
+}
 
 p {
 	margin-bottom: $base__space-unit;
