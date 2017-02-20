@@ -414,7 +414,7 @@ input[type="submit"] {
   width: 100px;
   height: 40px;
   border: 1px solid;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #a1a1a1;
   border-radius: 0;
   background: #248A83;
   box-shadow: none;
@@ -425,7 +425,7 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #a1a1a1;
     background-color: #1B6661; }
   button:active, button:focus,
   input[type="button"]:active,
@@ -434,7 +434,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #a1a1a1;
     background-color: #1B6661; }
 
 /* Fields */
@@ -474,14 +474,14 @@ input[type="search"] {
   height: 40px;
   margin-top: 1rem;
   padding: 3px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #a1a1a1;
   border-radius: 0; }
 
 textarea {
   width: 93%;
   padding-left: 3px;
   margin-top: 1rem;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #a1a1a1;
   border-radius: 0; }
 
 .site-footer {
@@ -491,7 +491,7 @@ textarea {
   background-size: 500px, 500px; }
   .site-footer .footer-container {
     margin: 0 auto;
-    padding: 2.5rem 0 0;
+    padding: 3rem 0 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -501,18 +501,23 @@ textarea {
     -ms-flex-align: start;
         align-items: flex-start; }
     .site-footer .footer-container .footer-info-container {
-      width: 40%;
-      margin-left: 7rem;
+      width: 55%;
+      margin-left: 10rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: start;
           align-items: flex-start; }
+      .site-footer .footer-container .footer-info-container div:nth-child(1).footer-contact-column {
+        width: 35%; }
       .site-footer .footer-container .footer-info-container div:nth-child(1), .site-footer .footer-container .footer-info-container div:nth-child(2) {
-        margin: 1rem 3rem 2rem 1rem; }
+        width: 45%;
+        margin: 0; }
         .site-footer .footer-container .footer-info-container div:nth-child(1) h3, .site-footer .footer-container .footer-info-container div:nth-child(2) h3 {
-          color: #d99054; }
+          color: #d99054;
+          margin: 1rem 0; }
         .site-footer .footer-container .footer-info-container div:nth-child(1) p, .site-footer .footer-container .footer-info-container div:nth-child(2) p {
-          letter-spacing: 0.3px; }
+          letter-spacing: 0.25px;
+          margin: 0.5rem 0 1.5rem; }
         .site-footer .footer-container .footer-info-container div:nth-child(1) .day-of-week, .site-footer .footer-container .footer-info-container div:nth-child(2) .day-of-week {
           font-weight: bold; }
         .site-footer .footer-container .footer-info-container div:nth-child(1) a, .site-footer .footer-container .footer-info-container div:nth-child(2) a {
@@ -521,21 +526,22 @@ textarea {
           .site-footer .footer-container .footer-info-container div:nth-child(1) a:hover, .site-footer .footer-container .footer-info-container div:nth-child(2) a:hover {
             text-decoration: underline; }
     .site-footer .footer-container .footer-branding {
-      width: 50%;
+      width: 30%;
+      margin-top: 1rem;
       text-align: right; }
       .site-footer .footer-container .footer-branding a {
         height: auto; }
         .site-footer .footer-container .footer-branding a img {
           width: 278px;
-          margin-top: 2.5rem;
-          margin-right: 9rem; }
+          margin-right: 10rem; }
     .site-footer .footer-container .site-info {
       width: 100%;
+      margin-top: 1.5rem;
       text-transform: uppercase;
       padding: 1.5rem 0;
       text-align: center; }
       .site-footer .footer-container .site-info p {
-        font-size: 0.97rem;
+        font-size: 0.88rem;
         margin: 0 auto; }
 
 /*--------------------------------------------------------------
@@ -557,10 +563,10 @@ a {
 /* Menus */
 .site-header {
   width: 100%;
-  height: 60px;
+  height: 50px;
   padding-left: 10rem;
   padding-right: 10rem;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #a1a1a1;
   position: fixed;
   z-index: 10000;
   background-color: rgba(255, 255, 255, 0.75); }
