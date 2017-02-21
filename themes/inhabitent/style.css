@@ -975,25 +975,38 @@ body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
       font-size: 2rem;
       color: white; }
   .blog .entry-header .entry-meta {
-    width: 450px;
     height: auto;
+    font-size: 0.9rem;
     color: white;
     background-color: #248A83;
-    padding: 0.25rem 0.75rem;
+    padding: 0.4rem 0.75rem;
     text-transform: uppercase;
     text-align: center;
     position: absolute;
-    bottom: 1.5%;
-    right: 6.85%; }
+    bottom: 8px;
+    right: 54px; }
 
-.blog .entry-header:nth-child(2) .entry-title .entry-meta {
-  bottom: 1.5%;
-  right: 6.85%; }
+/* .blog .entry-header:nth-child(2) {
 
-.blog .entry-header:nth-child(3) .entry-title .entry-meta {
-  bottom: 1.5%;
-  right: 6.85%; }
+	& .entry-title {
+		
+		& .entry-meta {
+			bottom: 1.5%;
+    	right: 6.85%;
+		}
+	}
+}
 
+.blog .entry-header:nth-child(3) {
+
+	& .entry-title {
+		
+		& .entry-meta {
+			bottom: 1.5%;
+    	right: 6.85%;
+		}
+	}
+} */
 .single-post .entry-header {
   position: relative; }
   .single-post .entry-header img {
