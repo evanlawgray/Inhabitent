@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-
+* {
+	box-sizing: border-box;
+}
 html {
 	box-sizing: border-box;
 	@include font-size(1);
@@ -18,7 +20,7 @@ body {
 }
 
 body:not(.home) .site .site-content {
-	padding-top: 60px;
+	padding-top: 50px;
 }
 
 blockquote, q {

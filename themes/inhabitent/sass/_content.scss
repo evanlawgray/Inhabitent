@@ -27,6 +27,13 @@
 	margin: $base__space-unit 0 0;
 }
 
+.entry-content {
+	width: 730px;
+	margin-top: 1rem;
+	line-height: $font__line-height-body;
+	text-align: left;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;

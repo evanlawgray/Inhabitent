@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: 'novocento', Arial, Serif;
   text-transform: uppercase;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.1rem; }
 
 .entry-header {
   font-size: 1.25rem; }
@@ -338,6 +338,9 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -354,7 +357,7 @@ body {
   /* Fallback for when there is no custom background color defined. */ }
 
 body:not(.home) .site .site-content {
-  padding-top: 60px; }
+  padding-top: 50px; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -410,6 +413,7 @@ table {
   text-transform: uppercase;
   width: 150px;
   height: 40px;
+  margin-bottom: 4rem;
   border: 1px solid;
   border: 1px solid black;
   border-radius: 0;
@@ -452,7 +456,7 @@ input[type="submit"] {
   width: 100px;
   height: 40px;
   border: 1px solid;
-  border: 1px solid #a1a1a1;
+  border: 1px solid #e1e1e1;
   border-radius: 0;
   background: #248A83;
   box-shadow: none;
@@ -463,7 +467,7 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border: 1px solid #a1a1a1;
+    border: 1px solid #e1e1e1;
     background-color: #1B6661; }
   button:active, button:focus,
   input[type="button"]:active,
@@ -472,7 +476,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border: 1px solid #a1a1a1;
+    border: 1px solid #e1e1e1;
     background-color: #1B6661; }
 
 /* Fields */
@@ -512,14 +516,14 @@ input[type="search"] {
   height: 40px;
   margin-top: 1rem;
   padding: 3px;
-  border: 1px solid #a1a1a1;
+  border: 1px solid #e1e1e1;
   border-radius: 0; }
 
 textarea {
   width: 93%;
   padding-left: 3px;
   margin-top: 1rem;
-  border: 1px solid #a1a1a1;
+  border: 1px solid #e1e1e1;
   border-radius: 0; }
 
 .site-footer {
@@ -604,7 +608,7 @@ a {
   height: 50px;
   padding-left: 10rem;
   padding-right: 10rem;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #e1e1e1;
   position: fixed;
   z-index: 10000;
   background-color: rgba(255, 255, 255, 0.75); }
@@ -781,6 +785,9 @@ a {
   .widget-area .widget {
     margin: 0 0 3rem;
     line-height: 1.75rem; }
+    .widget-area .widget h2 {
+      color: #2f1339;
+      margin-bottom: 1.5rem; }
     .widget-area .widget a {
       text-decoration: none;
       color: #248A83; }
@@ -790,17 +797,27 @@ a {
       list-style-type: none;
       margin-left: 0;
       padding-left: 0; }
-    .widget-area .widget .widget-info {
+    .widget-area .widget .widget-contact-text:nth-child(3) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+      .widget-area .widget .widget-contact-text:nth-child(3) i {
+        height: 100%; }
+    .widget-area .widget .widget-contact-text, .widget-area .widget .widget-hours-text {
       margin-bottom: 0.5rem; }
-      .widget-area .widget .widget-info .fa-phone:before {
+      .widget-area .widget .widget-contact-text .fa-phone:before, .widget-area .widget .widget-hours-text .fa-phone:before {
         content: "\f095"; }
-      .widget-area .widget .widget-info .fa-envelope:before {
+      .widget-area .widget .widget-contact-text .fa-envelope:before, .widget-area .widget .widget-hours-text .fa-envelope:before {
         content: "\f0e0"; }
-      .widget-area .widget .widget-info .fa-map-marker:before {
+      .widget-area .widget .widget-contact-text .fa-map-marker:before, .widget-area .widget .widget-hours-text .fa-map-marker:before {
         content: "\f041"; }
-      .widget-area .widget .widget-info .day-of-week {
+      .widget-area .widget .widget-contact-text .day-of-week, .widget-area .widget .widget-hours-text .day-of-week {
         font-weight: bold; }
-      .widget-area .widget .widget-info i {
+      .widget-area .widget .widget-contact-text i, .widget-area .widget .widget-hours-text i {
+        margin-top: 0.5rem;
         margin-right: 0.5rem; }
   .widget-area select {
     max-width: 100%; }
@@ -830,6 +847,12 @@ a {
 .entry-content,
 .entry-summary {
   margin: 1.5rem 0 0; }
+
+.entry-content {
+  width: 730px;
+  margin-top: 1rem;
+  line-height: 1.5;
+  text-align: left; }
 
 .page-links {
   clear: both;
@@ -936,7 +959,9 @@ body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
   .blog .entry-header .entry-title {
     width: 550px;
     height: auto;
+    font-size: 2rem;
     line-height: 2.25rem;
+    color: white;
     background-color: #248A83;
     padding: 0.75rem 1.5rem;
     position: absolute;
@@ -958,5 +983,47 @@ body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
     text-transform: uppercase;
     text-align: center;
     position: absolute;
-    bottom: 1.18%;
-    right: 6.8%; }
+    bottom: 1.5%;
+    right: 6.85%; }
+
+.blog .entry-header:nth-child(2) .entry-title .entry-meta {
+  bottom: 1.5%;
+  right: 6.85%; }
+
+.blog .entry-header:nth-child(3) .entry-title .entry-meta {
+  bottom: 1.5%;
+  right: 6.85%; }
+
+.single-post .entry-header {
+  position: relative; }
+  .single-post .entry-header img {
+    width: 730px; }
+  .single-post .entry-header .entry-title {
+    width: 550px;
+    height: auto;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    color: white;
+    background-color: #248A83;
+    padding: 0.75rem 1.5rem;
+    position: absolute;
+    top: 3%;
+    left: 0%; }
+    .single-post .entry-header .entry-title a:hover {
+      color: #f0e4d1;
+      cursor: pointer; }
+    .single-post .entry-header .entry-title a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: white; }
+  .single-post .entry-header .entry-meta {
+    width: 450px;
+    height: auto;
+    color: white;
+    background-color: #248A83;
+    padding: 0.25rem 0.75rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: 1.5%;
+    right: 6.9%; }
