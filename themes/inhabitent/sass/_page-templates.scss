@@ -49,6 +49,8 @@ body.home {
 			}
 
 			& .entry-title {
+				margin-top: 0.5rem;
+				margin-left: 0.75rem;
 				display: flex;
    			flex-direction: column;
     		justify-content: flex-start;
@@ -61,14 +63,22 @@ body.home {
 					text-decoration: none;
 					color: $color__green-brand;
 					display: flex;
+
+					&:hover {
+						color: $color__purple-brand;
+					}
     		}
 			}
 
 			& .entry-meta {
+				margin-top: 0.75rem;
+				margin-left: 0.75rem;
 				order: 1;
+				font-size: 0.8rem;
 			}
 
 			& .read-more-button {
+				margin-left: 0.75rem;
 				margin-bottom: 0.75rem;
 				order: 4;
 			}
@@ -196,7 +206,38 @@ body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-
 	}
 }
 
+
+// About page 
+
+
+body.page-template-about {
+	& .site-main {
+		width: 800px;
+		margin: 0 auto;
+		line-height: 1.8rem;
+
+		& p:nth-child(3), & p:nth-child(6) {
+			margin-bottom: 2.5rem;
+		}
+
+		& .entry-header {
+			width: 300px;
+	    margin: 0 auto 2rem;
+	    font-size: 2rem;
+	    color: $color__purple-brand;
+	    position: relative;
+	    left: 6%;
+
+	    &:nth-child(2) {
+	    	margin-top: 4rem;
+	    }
+		}
+	}
+}
+
+
 // Blog single-page view
+
 
 .single-post .post-navigation {
 	height: 0;
@@ -243,7 +284,7 @@ body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-
 	}
 }
 
-// Comments area
+/////****** Blog Comments Area
 
 .comments-area {
 	& h3 {
@@ -352,6 +393,7 @@ body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-
 
 	& article {
 		width: 25%;
+
 	}
 }
 
