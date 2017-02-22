@@ -31,13 +31,40 @@ function my_login_logo() { ?>
             margin: 0 auto;
             background-size: 100%;
         }
+        #login .button.button-primary {
+            background-color: #248A83;
+            border: 1px solid #248A83;
+        }
     </style>
 <?php }
 
-add_filter( 'login_head', 'my_login_logo' );
+add_action( 'login_head', 'my_login_logo' );
 
-function my_login_logo_link() {
-	return '<?php echo get_home_url(); ?>';
+function my_login_logo_link($url) {
+	return home_url();
 }
 
-add_filter ( 'login_headerurl', 'my_login_logo_link');
+add_action ( 'login_headerurl', 'my_login_logo_link');
+
+//Change logo text to Inhabitent
+
+function my_login_logo_title() {
+    return "Inhabitent";
+}
+
+add_filter( 'login_headertitle', 'my_login_logo_title' );
+
+// Get product types (custom taxonomy) to add into shop index page.
+
+function wc_get_product_types() {
+  return (array) apply_filters( 'product_type_selector', array(
+    'simple'   => __( 'Simple product', 'inhabitent' ),
+    'grouped'  => __( 'Grouped product', 'inhabitent' ),
+    'external' => __( 'External/Affiliate product', 'inhabitent' ),
+    'variable' => __( 'Variable product', 'inhabitent' )
+  ) );
+}
+
+
+
+

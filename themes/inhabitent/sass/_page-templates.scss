@@ -3,14 +3,77 @@
 --------------------------------------------------------------*/
 /* Front page */
 
-.hero-image-banner {
-	height: 100vh;
-	background: url("../../images/inhabitent-logo-full.svg") no-repeat center,
-	  linear-gradient(
-	  rgba(0,0,0, 0.5) 0%,
-	  rgba(0,0,0, 0.5) 100%),
-		url("../../images/home-hero.jpg") no-repeat center top;
-		background-size: 275px, cover, 100%;
+body.home {
+	.hero-image-banner {
+		height: 100vh;
+		background: url("../../images/inhabitent-logo-full.svg") no-repeat center,
+		  linear-gradient(
+		  rgba(0,0,0, 0.5) 0%,
+		  rgba(0,0,0, 0.5) 100%),
+			url("../../images/home-hero.jpg") no-repeat center top;
+			background-size: 275px, cover, 100%;
+	}
+
+	.front-page-posts-wrapper {
+		margin: 4rem auto;
+		width: 80%;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: baseline;
+
+		& article:nth-child(2) {
+			border-right: 0;
+		}
+
+		& article:nth-child(3) {
+			border-right: 0;
+			border-left: 1rem solid white;
+		}
+
+		& article {
+			width: 33.333%;
+			border-right: 1rem solid white;
+
+			& .entry-header {
+
+				border: $basic__border;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+
+				img {
+					max-height: 248px;
+					border-bottom: 4px solid #E1E1E1;
+					order: 0;
+				}
+			}
+
+			& .entry-title {
+				display: flex;
+   			flex-direction: column;
+    		justify-content: flex-start;
+    		order: 2;
+
+    		& a {
+    			font-size: 1.3rem;
+					line-height: 1.75rem;
+					text-align: left;
+					text-decoration: none;
+					color: $color__green-brand;
+					display: flex;
+    		}
+			}
+
+			& .entry-meta {
+				order: 1;
+			}
+
+			& .read-more-button {
+				margin-bottom: 0.75rem;
+				order: 4;
+			}
+		}
+	}
 }
 
 //set layouts and content area widths for subpages
@@ -26,7 +89,7 @@ body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, 
 	padding-bottom: 3rem;
 }
 
-body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive) .content-area {
 	width: 70%;
 }
 
@@ -256,5 +319,39 @@ body:not(.home):not(.page-template-about):not(.single-adventure) .content-area {
 	}
 }
 
+// Product archive page 
 
+.post-type-archive {
+
+	#primary.content-area {
+
+		width: 100%;
+		padding-top: $base__space-unit;
+
+		.page-header {
+
+			h1.page-title {
+				width: 400px;
+				margin: 0 auto;
+				font-size: 2.3rem;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+.shop-content-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 3rem;
+	border-top: $dashed__border;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+
+	& article {
+		width: 25%;
+	}
+}
 
