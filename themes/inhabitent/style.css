@@ -1093,21 +1093,34 @@ body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-
       .single-post .entry-header .entry-meta a:hover {
         color: #f0e4d1; }
 
+body.page-template-about .content-area .about-hero-image-banner {
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative; }
+  body.page-template-about .content-area .about-hero-image-banner .about-header {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 43.5%; }
+
 body.page-template-about .site-main {
   width: 800px;
   margin: 0 auto;
+  padding-top: 0.75rem;
+  padding-bottom: 3rem;
   line-height: 1.8rem; }
-  body.page-template-about .site-main p:nth-child(3), body.page-template-about .site-main p:nth-child(6) {
-    margin-bottom: 2.5rem; }
+  body.page-template-about .site-main .entry-header:nth-child(2) {
+    margin-top: 2rem; }
   body.page-template-about .site-main .entry-header {
     width: 300px;
-    margin: 0 auto 2rem;
+    margin: 3rem auto 2rem;
     font-size: 2rem;
     color: #2f1339;
     position: relative;
     left: 6%; }
-    body.page-template-about .site-main .entry-header:nth-child(2) {
-      margin-top: 4rem; }
 
 .single-post .post-navigation {
   height: 0;
