@@ -13,12 +13,14 @@
 			<?php if ( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail( 'large' ); ?>
 			<?php endif; ?>
+
+			<div class="product-entry-meta">
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-			<?php if ( 'products' === get_post_type() ) : ?>
-				<?php $price = CFS()->get('price'); ?>
-			<div class="product-entry-meta">
-				<p class="product-price"> <?php echo $price ; ?> </p>
+			<?php if ( 'products' === get_post_type() ) : 
+
+		 	 $price = CFS()->get('price'); ?>
+			 <?php echo $price;  ?>
 			</div><!-- .product-entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->

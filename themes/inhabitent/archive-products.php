@@ -15,15 +15,10 @@ get_header(); ?>
 			<header class="page-header">
 
 			<?php
-			function product_archive_title($title) {
-			if(is_post_type_archive('products')) {
-				$title = 'Shop Stuff';
-			}
-				return $title;
-			}
-			add_filter('get_the_archive_title', 'product_archive_title');
+	
 			the_archive_title( '<h1 class="page-title">', '</h1>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' );
+/*			the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			echo the_archive_description();*/
 			?>
 
 			</header><!-- .page-header -->

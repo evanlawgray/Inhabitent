@@ -65,6 +65,19 @@ function wc_get_product_types() {
   ) );
 }
 
+// Get the title for the shop page
+
+
+function product_archive_title($title) {
+    if(is_post_type_archive('products')) {
+        $title = 'Shop Stuff';
+    }
+    return $title;
+}
+
+add_filter('get_the_archive_title', 'product_archive_title');
+
+
 // Add css to set the background image url for the About page hero image.
 
 function inhabitent_about_image_css() {
@@ -92,5 +105,20 @@ function inhabitent_about_image_css() {
 add_action('wp_enqueue_scripts', 'inhabitent_about_image_css');
 
 
+// Insert custom query for the shop/products archives page
 
+/*function custom_products_archive_query($query){
+    if ( $query->is_main_query() && $query->query_vars['post_type'] != 'products') {
+        $args = array( 
+            'post_type' => 'products', 
+            'order' => 'ASC', 
+            'posts_per_page' => 16 
+        );
 
+    $product_posts = get_posts( $args );
+
+    return $product_posts;
+    }
+}
+
+add_action('pre_get_posts', 'custom_products_archive_query');*/

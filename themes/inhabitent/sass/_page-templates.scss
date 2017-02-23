@@ -106,7 +106,7 @@ body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-
 
 // Journal Page
 
-.blog .entry-header {
+body.blog .entry-header {
 	position: relative;
 
 	& img {
@@ -379,7 +379,7 @@ body.page-template-about {
 
 .post-type-archive {
 
-	#primary.content-area {
+	.content-area {
 		padding-top: 0;
 		width: 100%;
 
@@ -412,16 +412,22 @@ body.page-template-about {
 		width: 22%;
 		border: $basic__border;
 		overflow: hidden;
-/* 		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-around;
-		align-items: flex-start; */
+
+		& .entry-header {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-around;
+				align-items: flex-start;
+		}
 
 		& .product-entry-meta {
 			height: 40px;
 			width: auto;
 			margin: 0;
-			display: inline-block;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: baseline;
 		}
 
 		& .entry-title {
