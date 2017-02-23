@@ -14,6 +14,22 @@ body.home {
 			background-size: 275px, cover, 100%;
 	}
 
+	.shopstuff-container {
+		margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+
+    & h2 {
+    	width: 100%;
+    	text-align: center;
+    }
+
+    & .shop-stuff-item {
+    	width: 25%;
+    }
+	}
+
 	.front-page-posts-wrapper {
 		margin: 4rem auto;
 		width: 80%;

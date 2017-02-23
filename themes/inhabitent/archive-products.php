@@ -10,7 +10,19 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php 
+ 
+        $args = array( 
+            'post_type' => 'products', 
+            'order' => 'ASC', 
+            'posts_per_page' => 16 
+        );
+
+    $products = new WP_Query( $args );?>
+
+
+
+		<?php if ( $products->have_posts() ) : ?>
 
 			<header class="page-header">
 
@@ -26,7 +38,7 @@ get_header(); ?>
 			<div class="shop-content-wrapper">
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 				<?php
 					get_template_part( 'template-parts/content-archive-products' );

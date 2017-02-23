@@ -943,6 +943,19 @@ body.home .hero-image-banner {
   background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
   background-size: 275px, cover, 100%; }
 
+body.home .shopstuff-container {
+  margin: 0 auto;
+  width: 75%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  body.home .shopstuff-container h2 {
+    width: 100%;
+    text-align: center; }
+  body.home .shopstuff-container .shop-stuff-item {
+    width: 25%; }
+
 body.home .front-page-posts-wrapper {
   margin: 4rem auto;
   width: 80%;

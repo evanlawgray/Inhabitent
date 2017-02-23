@@ -106,18 +106,17 @@ add_action('wp_enqueue_scripts', 'inhabitent_about_image_css');
 
 
 // Insert custom query for the shop/products archives page
-
-/*function custom_products_archive_query($query){
-    if ( $query->is_main_query() && $query->query_vars['post_type'] != 'products') {
+/*
+function custom_products_archive_query($query){
+    if ( $query->is_main_query() && $query->query_vars['post_type'] = 'products') {
         $args = array( 
             'post_type' => 'products', 
             'order' => 'ASC', 
             'posts_per_page' => 16 
         );
 
-    $product_posts = get_posts( $args );
+        $products = new WP_Query( $args );
 
-    return $product_posts;
     }
 }
 
