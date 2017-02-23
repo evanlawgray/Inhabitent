@@ -380,11 +380,11 @@ body.page-template-about {
 .post-type-archive {
 
 	#primary.content-area {
-
+		padding-top: 0;
 		width: 100%;
-		padding-top: $base__space-unit;
 
 		.page-header {
+			margin: 2rem auto 2rem;
 
 			h1.page-title {
 				width: 400px;
@@ -400,7 +400,7 @@ body.page-template-about {
 .shop-content-wrapper {
 	width: 85%;
 	margin: 0 auto;
-	margin-top: 3rem;
+	padding-top: 3rem;
 	border-top: $dashed__border;
 	display: flex;
 	flex-flow: row wrap;
@@ -408,15 +408,37 @@ body.page-template-about {
 	align-content: center;
 
 	& article {
+		height: 300px;
 		width: 22%;
 		border: $basic__border;
 		overflow: hidden;
+/* 		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: flex-start; */
 
-		& .entry-title a {
-			font-family: 'merriweather', Arial, serif;
-			font-size: 1.2rem;
-			text-transform: none;
-			text-decoration: none;
+		& .product-entry-meta {
+			height: 40px;
+			width: auto;
+			margin: 0;
+			display: inline-block;
+		}
+
+		& .entry-title {
+			height: 40px;
+			width: auto;
+			margin: 0;
+			display: inline-block;
+
+			& a {
+				font-weight: 100;
+				color: $color__text-main;
+				height: 40px;
+				font-family: 'merriweather', Arial, serif;
+				font-size: 1.2rem;
+				text-transform: none;
+				text-decoration: none;
+			} 
 		}
 
 		& img {
@@ -426,7 +448,7 @@ body.page-template-about {
 	    border-bottom: 4px solid #e1e1e1;
 	    position: relative;
 	    top: 50%;
-	    left: 50%;
+	    right: 20%;
 		}
 	}
 }
