@@ -33,7 +33,7 @@ get_header(); ?>
 
 	      <p> <?php echo $term->description; ?> </p>
 	         
-	      <button><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a></button>
+	      <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a>
 
 	    </div>
 
