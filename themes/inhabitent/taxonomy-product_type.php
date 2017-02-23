@@ -34,7 +34,7 @@ get_header(); ?>
 		        $url = get_term_link($term->slug , 'product_type');    
 				?>
 
-				<a href="<?php echo $url; ?>"><?php echo $term->slug; ?></a>
+				<a href="<?php $url; ?>"><?php echo $term->slug; ?></a>
 				
 				<?php endforeach; ?>
 

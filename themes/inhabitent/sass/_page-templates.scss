@@ -393,7 +393,7 @@ body.page-template-about {
 
 // Shop archive page 
 
-.post-type-archive {
+.post-type-archive-products {
 
 	.content-area {
 		padding-top: 0;
@@ -408,6 +408,21 @@ body.page-template-about {
 				font-size: 2.3rem;
 				display: flex;
 				justify-content: center;
+			}
+
+			.shop-terms-container {
+				width: 30%;
+				margin: $base__space-unit auto 2.5rem;
+				font-size: 1.2rem;
+				font-family: 'novocento', Arial, serif;
+				display: flex;
+		    justify-content: space-around;
+		    text-transform: uppercase;
+
+		    & a {
+		    	text-decoration: none;
+		    	color: $color__green-brand;
+		    }
 			}
 		}
 	}
