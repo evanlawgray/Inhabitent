@@ -1332,7 +1332,7 @@ body.page-template-about .site-main {
   -ms-flex-line-pack: center;
       align-content: center; }
   .shop-content-wrapper article {
-    height: 300px;
+    height: auto;
     width: 23%;
     border: 1px solid #e1e1e1; }
     .shop-content-wrapper article .entry-header {
@@ -1354,17 +1354,17 @@ body.page-template-about .site-main {
         -ms-flex-align: center;
             align-items: center; }
         .shop-content-wrapper article .entry-header .product-image-wrapper img {
-          height: 250px;
+          height: 260px;
           width: auto;
           max-width: none;
           border-bottom: 5px solid #e1e1e1;
           position: relative;
           top: 50%;
-          left: 0%; }
+          left: 0.5%; }
       .shop-content-wrapper article .entry-header .product-entry-meta {
-        height: 40px;
+        height: 55px;
         width: 100%;
-        margin-top: -0.5rem;
+        margin-top: -0.25rem;
         padding: 0 1rem;
         display: -ms-flexbox;
         display: flex;
