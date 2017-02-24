@@ -39,20 +39,49 @@ get_header(); ?>
 
 	    <?php endforeach; ?>
 
-    </div>
+  	</div>
 
     <div class="front-page-posts-wrapper">
 
-		<?php
-	   $args = array( 'post_type' => 'post', 'order' => 'DSC', 'numberposts' => 3 );
-	   $product_posts = get_posts( $args ); // returns an array of posts
-		?>
+			<?php
+		   $args = array( 'post_type' => 'post', 'order' => 'DSC', 'numberposts' => 3 );
+		   $product_posts = get_posts( $args ); // returns an array of posts
+			?>
 
 			<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 		  <?php get_template_part( 'template-parts/content-front-page-posts' ); ?>
 			<?php endforeach; wp_reset_postdata(); ?>
 
 		</div>
+
+		<div class="adventures-container">
+
+	  	<div class="adventures-block-left">
+	  		<div class="adventure">
+		  		<h3 class="adventure-title">Getting Back to Nature in a Canoe</h3>
+		  		<a class="adventure-button" href="#"></a>
+		  	</div>
+	  	</div>
+
+	  	<div class="adventures-block-right">
+		  	<div class="adventure">
+		  		<h3 class="adventure-title">A Night with Friends at the Beach</h3>
+		  		<a class="adventure-button" href="#"></a>
+		  	</div>
+		  	<div class="adventure">
+		  		<h3 class="adventure-title">Taking in the View at Big Mountain</h3>
+		  		<a class="adventure-button" href="#"></a>
+		  	</div>
+		  	<div class="adventure">
+		  		<h3 class="adventure-title">Star-Gazing at the Night Sky</h3>
+		  		<a class="adventure-button" href="#"></a>
+		  	</div>
+		  </div>
+
+		  <a class="more-adventures-button">More Adventures</a>
+
+		</div>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
