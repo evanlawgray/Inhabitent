@@ -596,12 +596,14 @@ body.page-template-about {
 			& .ellipses {
 				position: absolute;
 		    z-index: -1;
-		    margin-top: 0.6rem;
+		    margin-top: 0.5rem;
 		    overflow: hidden;
 		    width: 75%;
+		    padding: 0 0.3rem;
 			}
 
 			& p {
+				padding: 0 0.15rem;
 				font-size: 0.9rem;
 				font-weight: 100;
 				color: $color__text-main;
@@ -615,7 +617,7 @@ body.page-template-about {
 			    letter-spacing: 0px;
 			    color: black;
 			    background-color: white;
-			    margin: 0;
+			   	padding: 0 0.15rem;
 			    display: inline-block;
 			    text-transform: none;
 
