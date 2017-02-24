@@ -20,7 +20,7 @@ get_header(); ?>
 				$terms = get_terms( array(
 					'taxonomy' => 'product_type',
 					'orderby' => 'name',
-					'hide_empty' => false) );
+					));
 
 				foreach ($terms as $term) :
 	        $url = get_term_link($term->slug , 'product_type');    
@@ -49,7 +49,7 @@ get_header(); ?>
 		?>
 
 			<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-		  <?php get_template_part( 'template-parts/content-front-page' ); ?>
+		  <?php get_template_part( 'template-parts/content-front-page-posts' ); ?>
 			<?php endforeach; wp_reset_postdata(); ?>
 
 		</div>

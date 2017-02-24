@@ -110,7 +110,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 	width: 1120px;
 }
 
-body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }

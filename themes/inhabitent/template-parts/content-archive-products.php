@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying products (custom post type).
+ * Template part for displaying products archive (custom post type).
  *
  * @package RED_Starter_Theme
  */
@@ -11,7 +11,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 
-			<a href="<?php $url; ?>" rel="bookmark">
+			<a href="<?php echo get_permalink(); ?>">
 			<?php if ( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail( 'large' ); ?>
 			<?php endif; ?>
