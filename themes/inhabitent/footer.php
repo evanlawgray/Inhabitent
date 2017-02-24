@@ -17,11 +17,11 @@
 
 							<h3>Contact Info</h3>
 
-							<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
+							<p><i class="fa fa-envelope fa-lg"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 
-							<p><i class="fa fa-telephone"></i><a href="tel:5553434567891">778-456-7891</a></p>
+							<p><i class="fa fa-phone fa-lg"></i><a href="tel:5553434567891">778-456-7891</a></p>
 
-							<p><i class="fa fa-facebook-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-google-plus-square"></i></p>
+							<p><i class="fa fa-facebook-square fa-lg"></i><i class="fa fa-twitter-square fa-lg"></i><i class="fa fa-google-plus-square fa-lg"></i></p>
 
 						</div>
 
