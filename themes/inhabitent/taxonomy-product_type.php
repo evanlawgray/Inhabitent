@@ -15,11 +15,21 @@ get_header(); ?>
 
 			<header class="page-header">
 
+			<?php 
+				$term_id = get_queried_object_id();
+				$category = get_term($term_id, 'product_type');
+			 ?>
+
+
+
+			<h1 class="page-title">
 			<?php
 	
-			the_archive_title( '<h1 class="page-title">', '</h1>' );
-
+				echo $category->name;
 			?>
+			</h1>
+
+			<p class="category-description"><?php echo $category->description; ?></p>
 
 
 			<?php 
@@ -27,19 +37,7 @@ get_header(); ?>
 					'taxonomy' => 'product_type',
 					'orderby' => 'name',
 					'hide_empty' => false) );?>
-
-			<div class="shop-terms-container">
-
-				<?php	foreach ($terms as $term) :
-		        $url = get_term_link($term->slug , 'product_type');    
-				?>
-
-				<a href="<?php $url; ?>"><?php echo $term->slug; ?></a>
-				
-				<?php endforeach; ?>
-
-			</div>
-
+					
 			</header><!-- .page-header -->
 
 			<div class="shop-content-wrapper">

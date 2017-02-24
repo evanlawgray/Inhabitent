@@ -11,19 +11,22 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 
-			<a href="<?php echo get_permalink(); ?>">
-			<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'large' ); ?>
-			<?php endif; ?>
-			</a>
+			<div class="product-image-wrapper">
+				<a href="<?php echo get_permalink(); ?>">
+				<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail( 'large' ); ?>
+				<?php endif; ?>
+				</a>
+			</div>
 
 			<div class="product-entry-meta">
-			<?php the_title( sprintf( '<h2 class="entry-title"></h2>' ) ); ?>
+				<div class="ellipses">.........................................................</div>
+				<h2 class="entry-title"><?php echo the_title(); ?></h2>
 
-			<?php if ( 'products' === get_post_type() ) : 
+				<?php if ( 'products' === get_post_type() ) : 
 
-		 	 $price = CFS()->get('price'); ?>
-			 <?php echo $price;  ?>
+			 	 $price = CFS()->get('price'); ?>
+				 <?php echo $price;  ?>
 			</div><!-- .product-entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->
