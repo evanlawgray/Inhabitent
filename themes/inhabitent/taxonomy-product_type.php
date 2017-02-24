@@ -18,15 +18,10 @@ get_header(); ?>
 			<?php 
 				$term_id = get_queried_object_id();
 				$category = get_term($term_id, 'product_type');
-			 ?>
-
-
+			?>
 
 			<h1 class="page-title">
-			<?php
-	
-				echo $category->name;
-			?>
+			<?php echo $category->name; ?>
 			</h1>
 
 			<p class="category-description"><?php echo $category->description; ?></p>
@@ -37,7 +32,7 @@ get_header(); ?>
 					'taxonomy' => 'product_type',
 					'orderby' => 'name',
 					'hide_empty' => false) );?>
-					
+
 			</header><!-- .page-header -->
 
 			<div class="shop-content-wrapper">
