@@ -107,18 +107,18 @@ add_action('wp_enqueue_scripts', 'inhabitent_about_image_css');
 
 // Insert custom query for the shop/products archives page
 
-function make_custom_products_archive_query($query){
-    if ( $query->is_main_query() && is_post_type_archive('products') ) {
+function make_custom_archive_query($query){
+    if ( $query->is_main_query() && (is_post_type_archive('products') || is_tax() ) ){
 
             $query->set('orderby', 'title');
             $query->set('post_type', 'products');
             $query->set('order', 'ASC');
             $query->set('posts_per_page', '16');
-
     }
 }
 
-add_action('pre_get_posts', 'make_custom_products_archive_query');
+add_action('pre_get_posts', 'make_custom_archive_query');
+
 
 // Get title for product archive page
 

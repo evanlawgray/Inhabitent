@@ -26,7 +26,7 @@
 				<?php if ( 'products' === get_post_type() ) : 
 
 			 	 $price = CFS()->get('price'); ?>
-				 <?php echo $price;  ?>
+				 <p class="price"><?php echo $price;  ?></p>
 			</div><!-- .product-entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->

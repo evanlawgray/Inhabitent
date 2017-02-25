@@ -1096,7 +1096,7 @@ body.home .front-page-posts-wrapper {
       -ms-flex-order: 4;
           order: 4; }
 
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventure) .site-content {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
@@ -1448,16 +1448,16 @@ body.single-products .content-area {
         background-color: #248A83;
         border: 1px solid #248A83; }
 
-body.tax-product_type div #content {
-  width: 90%;
+body.tax-product_type div .site-content {
+  width: 100%;
   margin-bottom: 4.5rem; }
-  body.tax-product_type div #content .content-area {
+  body.tax-product_type div .site-content .content-area {
     width: 100%; }
-    body.tax-product_type div #content .content-area .page-header {
+    body.tax-product_type div .site-content .content-area .page-header {
       text-align: center;
       padding-top: 2rem;
       padding-bottom: 2rem; }
-    body.tax-product_type div #content .content-area h1 {
+    body.tax-product_type div .site-content .content-area h1 {
       font-size: 2.5rem;
       margin-top: 0.5rem;
       margin-bottom: 2rem; }
