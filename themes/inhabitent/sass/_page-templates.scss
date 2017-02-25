@@ -223,12 +223,12 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 	width: 1120px;
 }
 
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
 
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive):not(.tax-product_type):not(.single-products) .content-area {
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
 	width: 74%;
 }
 
@@ -529,6 +529,59 @@ body.page-template-about {
 
 		& .form-submit {
 			margin-bottom: 1rem;
+		}
+	}
+}
+
+// Blog category archive page 
+
+.category {
+
+	.content-area {
+
+		padding-top: $base__space-unit;
+
+		.site-main {
+
+			width: 760px;
+
+			.page-header {
+				width: 640px;
+				margin-top: 0.75rem;
+				margin-bottom: 3rem;
+				border-bottom: $basic__border;
+
+				.page-title {
+					font-size: 2.4rem;
+				}
+			}
+
+			.entry-header {
+
+				position: relative;
+
+				.entry-title {
+			    width: 550px;
+			    height: auto;
+			    font-size: 2rem;
+			    line-height: 2.25rem;
+			    color: #fff;
+			    background-color: #248a83;
+			    padding: .75rem 1.5rem;
+			    position: absolute;
+			    top: 10px;
+			    left: 0;
+
+			    & a {
+						text-decoration: none;
+						color: white;
+
+						&:hover {
+							color: $color__yelow-brand;
+						}
+					}
+		  	}
+			}
 		}
 	}
 }

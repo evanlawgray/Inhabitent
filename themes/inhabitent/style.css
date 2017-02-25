@@ -1137,11 +1137,11 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   margin: 0 auto;
   width: 1120px; }
 
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive):not(.tax-product_type):not(.single-products) .content-area {
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
   width: 74%; }
 
 .blog .entry-content {
@@ -1338,6 +1338,36 @@ body.page-template-about .site-main {
       letter-spacing: 0.5px; }
     .comments-area .comment-form-comment .form-submit {
       margin-bottom: 1rem; }
+
+.category .content-area {
+  padding-top: 1.5rem; }
+  .category .content-area .site-main {
+    width: 760px; }
+    .category .content-area .site-main .page-header {
+      width: 640px;
+      margin-top: 0.75rem;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #e1e1e1; }
+      .category .content-area .site-main .page-header .page-title {
+        font-size: 2.4rem; }
+    .category .content-area .site-main .entry-header {
+      position: relative; }
+      .category .content-area .site-main .entry-header .entry-title {
+        width: 550px;
+        height: auto;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        color: #fff;
+        background-color: #248a83;
+        padding: .75rem 1.5rem;
+        position: absolute;
+        top: 10px;
+        left: 0; }
+        .category .content-area .site-main .entry-header .entry-title a {
+          text-decoration: none;
+          color: white; }
+          .category .content-area .site-main .entry-header .entry-title a:hover {
+            color: #f0e4d1; }
 
 .post-type-archive-products .content-area {
   padding-top: 0;
