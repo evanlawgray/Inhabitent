@@ -1,6 +1,30 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+
+//set layouts and content area widths for subpages
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventure) .site-content{
+	display: flex;
+	margin: 0 auto;
+	width: 1120px;
+}
+
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
+	width: 74%;
+}
+
+body:not(.home):not(.page-template-about) .site-content {
+	padding-top: 50px;
+}
+
+
+
 /* Front page */
 
 body.home {
@@ -11,7 +35,8 @@ body.home {
 		  rgba(0,0,0, 0.5) 0%,
 		  rgba(0,0,0, 0.5) 100%),
 			url("../../images/home-hero.jpg") no-repeat center top;
-			background-size: 275px, cover, 100%;
+		background-size: 275px, cover, 100%;
+		margin-bottom: 2.5rem;
 	}
 
 	& h2 {
@@ -19,6 +44,47 @@ body.home {
 		font-weight: 100;
 		margin-bottom: 3.75rem;
 		text-align: center;
+	}
+
+	/********* Product area ******/
+
+	&	.shopstuff-container {
+		margin: 0 auto 4rem;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    & h2 {
+    	width: 100%;
+    	text-align: center;
+    	margin-bottom: 3rem;
+    }
+
+    & .shop-stuff-item {
+    	width: 23%;
+    	border: $basic__border;
+    	border-top: 5px solid #e1e1e1;
+    	padding: 0.75rem 0.75rem 1.75rem;;
+    	text-align: center;
+
+    	&:hover {
+    		border: 1px solid $color__orange-brand;
+    		border-top: 5px solid $color__orange-brand;
+    	}
+
+    	& .product-icon-image {
+    		width: 70px;
+    		margin: 0 auto;
+    	}
+
+    	& .button-link {
+    		@include green-button;
+    		color: white;
+    		text-decoration: none;
+    		padding: 0.8rem $base__space-unit;
+    	}
+    }
 	}
 
 	/********* Blog area ****/
@@ -245,40 +311,6 @@ body.home {
    		}
 		}
 	}
-
-	.shopstuff-container {
-		margin: 0 auto;
-    width: 75%;
-    display: flex;
-    flex-flow: row wrap;
-
-    & h2 {
-    	width: 100%;
-    	text-align: center;
-    }
-
-    & .shop-stuff-item {
-    	width: 25%;
-    }
-	}
-
-	
-//set layouts and content area widths for subpages
-
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventure) .site-content{
-	display: flex;
-	margin: 0 auto;
-	width: 1120px;
-}
-
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-}
-
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
-	width: 74%;
-}
 
 
 // Journal Page
@@ -643,21 +675,22 @@ body.page-template-about {
 		width: 100%;
 
 		.page-header {
-			margin: 2rem auto 2rem;
+			margin: 2.75rem auto 2rem;
 
 			h1.page-title {
 				width: 400px;
 				margin: 0 auto;
-				font-size: 2.3rem;
+				font-size: 2.4rem;
 				display: flex;
 				justify-content: center;
 			}
 
 			.shop-terms-container {
-				width: 30%;
+				width: 25%;
 				margin: $base__space-unit auto 2.5rem;
-				font-size: 1.2rem;
 				font-family: 'novocento', Arial, serif;
+				font-size: 1.2rem;
+				font-weight: 100;
 				display: flex;
 		    justify-content: space-around;
 		    text-transform: uppercase;

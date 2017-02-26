@@ -359,9 +359,6 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
-body:not(.home) .site .site-content {
-  padding-top: 50px; }
-
 blockquote, q {
   quotes: "" ""; }
   blockquote:before, blockquote:after, q:before, q:after {
@@ -671,10 +668,15 @@ a {
           align-items: center; }
   .site-header .main-navigation {
     clear: both;
-    display: inline-block;
     float: right;
     width: 50%;
-    height: 100%; }
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: center;
+        align-items: center; }
     .site-header .main-navigation .menu-menu-1-container {
       height: 100%; }
       .site-header .main-navigation .menu-menu-1-container ul.menu {
@@ -692,14 +694,26 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+        /* 			li:hover > ul,
+				li.focus > ul {
+					left: auto;
+				}
+ */ }
         .site-header .main-navigation .menu-menu-1-container ul.menu ul {
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
           float: left;
           position: absolute;
           top: 1.5rem;
           left: -999rem;
-          z-index: 99999; }
+          z-index: 99999;
+          /* 					:hover > a,
+					.focus > a {
+					}
+
+					a:hover,
+					a.focus {
+					} */ }
           .site-header .main-navigation .menu-menu-1-container ul.menu ul ul {
             left: -999rem;
             top: 0; }
@@ -708,12 +722,9 @@ a {
             left: 100%; }
           .site-header .main-navigation .menu-menu-1-container ul.menu ul a {
             width: 200px; }
-        .site-header .main-navigation .menu-menu-1-container ul.menu li:hover > ul,
-        .site-header .main-navigation .menu-menu-1-container ul.menu li.focus > ul {
-          left: auto; }
       .site-header .main-navigation .menu-menu-1-container li {
-        margin-left: 0.75rem;
-        margin-right: 0.75rem; }
+        margin-left: 0.85rem;
+        margin-right: 0.85rem; }
       .site-header .main-navigation .menu-menu-1-container a {
         display: block;
         text-decoration: none;
@@ -722,6 +733,22 @@ a {
           color: #2f1339; }
         .site-header .main-navigation .menu-menu-1-container a:hover {
           cursor: pointer; }
+    .site-header .main-navigation form.search-form {
+      width: auto;
+      display: inline-block; }
+      .site-header .main-navigation form.search-form .search-submit {
+        background: none;
+        border: none;
+        color: #248A83; }
+      .site-header .main-navigation form.search-form fieldset {
+        border: none;
+        padding: 0;
+        width: auto; }
+        .site-header .main-navigation form.search-form fieldset .search-field {
+          width: 0;
+          height: 100%;
+          background: none;
+          border: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -972,18 +999,85 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventure) .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 1120px; }
+
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
+  width: 74%; }
+
+body:not(.home):not(.page-template-about) .site-content {
+  padding-top: 50px; }
+
 /* Front page */
 body.home {
+  /********* Product area ******/
   /********* Blog area ****/ }
   body.home .hero-image-banner {
     height: 100vh;
     background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
-    background-size: 275px, cover, 100%; }
+    background-size: 275px, cover, 100%;
+    margin-bottom: 2.5rem; }
   body.home h2 {
     font-size: 2.4rem;
     font-weight: 100;
     margin-bottom: 3.75rem;
     text-align: center; }
+  body.home .shopstuff-container {
+    margin: 0 auto 4rem;
+    width: 80%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    body.home .shopstuff-container h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 3rem; }
+    body.home .shopstuff-container .shop-stuff-item {
+      width: 23%;
+      border: 1px solid #e1e1e1;
+      border-top: 5px solid #e1e1e1;
+      padding: 0.75rem 0.75rem 1.75rem;
+      text-align: center; }
+      body.home .shopstuff-container .shop-stuff-item:hover {
+        border: 1px solid #d99054;
+        border-top: 5px solid #d99054; }
+      body.home .shopstuff-container .shop-stuff-item .product-icon-image {
+        width: 70px;
+        margin: 0 auto; }
+      body.home .shopstuff-container .shop-stuff-item .button-link {
+        font-family: novocento,Arial,serif;
+        font-size: 13.6px;
+        font-size: .85rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        width: 150px;
+        height: 40px;
+        margin-bottom: 4rem;
+        border: none;
+        border-radius: 0;
+        background: #248A83;
+        color: #000;
+        line-height: 1.5;
+        padding: .6rem 1rem .4rem 1.35rem;
+        color: white;
+        text-decoration: none;
+        padding: 0.8rem 1.5rem; }
+        body.home .shopstuff-container .shop-stuff-item .button-link:hover {
+          background-color: #1B6661;
+          cursor: pointer; }
+        body.home .shopstuff-container .shop-stuff-item .button-link:active, body.home .shopstuff-container .shop-stuff-item .button-link:focus {
+          border: 1px solid #1B6661;
+          background-color: #1B6661; }
   body.home .front-page-posts-wrapper {
     margin: 3rem auto;
     width: 78%;
@@ -1187,32 +1281,6 @@ body.home {
       transform: translateY(37%); }
     .adventures-container .adventures-block-right .adventure:nth-child(3) .adventure-button {
       top: 18px; }
-
-.shopstuff-container {
-  margin: 0 auto;
-  width: 75%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
-  .shopstuff-container h2 {
-    width: 100%;
-    text-align: center; }
-  .shopstuff-container .shop-stuff-item {
-    width: 25%; }
-
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventure) .site-content {
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  width: 1120px; }
-
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
-  width: 74%; }
 
 .blog .entry-content {
   width: 760px; }
@@ -1443,20 +1511,21 @@ body.page-template-about .site-main {
   padding-top: 0;
   width: 100%; }
   .post-type-archive-products .content-area .page-header {
-    margin: 2rem auto 2rem; }
+    margin: 2.75rem auto 2rem; }
     .post-type-archive-products .content-area .page-header h1.page-title {
       width: 400px;
       margin: 0 auto;
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; }
     .post-type-archive-products .content-area .page-header .shop-terms-container {
-      width: 30%;
+      width: 25%;
       margin: 1.5rem auto 2.5rem;
-      font-size: 1.2rem;
       font-family: 'novocento', Arial, serif;
+      font-size: 1.2rem;
+      font-weight: 100;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;

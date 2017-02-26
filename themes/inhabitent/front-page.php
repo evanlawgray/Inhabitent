@@ -33,13 +33,15 @@ get_header(); ?>
 
 	      <p> <?php echo $term->description; ?> </p>
 	         
-	      <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a>
+	      <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?> Stuff</a>
 
 	    </div>
 
 	    <?php endforeach; ?>
 
   	</div>
+
+  	<h2>Inhabitent Journal</h2>
 
     <div class="front-page-posts-wrapper">
 
