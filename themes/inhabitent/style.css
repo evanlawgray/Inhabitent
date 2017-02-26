@@ -650,13 +650,13 @@ a {
   width: 100%;
   height: 50px;
   padding-left: 10rem;
-  padding-right: 10rem;
+  padding-right: 8.75rem;
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
   z-index: 10000;
   background-color: rgba(255, 255, 255, 0.75); }
   .site-header .site-branding {
-    width: 50%;
+    width: 45%;
     height: 100%;
     margin: 0;
     display: inline-block; }
@@ -665,6 +665,8 @@ a {
     .site-header .site-branding .header-logo-wrapper {
       width: 50px;
       height: 100%;
+      background: url("../../images/inhabitent-logo-tent.svg") no-repeat center;
+      background-size: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
@@ -673,10 +675,13 @@ a {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
+      .site-header .site-branding .header-logo-wrapper:hover {
+        cursor: pointer; }
   .site-header .main-navigation {
+    font-size: 0.95rem;
     clear: both;
     float: right;
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: -ms-flexbox;
     display: flex;
@@ -730,8 +735,8 @@ a {
           .site-header .main-navigation .menu-menu-1-container ul.menu ul a {
             width: 200px; }
       .site-header .main-navigation .menu-menu-1-container li {
-        margin-left: 0.85rem;
-        margin-right: 0.85rem; }
+        margin-left: 0.75rem;
+        margin-right: 0.75rem; }
       .site-header .main-navigation .menu-menu-1-container a {
         display: block;
         text-decoration: none;
@@ -740,22 +745,57 @@ a {
           color: #2f1339; }
         .site-header .main-navigation .menu-menu-1-container a:hover {
           cursor: pointer; }
-    .site-header .main-navigation form.search-form {
+    .site-header .main-navigation .search-form {
       width: auto;
       display: inline-block; }
-      .site-header .main-navigation form.search-form .search-submit {
-        background: none;
-        border: none;
-        color: #248A83; }
-      .site-header .main-navigation form.search-form fieldset {
+      .site-header .main-navigation .search-form fieldset {
         border: none;
         padding: 0;
         width: auto; }
-        .site-header .main-navigation form.search-form fieldset .search-field {
+        .site-header .main-navigation .search-form fieldset .search-submit {
+          background: none;
+          border: none;
+          padding-right: 0;
+          color: #248A83;
+          transform: translateY(-2px); }
+          .site-header .main-navigation .search-form fieldset .search-submit i {
+            font-size: 1rem; }
+          .site-header .main-navigation .search-form fieldset .search-submit:focus, .site-header .main-navigation .search-form fieldset .search-submit:active {
+            outline: none; }
+        .site-header .main-navigation .search-form fieldset .search-field {
           width: 0;
           height: 100%;
           background: none;
-          border: none; }
+          border: none;
+          outline: none;
+          color: #f0e4d1;
+          transition: width 0.55s ease; }
+        .site-header .main-navigation .search-form fieldset ::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #f0e4d1; }
+        .site-header .main-navigation .search-form fieldset :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #f0e4d1; }
+        .site-header .main-navigation .search-form fieldset ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #f0e4d1; }
+        .site-header .main-navigation .search-form fieldset :-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: #f0e4d1; }
+        .site-header .main-navigation .search-form fieldset .search-field-expand {
+          width: 190px; }
+
+.home .site-header, .page-template-about .site-header {
+  border-bottom: none;
+  background: none;
+  position: absolute; }
+  .home .site-header .header-logo-wrapper, .page-template-about .site-header .header-logo-wrapper {
+    background: url("../../images/inhabitent-logo-tent-white.svg") no-repeat center;
+    background-size: 100%; }
+  .home .site-header .header-logo, .home .site-header .menu-item a, .home .site-header .search-submit i, .page-template-about .site-header .header-logo, .page-template-about .site-header .menu-item a, .page-template-about .site-header .search-submit i {
+    color: white; }
+    .home .site-header .header-logo:hover, .home .site-header .menu-item a:hover, .home .site-header .search-submit i:hover, .page-template-about .site-header .header-logo:hover, .page-template-about .site-header .menu-item a:hover, .page-template-about .site-header .search-submit i:hover {
+      color: #f0e4d1; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1118,6 +1158,7 @@ body.home {
               order: 0; }
       body.home .front-page-posts-wrapper article .entry-title {
         margin-top: 0.5rem;
+        margin-bottom: 1rem;
         margin-left: 0.75rem;
         display: -ms-flexbox;
         display: flex;
