@@ -5,178 +5,180 @@
 /* Buttons */
 
 .read-more-button {
-	font-family: 'novocento', Arial, serif;
-	@include font-size(0.85);
-	font-weight: 100;
-	text-transform: uppercase;
-	width: 150px;
-	height: 40px;
-	margin-bottom: 4rem;
-	border: 1px solid black;
-	border-radius: 0;
-	background: white;
-	color: black;
-	line-height: 1.5;
-	padding: .6rem 1rem .4rem 1.35rem;
+  font-family: 'novocento', Arial, serif;
 
-	& a {
-		color: black;
-		text-decoration: none;
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: center;
-		align-items: center;
+  @include font-size(0.85);
 
-		&:visited {
-			color: black;
-		}
+  font-weight: 100;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 4rem;
+  border: 1px solid black;
+  border-radius: 0;
+  background: white;
+  color: black;
+  line-height: 1.5;
+  padding: .6rem 1rem .4rem 1.35rem;
 
-		& span .arrow {
-			position: relative;
-			bottom: 1px;
-			left: 2px;
-		}
-	}
+  & a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 
-	&:hover {
-		color: white;
-		background-color: $color__green-brand;
-		border: 1px solid $color__green-brand;
+    &:visited {
+      color: black;
+    }
 
-		& a {
-			color: white;
-		}
-	}
+    & span .arrow {
+      position: relative;
+      bottom: 1px;
+      left: 2px;
+    }
+  }
 
+  &:hover {
+    color: white;
+    background-color: $color__green-brand;
+    border: 1px solid $color__green-brand;
+
+    & a {
+      color: white;
+    }
+  }
 }
 
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"],{
-	font-family: 'novocento', Arial, serif;
-	@include font-size(0.85);
-	font-weight: 100;
-	text-transform: uppercase;
-	width: auto;
-	height: 40px;
-	border: 1px solid $color__green-brand;
-	border-radius: 0;
-	background: $color__green-brand;
-	box-shadow: none;
-	color: white;
-	line-height: 1.5;
-	padding: .4rem 1rem .4rem;
+input[type="submit"] {
+  font-family: 'novocento', Arial, serif;
 
-	&:hover {
-		border: $basic__border;
-		background-color: $color__green-brand-hover;
-	}
+  @include font-size(0.85);
 
-	&:active,
-	&:focus {
-		border: $basic__border;
-		background-color: $color__green-brand-hover;
-	}
+  font-weight: 100;
+  text-transform: uppercase;
+  width: auto;
+  height: 40px;
+  border: 1px solid $color__green-brand;
+  border-radius: 0;
+  background: $color__green-brand;
+  box-shadow: none;
+  color: white;
+  line-height: 1.5;
+  padding: .4rem 1rem .4rem;
+
+  &:hover {
+    border: $basic__border;
+    background-color: $color__green-brand-hover;
+  }
+
+  &:active,
+  &:focus {
+    border: $basic__border;
+    background-color: $color__green-brand-hover;
+  }
 }
 
 /* Fields */
-.wpcf7-form { 
-	margin-top: 0.5rem;
-	margin-bottom: 4.5rem;
-	& label {
-		font-family: 'novcento', Arial, serif;
-		font-size: 1.08rem;
-		text-transform: uppercase;
-		letter-spacing: 0.5px;
-		color: $color__purple-brand;
-	}
-}
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	background-color: #F4F4F4;
+.wpcf7-form {
+  margin-top: 0.5rem;
+  margin-bottom: 4.5rem;
 
-	&:focus {
-		color: #111;
-	}
-}
-
-input[type="search"] {
-	color: $color__yelow-brand;
-	text-transform: uppercase;
+  & label {
+    font-family: 'novcento', Arial, serif;
+    font-size: 1.08rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: $color__purple-brand;
+  }
 }
 
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #F4F4F4;
+
+  &:focus {
+    color: #111;
+  }
+}
+
 input[type="search"] {
-	height: 40px;
-	margin-top: 0.5rem;
-	padding: 3px;
-	border: $basic__border;
-	border-radius: 0;
+  color: $color__yelow-brand;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  height: 40px;
+  margin-top: 0.5rem;
+  padding: 3px;
+  border: $basic__border;
+  border-radius: 0;
 }
 
 textarea {
-	width: 100%;
-	height: 230px;
-	padding-left: 3px;
-	margin-top: 1rem;
-	border: $basic__border;
-	border-radius: 0;
+  width: 100%;
+  height: 230px;
+  padding-left: 3px;
+  margin-top: 1rem;
+  border: $basic__border;
+  border-radius: 0;
 }
 
 .comment-form-url {
+  & label {
+    width: 100%;
+    font-size: 1.15rem;
+    font-family: 'novocento', Arial, serif;
+    text-transform: uppercase;
+    display: block;
+  }
 
-	& label {
-		width: 100%;
-		font-size: 1.15rem;
-		font-family: 'novocento', Arial, serif;
-		text-transform: uppercase;
-		display: block;
-	}
-
-	& input {
-		width: 97%;
-	}
-
+  & input {
+    width: 97%;
+  }
 }
 
 .comment-form-author, .comment-form-email {
-	width: 49%;
-	height: 70px;
-	display: inline-block;
-	flex-flow: column nowrap;
+  width: 49%;
+  height: 70px;
+  display: inline-block;
+  flex-flow: column nowrap;
 
-	& label {
-		width: 100%;
-		font-size: 1.15rem;
-		font-family: 'novocento', Arial, serif;
-		text-transform: uppercase;
-		display: block;
+  & label {
+    width: 100%;
+    font-size: 1.15rem;
+    font-family: 'novocento', Arial, serif;
+    text-transform: uppercase;
+    display: block;
 
-		& span {
-			font-size: 1.25rem;
-			color: $color__orange-brand;
-			position: relative;
-			top: 3px;
-		}
-	}
+    & span {
+      font-size: 1.25rem;
+      color: $color__orange-brand;
+      position: relative;
+      top: 3px;
+    }
+  }
 
-	& input {
-		width: 97%;
-		margin-bottom: $base__space-unit;
-	}
+  & input {
+    width: 97%;
+    margin-bottom: $base__space-unit;
+  }
 }
 
 .form-submit input[type="submit"] {
-	width: 100px;
+  width: 100px;
 }
-

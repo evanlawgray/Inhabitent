@@ -1,82 +1,82 @@
 .site-footer {
-	width: 100%;
-	color: white;
-	background: url("../../images/dark-wood.png") repeat-x center bottom;
-	background-size: 500px, 500px;
+  width: 100%;
+  color: white;
+  background: url("../../images/dark-wood.png") repeat-x center bottom;
+  background-size: 500px, 500px;
 
-	.footer-container {
-		margin: 0 auto;
-		padding: 3rem 0 0;
-		display: flex; 
-		flex-flow: row wrap;
-		justify-content: space-around;
-		align-items: flex-start;
+  .footer-container {
+    margin: 0 auto;
+    padding: 3rem 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
 
-		.footer-info-container {
-			width: 55%;
-			margin-left: 10rem;
-			display: flex;
-			align-items: flex-start;
+    .footer-info-container {
+      width: 55%;
+      margin-left: 10rem;
+      display: flex;
+      align-items: flex-start;
 
-			div:nth-child(1).footer-contact-column {
-				width: 35%;
-			}
+      div:nth-child(1).footer-contact-column {
+        width: 35%;
+      }
 
-			div:nth-child(1), div:nth-child(2){
-				width: 45%;
-				margin: 0;
+      div:nth-child(1), div:nth-child(2) {
+        width: 45%;
+        margin: 0;
 
-				& h3 {
-					color: $color__orange-brand;
-					margin: 1rem 0;
-				}
+        & h3 {
+          color: $color__orange-brand;
+          margin: 1rem 0;
+        }
 
-				& p {
-					letter-spacing: 0.25px;
-					margin: 0.5rem 0 $base__space-unit;
-				}
+        & p {
+          letter-spacing: 0.25px;
+          margin: 0.5rem 0 $base__space-unit;
+        }
 
-				& .day-of-week {
-					font-weight: bold;
-				}
+        & .day-of-week {
+          font-weight: bold;
+        }
 
-				& a {
-					color: white;
-					text-decoration: none;
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-			}
-		}
-		
-		.footer-branding {
-			width: 30%;
-			margin-top: 1rem;
-			text-align: right;
+        & a {
+          color: white;
+          text-decoration: none;
 
-			& a {
-				height: auto;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
 
-				& img {
-					width: 278px;
-					margin-right: 10rem;
-				}
-			}
-		}
+    .footer-branding {
+      width: 30%;
+      margin-top: 1rem;
+      text-align: right;
 
+      & a {
+        height: auto;
 
-		.site-info {
-			width: 100%;
-			margin-top: $base__space-unit;
-			text-transform: uppercase;
-			padding: $base__space-unit 0;
-			text-align: center;
+        & img {
+          width: 278px;
+          margin-right: 10rem;
+        }
+      }
+    }
 
-			& p {
-				font-size: 0.88rem;
-				margin: 0 auto;
-			}
-		}
-	}
+    .site-info {
+      width: 100%;
+      margin-top: $base__space-unit;
+      text-transform: uppercase;
+      padding: $base__space-unit 0;
+      text-align: center;
+
+      & p {
+        font-size: 0.88rem;
+        margin: 0 auto;
+      }
+    }
+  }
 }
