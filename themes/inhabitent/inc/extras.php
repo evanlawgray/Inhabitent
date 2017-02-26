@@ -178,7 +178,7 @@ function red_wp_trim_excerpt( $text ) {
         
         // create a custom "more" link
         $excerpt_end = '<div class="read-more-button">
-            <a href="' . get_permalink() . '">Read More &rarr;</a>
+            <a href="' . get_permalink() . '">Read More<span class="arrow">   &rarr;</span></a>
             </div>'; // modify excerpt ending
         $excerpt_more = apply_filters( 'excerpt_more', ' ' . $excerpt_end );
         

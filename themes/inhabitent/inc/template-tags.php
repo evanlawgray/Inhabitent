@@ -67,7 +67,7 @@
  		/* translators: used between list items, there is a space after the comma */
  		$tags_list = get_the_tag_list( '', esc_html( ', ' ) );
  		if ( $tags_list ) {
- 			printf( '<span class="tags-links">' . esc_html( 'Tagged &rarr; %1$s' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+ 			printf( '<span class="tags-links">' . esc_html( 'Tagged <span class="arrow">&rarr;</span> %1$s' ) . '</span>', $tags_list ); // WPCS: XSS OK.
  		}
  	}
  }
@@ -157,7 +157,7 @@
  						'add_below'  => 'div-comment',
  						'depth'      => $depth,
  						'max_depth'  => $args['max_depth'],
- 						'reply_text' => 'Reply &rarr;'
+ 						'reply_text' => 'Reply <span class="arrow">&rarr;</span>'
  					) ) ); ?>
  				</div><!-- .reply -->
  			</div><!-- .comment-content -->
@@ -183,8 +183,8 @@
  				'format' => '?paged=%#%',
  				'current' => max( 1, get_query_var('paged') ),
  				'total' => $wp_query->max_num_pages,
- 				'prev_text' => esc_html( '&larr; Previous' ),
- 				'next_text' => esc_html( 'Next &rarr;' ),
+ 				'prev_text' => '<span class="arrow">&larr;</span> Previous',
+ 				'next_text' => 'Next <span class="arrow">&rarr;</span>',
  			)
  		);
  		echo '</nav>';

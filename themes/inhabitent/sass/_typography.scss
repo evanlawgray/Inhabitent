@@ -50,6 +50,15 @@ i.fa {
 	margin-right: 0.5rem;
 }
 
+.arrow {
+	position: relative;
+	bottom: 2px;
+}
+
+.read-more-button .arrow {
+	margin-left: 0.25rem;
+}
+
 blockquote {
 	margin: 0 $base__space-unit;
 }

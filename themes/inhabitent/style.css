@@ -305,6 +305,13 @@ dfn, cite, em, i {
 i.fa {
   margin-right: 0.5rem; }
 
+.arrow {
+  position: relative;
+  bottom: 2px; }
+
+.read-more-button .arrow {
+  margin-left: 0.25rem; }
+
 blockquote {
   margin: 0 1.5rem; }
 
@@ -1005,7 +1012,8 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   margin: 0 auto;
   width: 1120px; }
 
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products) .widget-area {
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.search):not(.search-results) .content-area,
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products):not(.search):not(.search-results) .widget-area {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
@@ -1635,7 +1643,7 @@ body.single-products .content-area {
     display: -ms-flexbox;
     display: flex; }
     body.single-products .content-area .entry-header .product-image-wrapper {
-      min-width: 50%; }
+      min-width: 48%; }
     body.single-products .content-area .entry-header .entry-meta {
       padding-left: 3rem;
       padding-bottom: 4rem; }
@@ -1666,16 +1674,78 @@ body.single-products .content-area {
         background-color: #248A83;
         border: 1px solid #248A83; }
 
-body.tax-product_type div .site-content {
-  width: 100%;
-  margin-bottom: 4.5rem; }
-  body.tax-product_type div .site-content .content-area {
+body.tax-product_type .site-content {
+  width: 100%; }
+  body.tax-product_type .site-content .content-area {
     width: 100%; }
-    body.tax-product_type div .site-content .content-area .page-header {
+    body.tax-product_type .site-content .content-area .page-header {
       text-align: center;
       padding-top: 2rem;
       padding-bottom: 2rem; }
-    body.tax-product_type div .site-content .content-area h1 {
+    body.tax-product_type .site-content .content-area h1 {
       font-size: 2.5rem;
       margin-top: 0.5rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 1.75rem; }
+
+.search .site-main, .search-results .site-main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 93%; }
+  .search .site-main .page-header, .search-results .site-main .page-header {
+    border-bottom: 1px solid #e1e1e1; }
+    .search .site-main .page-header .page-title, .search-results .site-main .page-header .page-title {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 2.35rem; }
+  .search .site-main article, .search-results .site-main article {
+    padding-top: 1rem;
+    margin-bottom: 0;
+    line-height: 1.75rem; }
+    .search .site-main article:last-of-type, .search-results .site-main article:last-of-type {
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #e1e1e1; }
+    .search .site-main article .read-more-button, .search-results .site-main article .read-more-button {
+      margin-bottom: 1.75rem; }
+    .search .site-main article .entry-title, .search-results .site-main article .entry-title {
+      font-size: 2.15rem; }
+      .search .site-main article .entry-title a, .search-results .site-main article .entry-title a {
+        color: #248A83;
+        text-decoration: none; }
+  .search .site-main .search-pagination, .search-results .site-main .search-pagination {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+    .search .site-main .search-pagination .current, .search-results .site-main .search-pagination .current {
+      background-color: #808080; }
+      .search .site-main .search-pagination .current:hover, .search-results .site-main .search-pagination .current:hover {
+        background-color: #808080;
+        cursor: default; }
+    .search .site-main .search-pagination a, .search .site-main .search-pagination span.current, .search-results .site-main .search-pagination a, .search-results .site-main .search-pagination span.current {
+      font-family: novocento,Arial,serif;
+      font-size: 13.6px;
+      font-size: .85rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      width: 150px;
+      height: 40px;
+      margin-bottom: 4rem;
+      border: none;
+      border-radius: 0;
+      background: #248A83;
+      color: #000;
+      line-height: 1.5;
+      padding: .6rem 1rem .4rem 1.35rem;
+      padding: 0.55rem 0.75rem;
+      margin-right: 0.25rem;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: white; }
+      .search .site-main .search-pagination a:hover, .search .site-main .search-pagination span.current:hover, .search-results .site-main .search-pagination a:hover, .search-results .site-main .search-pagination span.current:hover {
+        background-color: #1B6661;
+        cursor: pointer; }
+      .search .site-main .search-pagination a:active, .search .site-main .search-pagination a:focus, .search .site-main .search-pagination span.current:active, .search .site-main .search-pagination span.current:focus, .search-results .site-main .search-pagination a:active, .search-results .site-main .search-pagination a:focus, .search-results .site-main .search-pagination span.current:active, .search-results .site-main .search-pagination span.current:focus {
+        border: 1px solid #1B6661;
+        background-color: #1B6661; }
+      .search .site-main .search-pagination a:hover, .search .site-main .search-pagination span.current:hover, .search-results .site-main .search-pagination a:hover, .search-results .site-main .search-pagination span.current:hover {
+        background-color: #2f1339; }
+      .search .site-main .search-pagination a:active, .search .site-main .search-pagination a:focus, .search .site-main .search-pagination span.current:active, .search .site-main .search-pagination span.current:focus, .search-results .site-main .search-pagination a:active, .search-results .site-main .search-pagination a:focus, .search-results .site-main .search-pagination span.current:active, .search-results .site-main .search-pagination span.current:focus {
+        border: none; }
