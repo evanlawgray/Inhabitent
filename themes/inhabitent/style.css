@@ -495,6 +495,8 @@ input[type="submit"] {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: #2f1339; }
+    .wpcf7-form label .asterisk {
+      color: #d99054; }
 
 input[type="text"],
 input[type="email"],
@@ -566,7 +568,7 @@ textarea {
     width: 97%;
     margin-bottom: 1.5rem; }
 
-.form-submit input[type="submit"] {
+.wpcf7-form input[type="submit"] {
   width: 100px; }
 
 .site-footer {
@@ -1052,8 +1054,8 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   margin: 0 auto;
   width: 1120px; }
 
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.search):not(.search-results):not(.error404) .content-area,
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products):not(.search):not(.search-results):not(.error404) .widget-area {
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.search):not(.search-results):not(.error404):not(.page-template-default) .content-area,
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products):not(.search):not(.search-results):not(.error404):not(.page-template-default) .widget-area {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
@@ -1825,3 +1827,7 @@ body.tax-product_type .site-content {
             color: #248A83; }
       .error404 .content-area .site-main .widget_archive p {
         margin-bottom: 0.75rem; }
+
+.page-id-52 .content-area {
+  padding-top: 1rem;
+  padding-bottom: 3rem; }
