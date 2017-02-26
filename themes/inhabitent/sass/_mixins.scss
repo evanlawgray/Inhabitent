@@ -10,3 +10,59 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin transparent-button($border-color) {
+	font-family: 'novocento', Arial, serif;
+	@include font-size(0.85);
+	font-weight: 100;
+	text-transform: uppercase;
+	width: auto;
+	height: 40px;
+	border: 1px solid $border-color;
+	border-radius: 0;
+	box-shadow: none;
+	color: white;
+	line-height: 1.5;
+	padding: .4rem 1rem .4rem;
+	letter-spacing: 0.25px;
+
+	&:hover {
+		border: 1px solid $color__green-brand;
+		background-color: $color__green-brand;
+		cursor: pointer;
+	}
+
+	&:active,
+	&:focus {
+		border: 1px solid $color__green-brand;
+		background-color: $color__green-brand;
+	}
+}
+
+@mixin green-button {
+	font-family: novocento,Arial,serif;
+  font-size: 13.6px;
+  font-size: .85rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 4rem;
+  border: none;
+  border-radius: 0;
+  background: $color__green-brand;
+  color: #000;
+  line-height: 1.5;
+  padding: .6rem 1rem .4rem 1.35rem;
+
+  &:hover {
+  	background-color: $color__green-brand-hover;
+  	cursor: pointer;
+  }
+
+  &:active,
+  &:focus, {
+		border: 1px solid $color__green-brand-hover;
+  	background-color: $color__green-brand-hover;
+  }
+}

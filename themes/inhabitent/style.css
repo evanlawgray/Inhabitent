@@ -417,7 +417,6 @@ table {
   width: 150px;
   height: 40px;
   margin-bottom: 4rem;
-  border: 1px solid;
   border: 1px solid black;
   border-radius: 0;
   background: white;
@@ -459,7 +458,6 @@ input[type="submit"] {
   text-transform: uppercase;
   width: auto;
   height: 40px;
-  border: 1px solid;
   border: 1px solid #248A83;
   border-radius: 0;
   background: #248A83;
@@ -498,7 +496,6 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -508,9 +505,12 @@ textarea {
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
-  input[type="search"]:focus,
   textarea:focus {
     color: #111; }
+
+input[type="search"] {
+  color: #f0e4d1;
+  text-transform: uppercase; }
 
 input[type="text"],
 input[type="email"],
@@ -973,163 +973,233 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-body.home .hero-image-banner {
-  height: 100vh;
-  background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
-  background-size: 275px, cover, 100%; }
+body.home {
+  /********* Blog area ****/ }
+  body.home .hero-image-banner {
+    height: 100vh;
+    background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
+    background-size: 275px, cover, 100%; }
+  body.home h2 {
+    font-size: 2.4rem;
+    font-weight: 100;
+    margin-bottom: 3.75rem;
+    text-align: center; }
+  body.home .front-page-posts-wrapper {
+    margin: 3rem auto;
+    width: 78%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-align: baseline;
+        align-items: baseline; }
+    body.home .front-page-posts-wrapper article:nth-child(2) {
+      border-right: 0; }
+    body.home .front-page-posts-wrapper article:nth-child(3) {
+      border-right: 0;
+      border-left: 1rem solid white; }
+    body.home .front-page-posts-wrapper article {
+      width: 33.333%;
+      border-right: 1rem solid white; }
+      body.home .front-page-posts-wrapper article .entry-header {
+        border: 1px solid #e1e1e1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+        body.home .front-page-posts-wrapper article .entry-header img {
+          max-height: 248px;
+          border-bottom: 4px solid #E1E1E1;
+          -ms-flex-order: 0;
+              order: 0; }
+      body.home .front-page-posts-wrapper article .entry-title {
+        margin-top: 0.5rem;
+        margin-left: 0.75rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        -ms-flex-order: 2;
+            order: 2; }
+        body.home .front-page-posts-wrapper article .entry-title a {
+          font-size: 1.3rem;
+          line-height: 1.75rem;
+          text-align: left;
+          text-decoration: none;
+          color: #248A83;
+          display: -ms-flexbox;
+          display: flex; }
+          body.home .front-page-posts-wrapper article .entry-title a:hover {
+            color: #2f1339; }
+      body.home .front-page-posts-wrapper article .entry-meta {
+        margin-top: 0.75rem;
+        margin-left: 0.75rem;
+        -ms-flex-order: 1;
+            order: 1;
+        font-size: 0.8rem; }
+      body.home .front-page-posts-wrapper article .read-more-button {
+        margin-left: 0.75rem;
+        margin-bottom: 0.75rem;
+        -ms-flex-order: 4;
+            order: 4; }
 
-body.home .adventures-container {
+/********* Adventures area ****/
+.adventures-container {
   width: 78%;
   height: auto;
-  margin: 5rem auto;
+  margin: 2rem auto 3rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  body.home .adventures-container .more-adventures-button {
-    width: 100%; }
-  body.home .adventures-container .adventures-block-left {
-    border-right: 0.75rem solid white; }
-  body.home .adventures-container .adventures-block-right {
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+  .adventures-container .more-adventures-button {
+    font-family: novocento,Arial,serif;
+    font-size: 13.6px;
+    font-size: .85rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 4rem;
+    border: none;
+    border-radius: 0;
+    background: #248A83;
+    color: #000;
+    line-height: 1.5;
+    padding: .6rem 1rem .4rem 1.35rem;
+    width: auto;
+    margin: 1.5rem 0;
+    padding: 0.55rem 1.5rem 2.25rem;
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: white; }
+    .adventures-container .more-adventures-button:hover {
+      background-color: #1B6661;
+      cursor: pointer; }
+    .adventures-container .more-adventures-button:active, .adventures-container .more-adventures-button:focus {
+      border: 1px solid #1B6661;
+      background-color: #1B6661; }
+  .adventures-container .adventures-block-left {
+    border-right: 0.75rem solid white;
+    width: 49.5%; }
+  .adventures-container .adventures-block-right {
+    width: 50.5%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     border-left: 0.75rem solid white; }
-  body.home .adventures-container .adventures-block-left, body.home .adventures-container .adventures-block-right {
-    height: 550px;
-    width: 50%;
+  .adventures-container .adventures-block-left, .adventures-container .adventures-block-right {
+    height: 540px;
     box-sizing: border-box; }
-    body.home .adventures-container .adventures-block-left .adventure, body.home .adventures-container .adventures-block-right .adventure {
+    .adventures-container .adventures-block-left .adventure, .adventures-container .adventures-block-right .adventure {
       box-sizing: border-box;
       overflow: hidden;
       text-align: left;
-      padding: 0 1.5rem; }
-      body.home .adventures-container .adventures-block-left .adventure .adventure-title, body.home .adventures-container .adventures-block-right .adventure .adventure-title {
+      padding: 0 1.5rem;
+      postion: absolute; }
+      .adventures-container .adventures-block-left .adventure .adventure-title, .adventures-container .adventures-block-right .adventure .adventure-title {
         font-family: 'merriweather', Arial, serif;
         font-weight: 300;
         color: white;
         text-transform: none;
         letter-spacing: 1px; }
-  body.home .adventures-container .adventures-block-left .adventure {
+        .adventures-container .adventures-block-left .adventure .adventure-title:hover, .adventures-container .adventures-block-right .adventure .adventure-title:hover {
+          color: #f0e4d1;
+          cursor: pointer; }
+      .adventures-container .adventures-block-left .adventure .adventure-button, .adventures-container .adventures-block-right .adventure .adventure-button {
+        font-family: 'novocento', Arial, serif;
+        font-size: 13.6px;
+        font-size: 0.85rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        width: auto;
+        height: 40px;
+        border: 1px solid #FFF;
+        border-radius: 0;
+        box-shadow: none;
+        color: white;
+        line-height: 1.5;
+        padding: .4rem 1rem .4rem;
+        letter-spacing: 0.25px;
+        padding: 0.8rem 1.5rem;
+        text-decoration: none;
+        position: relative; }
+        .adventures-container .adventures-block-left .adventure .adventure-button:hover, .adventures-container .adventures-block-right .adventure .adventure-button:hover {
+          border: 1px solid #248A83;
+          background-color: #248A83;
+          cursor: pointer; }
+        .adventures-container .adventures-block-left .adventure .adventure-button:active, .adventures-container .adventures-block-left .adventure .adventure-button:focus, .adventures-container .adventures-block-right .adventure .adventure-button:active, .adventures-container .adventures-block-right .adventure .adventure-button:focus {
+          border: 1px solid #248A83;
+          background-color: #248A83; }
+  .adventures-container .adventures-block-left .adventure {
     height: 100%;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center bottom;
     background-size: 170%;
     background-position: 50% 80%; }
-    body.home .adventures-container .adventures-block-left .adventure .adventure-title {
-      font-size: 3.15rem;
+    .adventures-container .adventures-block-left .adventure .adventure-title {
+      font-size: 3rem;
       line-height: 4rem; }
-  body.home .adventures-container .adventures-block-right .adventure:nth-child(1) {
+    .adventures-container .adventures-block-left .adventure .adventure-button {
+      bottom: 12px; }
+  .adventures-container .adventures-block-right .adventure:nth-child(1) {
     height: 50%;
     width: 100%;
     border-bottom: 1.25rem solid white;
     background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
     background-size: 125%;
     background-position: 50% 70%; }
-    body.home .adventures-container .adventures-block-right .adventure:nth-child(1) .adventure-title {
+    .adventures-container .adventures-block-right .adventure:nth-child(1) .adventure-title {
       font-size: 2.45rem;
       line-height: 3.15rem;
       transform: translate(-1%, 15%); }
-  body.home .adventures-container .adventures-block-right .adventure:nth-child(2) {
+    .adventures-container .adventures-block-right .adventure:nth-child(1) .adventure-button {
+      top: 10px; }
+  .adventures-container .adventures-block-right .adventure:nth-child(2) {
     height: 50%;
     width: 50%;
     border-right: 1.25rem solid white;
     background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
     background-size: 245%;
     background-position: 52% 75%; }
-    body.home .adventures-container .adventures-block-right .adventure:nth-child(2) .adventure-title {
+    .adventures-container .adventures-block-right .adventure:nth-child(2) .adventure-title {
       font-size: 1.7rem;
       line-height: 2rem;
-      transform: translateY(37%); }
-  body.home .adventures-container .adventures-block-right .adventure:nth-child(3) {
+      transform: translateY(23%); }
+    .adventures-container .adventures-block-right .adventure:nth-child(2) .adventure-button {
+      top: 20px; }
+  .adventures-container .adventures-block-right .adventure:nth-child(3) {
     height: 50%;
     width: 50%;
     background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
     background-size: 230%;
     background-position: 49% 75%; }
-    body.home .adventures-container .adventures-block-right .adventure:nth-child(3) .adventure-title {
+    .adventures-container .adventures-block-right .adventure:nth-child(3) .adventure-title {
       font-size: 1.7rem;
       line-height: 2rem;
-      transform: translateY(56%); }
+      transform: translateY(37%); }
+    .adventures-container .adventures-block-right .adventure:nth-child(3) .adventure-button {
+      top: 18px; }
 
-body.home .shopstuff-container {
+.shopstuff-container {
   margin: 0 auto;
   width: 75%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
-  body.home .shopstuff-container h2 {
+  .shopstuff-container h2 {
     width: 100%;
     text-align: center; }
-  body.home .shopstuff-container .shop-stuff-item {
+  .shopstuff-container .shop-stuff-item {
     width: 25%; }
-
-body.home .front-page-posts-wrapper {
-  margin: 4rem auto;
-  width: 80%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-align: baseline;
-      align-items: baseline; }
-  body.home .front-page-posts-wrapper article:nth-child(2) {
-    border-right: 0; }
-  body.home .front-page-posts-wrapper article:nth-child(3) {
-    border-right: 0;
-    border-left: 1rem solid white; }
-  body.home .front-page-posts-wrapper article {
-    width: 33.333%;
-    border-right: 1rem solid white; }
-    body.home .front-page-posts-wrapper article .entry-header {
-      border: 1px solid #e1e1e1;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
-      body.home .front-page-posts-wrapper article .entry-header img {
-        max-height: 248px;
-        border-bottom: 4px solid #E1E1E1;
-        -ms-flex-order: 0;
-            order: 0; }
-    body.home .front-page-posts-wrapper article .entry-title {
-      margin-top: 0.5rem;
-      margin-left: 0.75rem;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-      -ms-flex-order: 2;
-          order: 2; }
-      body.home .front-page-posts-wrapper article .entry-title a {
-        font-size: 1.3rem;
-        line-height: 1.75rem;
-        text-align: left;
-        text-decoration: none;
-        color: #248A83;
-        display: -ms-flexbox;
-        display: flex; }
-        body.home .front-page-posts-wrapper article .entry-title a:hover {
-          color: #2f1339; }
-    body.home .front-page-posts-wrapper article .entry-meta {
-      margin-top: 0.75rem;
-      margin-left: 0.75rem;
-      -ms-flex-order: 1;
-          order: 1;
-      font-size: 0.8rem; }
-    body.home .front-page-posts-wrapper article .read-more-button {
-      margin-left: 0.75rem;
-      margin-bottom: 0.75rem;
-      -ms-flex-order: 4;
-          order: 4; }
 
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventure) .site-content {
   display: -ms-flexbox;
