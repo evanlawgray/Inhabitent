@@ -250,8 +250,21 @@ a {
     color: $color__green-brand;
     position: fixed;
 
+    & .header-logo-wrapper a {
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
     & .menu li a {
       color: $color__green-brand;
+
+      &:hover {
+        color: $color__purple-brand;
+      }
     }
   }
 }

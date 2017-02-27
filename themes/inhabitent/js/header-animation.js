@@ -6,9 +6,11 @@
 	var $header = $('#masthead');
 	var $currentBannerHeight = $('.hero-image-banner').height();
 
+	/*$(window).scrollTo(0, 0);*/
+
 	//Check to make sure we are on the home or about page
 
-	if ( $siteBody.hasClass('home') || $siteBody.hasClass('about') ) {
+	if ( $siteBody.hasClass('home') || $siteBody.hasClass('page-template-about') ) {
 		var $headerLogoWrapper = $('.header-logo-wrapper');
 
 		//Whenever the user scrolls, the code below is executed

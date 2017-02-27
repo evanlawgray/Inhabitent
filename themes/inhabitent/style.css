@@ -810,8 +810,15 @@ a {
   border-bottom: 1px solid #e1e1e1;
   color: #248A83;
   position: fixed; }
+  .home .white-and-green-menu .header-logo-wrapper a, .page-template-about .white-and-green-menu .header-logo-wrapper a {
+    width: 100%;
+    height: 100%; }
+    .home .white-and-green-menu .header-logo-wrapper a:hover, .page-template-about .white-and-green-menu .header-logo-wrapper a:hover {
+      cursor: pointer; }
   .home .white-and-green-menu .menu li a, .page-template-about .white-and-green-menu .menu li a {
     color: #248A83; }
+    .home .white-and-green-menu .menu li a:hover, .page-template-about .white-and-green-menu .menu li a:hover {
+      color: #2f1339; }
 
 /* Small menu. */
 .menu-toggle,
