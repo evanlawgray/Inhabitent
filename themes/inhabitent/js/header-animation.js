@@ -4,8 +4,12 @@
 
 	var $siteBody = $('body');
 	var $header = $('#masthead');
-	var $currentBannerHeight = $('.hero-image-banner').height();
 
+	var $currentBannerHeight = {height: $('.hero-image-banner').height()};
+
+	function getBannerHeight($banner) {
+		$banner.height = $('.hero-image-banner').height();
+	}
 
 	//Check to make sure we are on the home or about page
 
@@ -14,11 +18,15 @@
 
 		//Whenever the user scrolls, the code below is executed
 
+		$(window).resize(function(){
+			getBannerHeight($currentBannerHeight);
+		})
+
 		$(window).scroll(function(){
 
 		//If the use has not scrolled past the banner image, set the header styles
 
-			if ($(this).scrollTop() <= $currentBannerHeight) {
+			if ($(this).scrollTop() <= $currentBannerHeight.height) {
 				$headerLogoWrapper.removeClass('header-logo-green');
 				$header.stop().css({
 					'position': 'absolute'}).removeClass('white-and-green-menu');
@@ -26,7 +34,7 @@
 
 			//If the user HAS scrolled past the banner image, reverse the header styles
 
-			if($(this).scrollTop() > $currentBannerHeight) {
+			if($(this).scrollTop() > $currentBannerHeight.height) {
 				$headerLogoWrapper.addClass('header-logo-green');
 				$header.stop().css({
 					'position': 'fixed',
