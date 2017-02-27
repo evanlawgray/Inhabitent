@@ -29,7 +29,7 @@ body:not(.home):not(.page-template-about) .site-content {
 body.home {
   .hero-image-banner {
     height: 100vh;
-    background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
+    background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
     background-size: 275px, cover, 100%;
     margin-bottom: 2.5rem;
   }
@@ -298,6 +298,47 @@ body.home {
   }
 }
 
+// About page
+
+body.page-template-about {
+  & .content-area .hero-image-banner {
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+
+    & .about-header {
+      font-size: 3rem;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 43.5%;
+    }
+  }
+
+  & .site-main {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 0.75rem;
+    padding-bottom: 3rem;
+    line-height: 1.8rem;
+
+    & .entry-header:nth-child(2) {
+      margin-top: 2rem;
+    }
+
+    & .entry-header {
+      width: 300px;
+      margin: 3rem auto 2rem;
+      font-size: 2rem;
+      color: $color__purple-brand;
+      position: relative;
+      left: 6%;
+    }
+  }
+}
+
 // Journal Page
 
 .blog {
@@ -308,7 +349,7 @@ body.home {
   & .entry-header {
     position: relative;
 
-    & img {
+    & img { 
       width: 760px;
     }
 
@@ -413,46 +454,6 @@ body.home {
   }
 }
 
-// About page
-
-body.page-template-about {
-  & .content-area .hero-image-banner {
-    height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: center bottom;
-    position: relative;
-
-    & .about-header {
-      font-size: 3rem;
-      color: white;
-      position: absolute;
-      top: 40%;
-      left: 43.5%;
-    }
-  }
-
-  & .site-main {
-    width: 800px;
-    margin: 0 auto;
-    padding-top: 0.75rem;
-    padding-bottom: 3rem;
-    line-height: 1.8rem;
-
-    & .entry-header:nth-child(2) {
-      margin-top: 2rem;
-    }
-
-    & .entry-header {
-      width: 300px;
-      margin: 3rem auto 2rem;
-      font-size: 2rem;
-      color: $color__purple-brand;
-      position: relative;
-      left: 6%;
-    }
-  }
-}
 
 // Blog single-page view
 
@@ -595,7 +596,9 @@ body.page-template-about {
 
 .category {
   .content-area {
+    width: 73%;
     padding-top: $base__space-unit;
+    padding-bottom: 3rem;
 
     .site-main {
       width: 760px;
@@ -613,6 +616,10 @@ body.page-template-about {
 
       .entry-header {
         position: relative;
+
+        & img {
+          width: 93%;
+        }
 
         .entry-title {
           width: 550px;
@@ -634,6 +641,10 @@ body.page-template-about {
               color: $color__yelow-brand;
             }
           }
+        }
+
+        & .entry-meta {
+          @include blog-entry-meta(53px, 7px);
         }
       }
     }

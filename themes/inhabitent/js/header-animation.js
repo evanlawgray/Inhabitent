@@ -6,7 +6,6 @@
 	var $header = $('#masthead');
 	var $currentBannerHeight = $('.hero-image-banner').height();
 
-	/*$(window).scrollTo(0, 0);*/
 
 	//Check to make sure we are on the home or about page
 

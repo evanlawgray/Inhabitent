@@ -68,3 +68,17 @@
     background-color: $color__green-brand-hover;
   }
 }
+
+@mixin blog-entry-meta ($offsetx, $offsety){
+  height: auto;
+  font-family: 'novocento', Arial, serif;
+  font-size: 0.9rem;
+  color: white;
+  background-color: $color__green-brand;
+  padding: 0.4rem $base__space-unit;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  bottom: $offsety;
+  right: $offsetx;
+}
