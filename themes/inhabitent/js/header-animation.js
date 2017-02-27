@@ -16,7 +16,7 @@
 
 		$(window).scroll(function(){
 
-		//If the use has not scrolled past the banner image, change the header styles
+		//If the use has not scrolled past the banner image, set the header styles
 
 			if ($(this).scrollTop() <= $currentBannerHeight) {
 				$headerLogoWrapper.removeClass('header-logo-green');
@@ -26,7 +26,7 @@
 
 			//If the user HAS scrolled past the banner image, reverse the header styles
 
-			if($(this).scrollTop() >= $currentBannerHeight) {
+			if($(this).scrollTop() > $currentBannerHeight) {
 				$headerLogoWrapper.addClass('header-logo-green');
 				$header.stop().css({
 					'position': 'fixed',
@@ -37,11 +37,16 @@
 
 	// Toggle the nag bar search field open and closed when the magnifying glass button is clicked
 
-	var $searchToggle = $('#search-toggle');
+	var $searchToggle = $('.icon-search');
 	var $searchField = $('.search-field');
 
 	$searchToggle.click(function(event){
 		event.preventDefault();
+		$searchField.toggleClass('search-field-expand').focus();
+		return true;
+	});
+
+	$searchField.focusout(function(event){
 		$searchField.toggleClass('search-field-expand');
 	});
 

@@ -1,0 +1,273 @@
+/* Front page */
+
+body.home {
+  .hero-image-banner {
+    height: 100vh;
+    background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
+    background-size: 275px, cover, 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  & h2 {
+    font-size: 2.4rem;
+    font-weight: 100;
+    margin-bottom: 3.75rem;
+    text-align: center;
+  }
+
+  /********* Product area ******/
+
+  & .shopstuff-container {
+    margin: 0 auto 4rem;
+    width: 78%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    & h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    & .shop-stuff-item {
+      width: 23%;
+      border: $basic__border;
+      border-top: 5px solid #e1e1e1;
+      padding: 0.75rem 0.75rem 1.75rem;
+      text-align: center;
+
+      &:hover {
+        border: 1px solid $color__orange-brand;
+        border-top: 5px solid $color__orange-brand;
+      }
+
+      & .product-icon-image {
+        width: 70px;
+        margin: 0 auto;
+      }
+
+      & .button-link {
+        @include green-button;
+
+        color: white;
+        text-decoration: none;
+        padding: 0.8rem $base__space-unit;
+      }
+    }
+  }
+
+  /********* Blog area ****/
+
+  .front-page-posts-wrapper {
+    margin: 3rem auto;
+    width: 78%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+
+    & article:nth-child(2) {
+      border-right: 0;
+    }
+
+    & article:nth-child(3) {
+      border-right: 0;
+      border-left: 1rem solid white;
+    }
+
+    & article {
+      width: 33.333%;
+      border-right: 1rem solid white;
+
+      & .entry-header {
+        border: $basic__border;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+
+        img {
+          max-height: 248px;
+          border-bottom: 4px solid #E1E1E1;
+          order: 0;
+        }
+      }
+
+      & .entry-title {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        margin-left: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        order: 2;
+
+        & a {
+          font-size: 1.3rem;
+          line-height: 1.75rem;
+          text-align: left;
+          text-decoration: none;
+          color: $color__green-brand;
+          display: flex;
+
+          &:hover {
+            color: $color__purple-brand;
+          }
+        }
+      }
+
+      & .entry-meta {
+        margin-top: 0.75rem;
+        margin-left: 0.75rem;
+        order: 1;
+        font-size: 0.8rem;
+      }
+
+      & .read-more-button {
+        margin-left: 0.75rem;
+        margin-bottom: 0.75rem;
+        order: 4;
+      }
+    }
+  }
+}
+
+/********* Adventures area ****/
+
+.adventures-container {
+  width: 78%;
+  height: auto;
+  margin: 2rem auto 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  & .more-adventures-button {
+    @include green-button;
+
+    width: auto;
+    margin: $base__space-unit 0;
+    padding: 0.55rem $base__space-unit 2.25rem;
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: white;
+  }
+
+  & .adventures-block-left {
+    border-right: 0.75rem solid white;
+    width: 49.5%;
+  }
+
+  & .adventures-block-right {
+    width: 50.5%;
+    display: flex;
+    flex-flow: row wrap;
+    border-left: 0.75rem solid white;
+  }
+
+  & .adventures-block-left, & .adventures-block-right {
+    height: 540px;
+    box-sizing: border-box;
+
+    & .adventure {
+      box-sizing: border-box;
+      overflow: hidden;
+      text-align: left;
+      padding: 0 $base__space-unit;
+      postion: absolute;
+
+      & .adventure-title {
+        font-family: 'merriweather', Arial, serif;
+        font-weight: 300;
+        color: white;
+        text-transform: none;
+        letter-spacing: 1px;
+
+        &:hover {
+          color: $color__yelow-brand;
+          cursor: pointer;
+        }
+      }
+
+      & .adventure-button {
+        @include transparent-button(#FFF);
+
+        padding: 0.8rem $base__space-unit;
+        text-decoration: none;
+        position: relative;
+      }
+    }
+  }
+
+  & .adventures-block-left .adventure {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center bottom;
+    background-size: 170%;
+    background-position: 50% 80%;
+
+    & .adventure-title {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    & .adventure-button {
+      bottom: 12px;
+    }
+  }
+
+  & .adventures-block-right .adventure:nth-child(1) {
+    height: 50%;
+    width: 100%;
+    border-bottom: 1.25rem solid white;
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
+    background-size: 125%;
+    background-position: 50% 70%;
+
+    & .adventure-title {
+      font-size: 2.45rem;
+      line-height: 3.15rem;
+      transform: translate(-1%, 15%);
+    }
+
+    & .adventure-button {
+      top: 10px;
+    }
+  }
+
+  & .adventures-block-right .adventure:nth-child(2) {
+    height: 50%;
+    width: 50%;
+    border-right: 1.25rem solid white;
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
+    background-size: 245%;
+    background-position: 52% 75%;
+
+    & .adventure-title {
+      font-size: 1.7rem;
+      line-height: 2rem;
+      transform: translateY(23%);
+    }
+
+    & .adventure-button {
+      top: 20px;
+    }
+  }
+
+  & .adventures-block-right .adventure:nth-child(3) {
+    height: 50%;
+    width: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
+    background-size: 230%;
+    background-position: 49% 75%;
+
+    & .adventure-title {
+      font-size: 1.7rem;
+      line-height: 2rem;
+      transform: translateY(37%);
+    }
+
+    & .adventure-button {
+      top: 18px;
+    }
+  }
+}

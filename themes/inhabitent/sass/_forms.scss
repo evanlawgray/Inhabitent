@@ -74,10 +74,12 @@ input[type="submit"] {
   &:hover {
     border: $basic__border;
     background-color: $color__green-brand-hover;
+    outline: none;
   }
 
   &:active,
   &:focus {
+    outline: none;
     border: $basic__border;
     background-color: $color__green-brand-hover;
   }
@@ -119,6 +121,10 @@ textarea {
 input[type="search"] {
   color: $color__yelow-brand;
   text-transform: uppercase;
+
+  &:focus, &:active {
+    outline: none;
+  }
 }
 
 input[type="text"],
@@ -185,4 +191,8 @@ textarea {
 
 .wpcf7-form input[type="submit"] {
   width: 100px;
+
+  &:focus, &:active {
+    outline: none;
+  }
 }

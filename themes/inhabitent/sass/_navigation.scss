@@ -65,7 +65,7 @@ a {
         width: 100%;
       }
 
-       &:hover {
+      &:hover {
         cursor: pointer;
       }
     }
@@ -104,37 +104,7 @@ a {
           top: $base__space-unit;
           left: -999rem;
           z-index: 99999;
-
-          ul {
-            left: -999rem;
-            top: 0;
-          }
-
-          li {
-            &:hover > ul,
-            &.focus > ul {
-              left: 100%;
-            }
-          }
-
-          a {
-            width: 200px;
-          }
-
-          /* 					:hover > a,
-          					.focus > a {
-          					}
-          
-          					a:hover,
-          					a.focus {
-          					} */
         }
-
-        	/* 			li:hover > ul,
-        				li.focus > ul {
-        					left: auto;
-        				}
-         */
       }
 
       li {
@@ -195,22 +165,10 @@ a {
           background: none;
           border: none;
           outline: none;
-          color: $color__yelow-brand;
+          color: #404040;
+          font-size: 0.95rem;
           transition: width 0.55s ease;
         }
-
-          ::-webkit-input-placeholder { /* WebKit browsers */
-            color: $color__yelow-brand;
-          }
-          :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-            color: $color__yelow-brand;
-          }
-          ::-moz-placeholder { /* Mozilla Firefox 19+ */
-            color: $color__yelow-brand;
-          }
-          :-ms-input-placeholder { /* Internet Explorer 10+ */
-            color: $color__yelow-brand;
-          }
 
         & .search-field-expand {
           width: 190px;
@@ -243,7 +201,35 @@ a {
         color: $color__yelow-brand;
       }
     }
+
+    & fieldset {
+
+      & .search-field {
+        color: $color__yelow-brand;
+      }
+
+      ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: $color__yelow-brand;
+      }
+
+      :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $color__yelow-brand;
+      }
+
+      ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $color__yelow-brand;
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: $color__yelow-brand;
+      }
+    }
   }
+
   .white-and-green-menu {
     background-color: rgba(256, 256, 256, 0.75);
     border-bottom: $basic__border;
@@ -268,7 +254,6 @@ a {
     }
   }
 }
-
 
 /* Small menu. */
 .menu-toggle,

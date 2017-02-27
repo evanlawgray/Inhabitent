@@ -1,0 +1,79 @@
+// Search results page
+
+.search, .search-results {
+  .site-main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 93%;
+
+    .page-header {
+      border-bottom: $basic__border;
+
+      .page-title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 2.35rem;
+      }
+    }
+
+    & article {
+      padding-top: 1rem;
+      margin-bottom: 0;
+      line-height: 1.75rem;
+
+      &:last-of-type {
+        padding-bottom: 2.5rem;
+        border-bottom: $basic__border;
+      }
+
+      &:only-of-type {
+        border-bottom: none;
+      }
+
+      & .read-more-button {
+        margin-bottom: 1.75rem;
+      }
+
+      & .entry-title {
+        font-size: 2.15rem;
+
+        & a {
+          color: $color__green-brand;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .search-pagination {
+      padding-top: $base__space-unit;
+      padding-bottom: $base__space-unit;
+
+      .current {
+        background-color: #808080;
+
+        &:hover {
+          background-color: #808080;
+          cursor: default;
+        }
+      }
+
+      & a, & span.current {
+        @include green-button;
+
+        padding: 0.55rem 0.75rem;
+        margin-right: 0.25rem;
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          background-color: $color__purple-brand;
+        }
+
+        &:active, &:focus {
+          border: none;
+        }
+      }
+    }
+  }
+}

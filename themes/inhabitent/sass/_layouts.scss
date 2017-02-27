@@ -1,0 +1,21 @@
+//set layouts and content area widths for subpages
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventure) .site-content {
+  display: flex;
+  margin: 0 auto;
+  width: 1120px;
+}
+
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.search):not(.search-results):not(.error404):not(.page-template-default) .content-area,
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products):not(.search):not(.search-results):not(.error404):not(.page-template-default) .widget-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
+  width: 74%;
+}
+
+body:not(.home):not(.page-template-about) .site-content {
+  padding-top: 50px;
+}

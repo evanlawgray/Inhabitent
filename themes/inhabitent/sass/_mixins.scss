@@ -69,7 +69,7 @@
   }
 }
 
-@mixin blog-entry-meta ($offsetx, $offsety){
+@mixin blog-entry-meta($offsetx, $offsety) {
   height: auto;
   font-family: 'novocento', Arial, serif;
   font-size: 0.9rem;
@@ -83,7 +83,7 @@
   right: $offsetx;
 }
 
-@mixin blog-entry-title ($offsetx, $offsety) {
+@mixin blog-entry-title($offsetx, $offsety) {
   width: 550px;
   height: auto;
   font-size: 2rem;

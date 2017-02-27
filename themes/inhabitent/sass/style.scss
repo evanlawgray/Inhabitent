@@ -3,7 +3,7 @@ Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
 Author: Evan Gray
 Author URI: http://www.redacademy.com
-Description: A wordpress theme for outdoorsy hipsters, who like to shop (based on underscores).
+Description: A wordpress theme for outdoorsy hipsters who like to shop (based on underscores).
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -62,5 +62,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "modules";
 @import "widgets";
 @import "content";
+@import "layouts";
+@import "front-page";
+@import "about";
+@import "blog";
+@import "shop";
+@import "search-results";
 @import "media";
 @import "page-templates";

@@ -1,0 +1,40 @@
+// About page
+
+body.page-template-about {
+  & .content-area .hero-image-banner {
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+
+    & .about-header {
+      font-size: 3rem;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 43.5%;
+    }
+  }
+
+  & .site-main {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 0.75rem;
+    padding-bottom: 3rem;
+    line-height: 1.8rem;
+
+    & .entry-header:nth-child(2) {
+      margin-top: 2rem;
+    }
+
+    & .entry-header {
+      width: 300px;
+      margin: 3rem auto 2rem;
+      font-size: 2rem;
+      color: $color__purple-brand;
+      position: relative;
+      left: 6%;
+    }
+  }
+}
