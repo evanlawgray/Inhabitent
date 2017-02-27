@@ -651,6 +651,51 @@ body.page-template-about {
   }
 }
 
+//Blog archive page 
+
+.archive {
+
+  & .site-main {
+    padding-bottom: 3rem;
+  }
+  
+  & .content-area {
+    width: 74%
+  }
+  & .page-header {
+    width: 640px;
+    margin-top: 0.75rem;
+    margin-bottom: 3rem;
+    border-bottom: $basic__border;
+
+  & .page-title {
+      font-size: 2.4rem;
+    }
+  }
+
+  & .entry-content {
+    width: 760px;
+  }
+
+  & .entry-header {
+
+    position: relative;
+    width: 100%;
+
+    & img {
+      width: 93%;
+    }
+
+    & .entry-title {
+      @include blog-entry-title(10px, 10px);
+    }
+
+    & .entry-meta {
+      @include blog-entry-meta (57px, 8px);
+    }
+  }
+}
+
 // Shop archive page
 
 .post-type-archive-products {

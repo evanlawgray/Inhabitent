@@ -1595,6 +1595,59 @@ body.page-template-about .site-main {
         bottom: 7px;
         right: 53px; }
 
+.archive .site-main {
+  padding-bottom: 3rem; }
+
+.archive .content-area {
+  width: 74%; }
+
+.archive .page-header {
+  width: 640px;
+  margin-top: 0.75rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #e1e1e1; }
+  .archive .page-header .page-title {
+    font-size: 2.4rem; }
+
+.archive .entry-content {
+  width: 760px; }
+
+.archive .entry-header {
+  position: relative;
+  width: 100%; }
+  .archive .entry-header img {
+    width: 93%; }
+  .archive .entry-header .entry-title {
+    width: 550px;
+    height: auto;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    color: white;
+    background-color: #248A83;
+    padding: 0.75rem 1.5rem;
+    position: absolute;
+    top: 10px;
+    left: 0; }
+    .archive .entry-header .entry-title a:hover {
+      color: #f0e4d1;
+      cursor: pointer; }
+    .archive .entry-header .entry-title a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: white; }
+  .archive .entry-header .entry-meta {
+    height: auto;
+    font-family: 'novocento', Arial, serif;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #248A83;
+    padding: 0.4rem 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    right: 57px; }
+
 .post-type-archive-products .content-area {
   padding-top: 0;
   width: 100%; }

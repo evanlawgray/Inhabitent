@@ -82,3 +82,27 @@
   bottom: $offsety;
   right: $offsetx;
 }
+
+@mixin blog-entry-title ($offsetx, $offsety) {
+  width: 550px;
+  height: auto;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: white;
+  background-color: $color__green-brand;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  & a:hover {
+    color: $color__yelow-brand;
+    cursor: pointer;
+  }
+
+  & a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+  }
+}
