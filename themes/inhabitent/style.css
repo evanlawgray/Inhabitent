@@ -677,6 +677,9 @@ a {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
+      .site-header .site-branding .header-logo-wrapper a {
+        height: 100%;
+        width: 100%; }
       .site-header .site-branding .header-logo-wrapper:hover {
         cursor: pointer; }
   .site-header .main-navigation {
@@ -794,10 +797,21 @@ a {
   .home .site-header .header-logo-wrapper, .page-template-about .site-header .header-logo-wrapper {
     background: url("../../images/inhabitent-logo-tent-white.svg") no-repeat center;
     background-size: 100%; }
+  .home .site-header .header-logo-green, .page-template-about .site-header .header-logo-green {
+    background: url("../../images/inhabitent-logo-tent.svg") no-repeat center;
+    background-size: 100%; }
   .home .site-header .header-logo, .home .site-header .menu-item a, .home .site-header .search-submit i, .page-template-about .site-header .header-logo, .page-template-about .site-header .menu-item a, .page-template-about .site-header .search-submit i {
     color: white; }
     .home .site-header .header-logo:hover, .home .site-header .menu-item a:hover, .home .site-header .search-submit i:hover, .page-template-about .site-header .header-logo:hover, .page-template-about .site-header .menu-item a:hover, .page-template-about .site-header .search-submit i:hover {
       color: #f0e4d1; }
+
+.home .white-and-green-menu, .page-template-about .white-and-green-menu {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid #e1e1e1;
+  color: #248A83;
+  position: fixed; }
+  .home .white-and-green-menu .menu li a, .page-template-about .white-and-green-menu .menu li a {
+    color: #248A83; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1081,7 +1095,7 @@ body.home {
     text-align: center; }
   body.home .shopstuff-container {
     margin: 0 auto 4rem;
-    width: 80%;
+    width: 78%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -1414,13 +1428,13 @@ body.home {
       .single-post .entry-header .entry-meta a:hover {
         color: #f0e4d1; }
 
-body.page-template-about .content-area .about-hero-image-banner {
+body.page-template-about .content-area .hero-image-banner {
   height: 100vh;
   width: auto;
   background-size: cover;
   background-position: center bottom;
   position: relative; }
-  body.page-template-about .content-area .about-hero-image-banner .about-header {
+  body.page-template-about .content-area .hero-image-banner .about-header {
     font-size: 3rem;
     color: white;
     position: absolute;

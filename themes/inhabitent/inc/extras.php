@@ -92,7 +92,7 @@ function inhabitent_about_image_css() {
         return;
     }
 
-    $hero_css = ".about-hero-image-banner{
+    $hero_css = ".hero-image-banner{
         background:
         linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
         url({$image}) no-repeat center bottom;

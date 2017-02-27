@@ -45,7 +45,7 @@ body.home {
 
   & .shopstuff-container {
     margin: 0 auto 4rem;
-    width: 80%;
+    width: 78%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -416,7 +416,7 @@ body.home {
 // About page
 
 body.page-template-about {
-  & .content-area .about-hero-image-banner {
+  & .content-area .hero-image-banner {
     height: 100vh;
     width: auto;
     background-size: cover;

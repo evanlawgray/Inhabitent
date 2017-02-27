@@ -60,6 +60,11 @@ a {
       justify-content: center;
       align-items: center;
 
+      & a {
+        height: 100%;
+        width: 100%;
+      }
+
        &:hover {
         cursor: pointer;
       }
@@ -226,6 +231,11 @@ a {
       background-size: 100%;
     }
 
+    .header-logo-green {
+      background: url("../../images/inhabitent-logo-tent.svg") no-repeat center;
+      background-size: 100%;
+    }
+
     & .header-logo, & .menu-item a, & .search-submit i {
       color: white;
 
@@ -234,7 +244,18 @@ a {
       }
     }
   }
+  .white-and-green-menu {
+    background-color: rgba(256, 256, 256, 0.75);
+    border-bottom: $basic__border;
+    color: $color__green-brand;
+    position: fixed;
+
+    & .menu li a {
+      color: $color__green-brand;
+    }
+  }
 }
+
 
 /* Small menu. */
 .menu-toggle,

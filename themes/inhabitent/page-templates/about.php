@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 
-			<div class="about-hero-image-banner">
+			<div class="hero-image-banner">
 				<h1 class="about-header">About</h1>
 			</div>
 
