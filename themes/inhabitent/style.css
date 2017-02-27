@@ -602,6 +602,9 @@ textarea {
           align-items: flex-start; }
       .site-footer .footer-container .footer-info-container div:nth-child(1).footer-contact-column {
         width: 35%; }
+        .site-footer .footer-container .footer-info-container div:nth-child(1).footer-contact-column i {
+          font-size: 1.25rem;
+          transform: translateY(-2px); }
       .site-footer .footer-container .footer-info-container div:nth-child(1), .site-footer .footer-container .footer-info-container div:nth-child(2) {
         width: 45%;
         margin: 0; }
