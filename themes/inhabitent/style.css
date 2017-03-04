@@ -1147,7 +1147,7 @@ body.home {
         -ms-flex-pack: start;
             justify-content: flex-start; }
         body.home .front-page-posts-wrapper article .entry-header img {
-          max-height: 248px;
+          max-height: 241px;
           border-bottom: 4px solid #E1E1E1;
           -ms-flex-order: 0;
               order: 0; }
