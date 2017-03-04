@@ -691,7 +691,7 @@ a {
         width: 100%; }
       .site-header .site-branding .header-logo-wrapper:hover {
         cursor: pointer; }
-  .site-header .main-navigation {
+  .site-header nav {
     font-size: 0.95rem;
     clear: both;
     float: right;
@@ -703,9 +703,9 @@ a {
         justify-content: flex-end;
     -ms-flex-align: center;
         align-items: center; }
-    .site-header .main-navigation .menu-menu-1-container {
+    .site-header nav .menu-menu-1-container {
       height: 100%; }
-      .site-header .main-navigation .menu-menu-1-container ul.menu {
+      .site-header nav .menu-menu-1-container ul.menu {
         font-family: 'novocento', Arial, serif;
         font-weight: 100;
         text-transform: uppercase;
@@ -721,42 +721,58 @@ a {
             justify-content: flex-end;
         -ms-flex-align: center;
             align-items: center; }
-        .site-header .main-navigation .menu-menu-1-container ul.menu ul {
+        .site-header nav .menu-menu-1-container ul.menu ul {
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
           float: left;
           position: absolute;
           top: 1.5rem;
           left: -999rem;
           z-index: 99999; }
-      .site-header .main-navigation .menu-menu-1-container li {
+      .site-header nav .menu-menu-1-container li {
         margin-left: 0.75rem;
         margin-right: 0.75rem; }
-      .site-header .main-navigation .menu-menu-1-container a {
+      .site-header nav .menu-menu-1-container a {
         display: block;
         text-decoration: none;
         color: #248A83; }
-        .site-header .main-navigation .menu-menu-1-container a:hover, .site-header .main-navigation .menu-menu-1-container a:focus {
+        .site-header nav .menu-menu-1-container a:hover, .site-header nav .menu-menu-1-container a:focus {
           color: #2f1339; }
-        .site-header .main-navigation .menu-menu-1-container a:hover {
+        .site-header nav .menu-menu-1-container a:hover {
           cursor: pointer; }
-    .site-header .main-navigation .search-form {
+    .site-header nav form {
       width: auto;
       display: inline-block; }
-      .site-header .main-navigation .search-form fieldset {
+      .site-header nav form fieldset {
         border: none;
         padding: 0;
         width: auto; }
-        .site-header .main-navigation .search-form fieldset .search-submit {
+        .site-header nav form fieldset .search-submit {
           background: none;
           border: none;
           padding-right: 0;
           color: #248A83;
           transform: translateY(-2px); }
-          .site-header .main-navigation .search-form fieldset .search-submit i {
+          .site-header nav form fieldset .search-submit i {
             font-size: 1rem; }
-          .site-header .main-navigation .search-form fieldset .search-submit:focus, .site-header .main-navigation .search-form fieldset .search-submit:active {
+          .site-header nav form fieldset .search-submit:focus, .site-header nav form fieldset .search-submit:active {
             outline: none; }
-        .site-header .main-navigation .search-form fieldset .search-field {
+        .site-header nav form fieldset .search-field {
+          font-family: 'novocento', Arial, serif; }
+        .site-header nav form fieldset ::-webkit-input-placeholder {
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif; }
+        .site-header nav form fieldset :-moz-placeholder {
+          /* Firefox 18- */
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif; }
+        .site-header nav form fieldset ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif; }
+        .site-header nav form fieldset :-ms-input-placeholder {
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif; }
+        .site-header nav form fieldset .search-field {
           width: 0;
           height: 100%;
           background: none;
@@ -765,7 +781,7 @@ a {
           color: #404040;
           font-size: 0.95rem;
           transition: width 0.55s ease; }
-        .site-header .main-navigation .search-form fieldset .search-field-expand {
+        .site-header nav form fieldset .search-field-expand {
           width: 190px; }
 
 .home .site-header, .page-template-about .site-header {
@@ -778,24 +794,29 @@ a {
   .home .site-header .header-logo-green, .page-template-about .site-header .header-logo-green {
     background: url("../../images/inhabitent-logo-tent.svg") no-repeat center;
     background-size: 100%; }
-  .home .site-header .header-logo, .home .site-header .menu-item a, .home .site-header .search-submit i, .page-template-about .site-header .header-logo, .page-template-about .site-header .menu-item a, .page-template-about .site-header .search-submit i {
+  .home .site-header .header-logo, .home .site-header .menu-item a, .home .site-header i, .page-template-about .site-header .header-logo, .page-template-about .site-header .menu-item a, .page-template-about .site-header i {
     color: white; }
-    .home .site-header .header-logo:hover, .home .site-header .menu-item a:hover, .home .site-header .search-submit i:hover, .page-template-about .site-header .header-logo:hover, .page-template-about .site-header .menu-item a:hover, .page-template-about .site-header .search-submit i:hover {
+    .home .site-header .header-logo:hover, .home .site-header .menu-item a:hover, .home .site-header i:hover, .page-template-about .site-header .header-logo:hover, .page-template-about .site-header .menu-item a:hover, .page-template-about .site-header i:hover {
       color: #f0e4d1; }
-  .home .site-header fieldset .search-field, .page-template-about .site-header fieldset .search-field {
-    color: #f0e4d1; }
-  .home .site-header fieldset ::-webkit-input-placeholder, .page-template-about .site-header fieldset ::-webkit-input-placeholder {
+  .home .site-header .search-form fieldset .search-field.search-field-expand, .page-template-about .site-header .search-form fieldset .search-field.search-field-expand {
+    color: white;
+    font-family: 'novocento', Arial, serif; }
+  .home .site-header .search-form fieldset ::-webkit-input-placeholder, .page-template-about .site-header .search-form fieldset ::-webkit-input-placeholder {
     /* WebKit browsers */
-    color: #f0e4d1; }
-  .home .site-header fieldset :-moz-placeholder, .page-template-about .site-header fieldset :-moz-placeholder {
+    color: #f0e4d1;
+    font-family: 'novocento', Arial, serif; }
+  .home .site-header .search-form fieldset :-moz-placeholder, .page-template-about .site-header .search-form fieldset :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #f0e4d1; }
-  .home .site-header fieldset ::-moz-placeholder, .page-template-about .site-header fieldset ::-moz-placeholder {
+    color: #f0e4d1;
+    font-family: 'novocento', Arial, serif; }
+  .home .site-header .search-form fieldset ::-moz-placeholder, .page-template-about .site-header .search-form fieldset ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: #f0e4d1; }
-  .home .site-header fieldset :-ms-input-placeholder, .page-template-about .site-header fieldset :-ms-input-placeholder {
+    color: #f0e4d1;
+    font-family: 'novocento', Arial, serif; }
+  .home .site-header .search-form fieldset :-ms-input-placeholder, .page-template-about .site-header .search-form fieldset :-ms-input-placeholder {
     /* Internet Explorer 10+ */
-    color: #f0e4d1; }
+    color: #f0e4d1;
+    font-family: 'novocento', Arial, serif; }
 
 .home .white-and-green-menu, .page-template-about .white-and-green-menu {
   background-color: rgba(255, 255, 255, 0.75);
@@ -807,10 +828,32 @@ a {
     height: 100%; }
     .home .white-and-green-menu .header-logo-wrapper a:hover, .page-template-about .white-and-green-menu .header-logo-wrapper a:hover {
       cursor: pointer; }
+  .home .white-and-green-menu .fa.fa-search, .page-template-about .white-and-green-menu .fa.fa-search {
+    color: #248A83; }
+    .home .white-and-green-menu .fa.fa-search:hover, .page-template-about .white-and-green-menu .fa.fa-search:hover {
+      color: #248A83; }
   .home .white-and-green-menu .menu li a, .page-template-about .white-and-green-menu .menu li a {
     color: #248A83; }
     .home .white-and-green-menu .menu li a:hover, .page-template-about .white-and-green-menu .menu li a:hover {
       color: #2f1339; }
+  .home .white-and-green-menu .search-form fieldset .search-field.search-field-expand, .page-template-about .white-and-green-menu .search-form fieldset .search-field.search-field-expand {
+    color: #404040; }
+  .home .white-and-green-menu .search-form fieldset ::-webkit-input-placeholder, .page-template-about .white-and-green-menu .search-form fieldset ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #a1a1a1;
+    font-family: 'novocento', Arial, serif; }
+  .home .white-and-green-menu .search-form fieldset :-moz-placeholder, .page-template-about .white-and-green-menu .search-form fieldset :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #a1a1a1;
+    font-family: 'novocento', Arial, serif; }
+  .home .white-and-green-menu .search-form fieldset ::-moz-placeholder, .page-template-about .white-and-green-menu .search-form fieldset ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #a1a1a1;
+    font-family: 'novocento', Arial, serif; }
+  .home .white-and-green-menu .search-form fieldset :-ms-input-placeholder, .page-template-about .white-and-green-menu .search-form fieldset :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #a1a1a1;
+    font-family: 'novocento', Arial, serif; }
 
 /* Small menu. */
 .menu-toggle,

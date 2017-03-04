@@ -71,7 +71,7 @@ a {
     }
   }
 
-  .main-navigation {
+  nav {
     font-size: 0.95rem;
     clear: both;
     float: right;
@@ -134,7 +134,7 @@ a {
       .current_page_ancestor > a {}
     }
 
-    .search-form {
+    form {
       width: auto;
       display: inline-block;
 
@@ -159,13 +159,38 @@ a {
           }
         }
 
+        .search-field {
+          font-family: 'novocento', Arial, serif;
+        }
+
+        ::-webkit-input-placeholder {
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif;
+        }
+           
+        :-moz-placeholder { /* Firefox 18- */
+          color: #a1a1a1; 
+          font-family: 'novocento', Arial, serif; 
+        }
+           
+        ::-moz-placeholder {  /* Firefox 19+ */
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif;  
+        }
+           
+        :-ms-input-placeholder {  
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif;  
+        }
+
+
         & .search-field {
           width: 0;
           height: 100%;
           background: none;
           border: none;
           outline: none;
-          color: #404040;
+          color: $color__text-main;
           font-size: 0.95rem;
           transition: width 0.55s ease;
         }
@@ -194,38 +219,45 @@ a {
       background-size: 100%;
     }
 
-    & .header-logo, & .menu-item a, & .search-submit i {
+    & .header-logo, & .menu-item a, & i {
       color: white;
 
       &:hover {
         color: $color__yelow-brand;
       }
     }
+    & .search-form {
 
-    & fieldset {
+      & fieldset {
 
-      & .search-field {
-        color: $color__yelow-brand;
-      }
+        & .search-field.search-field-expand {
+          color: white;
+          font-family: 'novocento', Arial, serif;
+        }
 
-      ::-webkit-input-placeholder {
-        /* WebKit browsers */
-        color: $color__yelow-brand;
-      }
+        ::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: $color__yelow-brand;
+          font-family: 'novocento', Arial, serif;
+        }
 
-      :-moz-placeholder {
-        /* Mozilla Firefox 4 to 18 */
-        color: $color__yelow-brand;
-      }
+        :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: $color__yelow-brand;
+          font-family: 'novocento', Arial, serif;
+        }
 
-      ::-moz-placeholder {
-        /* Mozilla Firefox 19+ */
-        color: $color__yelow-brand;
-      }
+        ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: $color__yelow-brand;
+          font-family: 'novocento', Arial, serif;
+        }
 
-      :-ms-input-placeholder {
-        /* Internet Explorer 10+ */
-        color: $color__yelow-brand;
+        :-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: $color__yelow-brand;
+          font-family: 'novocento', Arial, serif;
+        }
       }
     }
   }
@@ -236,12 +268,21 @@ a {
     color: $color__green-brand;
     position: fixed;
 
+
     & .header-logo-wrapper a {
       width: 100%;
       height: 100%;
 
       &:hover {
         cursor: pointer;
+      }
+    }
+
+    & .fa.fa-search {
+      color: $color__green-brand;
+
+      &:hover {
+        color: $color__green-brand;
       }
     }
 
@@ -252,6 +293,40 @@ a {
         color: $color__purple-brand;
       }
     }
+
+    & .search-form {
+
+      & fieldset {
+
+        & .search-field.search-field-expand {
+          color: $color__text-main;
+        }
+
+        ::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif;
+        }
+
+        :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif;
+        }
+
+        ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif;
+        }
+
+        :-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: #a1a1a1;
+          font-family: 'novocento', Arial, serif;
+        }
+      }
+    }  
   }
 }
 
