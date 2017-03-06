@@ -133,7 +133,7 @@
 
 // Single product page
 
-body.single-products {
+.single-products {
   .site-content {
     width: 75%;
   }
@@ -141,33 +141,35 @@ body.single-products {
   .content-area {
     width: 100%;
 
-    & .entry-header {
+    .entry-header {
       width: 100%;
       display: flex;
 
-      & .product-image-wrapper {
+      .product-image-wrapper {
         min-width: 48%;
       }
 
-      & .entry-meta {
+      .entry-meta {
         padding-left: 3rem;
         padding-bottom: 4rem;
 
-        & .entry-title {
+        .entry-title {
+          font-size: $sub-header-font-size;
           width: 50%;
           margin-top: 0;
           color: $color__orange-brand;
           display: inline;
         }
 
-        & p.price {
+        .price {
           margin-top: 0.75rem;
+          margin-bottom: 1.75rem;
           font-size: 1.5rem;
           font-family: novocento,Arial,serif;
           letter-spacing: 0.5px;
         }
 
-        & .entry-content {
+        .entry-content {
           width: auto;
           margin-bottom: $base__space-unit;
           font-size: 1rem;
@@ -175,7 +177,7 @@ body.single-products {
         }
       }
 
-      & .social-buttons button {
+      .social-buttons button {
         width: auto;
         padding: .25rem 1.5rem;
         border: 1px solid #666;
@@ -186,7 +188,7 @@ body.single-products {
         &:hover {
           color: white;
           background-color: $color__green-brand;
-          border: 1px solid $color__green-brand;
+          border: $green-brand-border;
         }
       }
     }
