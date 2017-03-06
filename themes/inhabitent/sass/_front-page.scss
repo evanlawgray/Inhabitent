@@ -8,7 +8,8 @@ body.home {
     margin-bottom: 2.5rem;
   }
 
-  & h2 {
+  h2 {
+    width: 100%;
     font-size: 2.4rem;
     font-weight: 100;
     margin-bottom: 3.75rem;
@@ -17,37 +18,38 @@ body.home {
 
   /********* Product area ******/
 
-  & .shopstuff-container {
+  .shopstuff-container {
     margin: 0 auto 4rem;
-    width: 78%;
+    width: 79.5%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 
-    & h2 {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 3rem;
-    }
+    // h2 {
+    //   width: 100%;
 
-    & .shop-stuff-item {
-      width: 23%;
+    //   margin-bottom: 3rem;
+    // }
+
+    .shop-stuff-item {
+      width: 23.5%;
       border: $basic__border;
       border-top: 5px solid #e1e1e1;
       padding: 0.75rem 0.75rem 1.75rem;
       text-align: center;
+      line-height: 1.7rem;
 
       &:hover {
         border: 1px solid $color__orange-brand;
         border-top: 5px solid $color__orange-brand;
       }
 
-      & .product-icon-image {
+      .product-icon-image {
         width: 70px;
         margin: 0 auto;
       }
 
-      & .button-link {
+      .button-link {
         @include green-button;
 
         color: white;
@@ -61,47 +63,51 @@ body.home {
 
   .front-page-posts-wrapper {
     margin: 3rem auto;
-    width: 78%;
+    width: 79.5%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     align-items: baseline;
 
-    & article:nth-child(2) {
+    article:nth-child(2) {
       border-right: 0;
     }
 
-    & article:nth-child(3) {
+    article:nth-child(3) {
       border-right: 0;
       border-left: 1rem solid white;
     }
 
-    & article {
-      width: 33.333%;
+    article {
+      width: 33%;
+      min-height: 300px;
       border-right: 1rem solid white;
 
-      & .entry-header {
+      .entry-header {
         border: $basic__border;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
 
         img {
-          max-height: 241px;
+          max-height: 240px;
           border-bottom: 4px solid #E1E1E1;
           order: 0;
         }
       }
 
-      & .entry-title {
+      .entry-title {
         margin-top: 0.5rem;
         margin-bottom: 1rem;
         margin-left: 0.75rem;
+        padding-right: 1.5rem;
+        font-weight: 900;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         order: 2;
 
-        & a {
+        a {
           font-size: 1.3rem;
           line-height: 1.75rem;
           text-align: left;
@@ -115,16 +121,17 @@ body.home {
         }
       }
 
-      & .entry-meta {
+      .entry-meta {
         margin-top: 0.75rem;
         margin-left: 0.75rem;
         order: 1;
         font-size: 0.8rem;
       }
 
-      & .read-more-button {
+      .read-more-button {
         margin-left: 0.75rem;
         margin-bottom: 0.75rem;
+        padding: 0.55rem 1rem 0rem;
         order: 4;
       }
     }
@@ -134,14 +141,14 @@ body.home {
 /********* Adventures area ****/
 
 .adventures-container {
-  width: 78%;
+  width: 79.5%;
   height: auto;
   margin: 2rem auto 3rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
 
-  & .more-adventures-button {
+  .more-adventures-button {
     @include green-button;
 
     width: auto;
@@ -152,35 +159,35 @@ body.home {
     color: white;
   }
 
-  & .adventures-block-left {
-    border-right: 0.75rem solid white;
+  .adventures-block-left {
+    border-right: 0.65rem solid white;
     width: 49.5%;
   }
 
-  & .adventures-block-right {
+  .adventures-block-right {
     width: 50.5%;
     display: flex;
     flex-flow: row wrap;
-    border-left: 0.75rem solid white;
+    border-left: 0.65rem solid white;
   }
 
-  & .adventures-block-left, & .adventures-block-right {
+  .adventures-block-left, .adventures-block-right {
     height: 540px;
     box-sizing: border-box;
 
-    & .adventure {
+    .adventure {
       box-sizing: border-box;
       overflow: hidden;
       text-align: left;
       padding: 0 $base__space-unit;
       postion: absolute;
 
-      & .adventure-title {
+      .adventure-title {
         font-family: 'merriweather', Arial, serif;
         font-weight: 300;
         color: white;
         text-transform: none;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
 
         &:hover {
           color: $color__yelow-brand;
@@ -188,7 +195,7 @@ body.home {
         }
       }
 
-      & .adventure-button {
+      .adventure-button {
         @include transparent-button(#FFF);
 
         padding: 0.8rem $base__space-unit;
@@ -198,75 +205,76 @@ body.home {
     }
   }
 
-  & .adventures-block-left .adventure {
+  .adventures-block-left .adventure {
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center bottom;
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center bottom;
     background-size: 170%;
     background-position: 50% 80%;
 
-    & .adventure-title {
+    .adventure-title {
       font-size: 3rem;
       line-height: 4rem;
     }
 
-    & .adventure-button {
+    .adventure-button {
       bottom: 12px;
     }
   }
 
-  & .adventures-block-right .adventure:nth-child(1) {
+  .adventures-block-right .adventure:nth-child(1) {
     height: 50%;
     width: 100%;
-    border-bottom: 1.25rem solid white;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
-    background-size: 125%;
-    background-position: 50% 70%;
+    border-bottom: 1.2rem solid white;
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
+    background-size: 118%;
+    background-position: 50% 75%;
 
-    & .adventure-title {
+    .adventure-title {
       font-size: 2.45rem;
+      margin-top: 1.75rem;
       line-height: 3.15rem;
       transform: translate(-1%, 15%);
     }
 
-    & .adventure-button {
+    .adventure-button {
       top: 10px;
     }
   }
 
-  & .adventures-block-right .adventure:nth-child(2) {
+  .adventures-block-right .adventure:nth-child(2) {
     height: 50%;
     width: 50%;
-    border-right: 1.25rem solid white;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
-    background-size: 245%;
-    background-position: 52% 75%;
+    border-right: 1.2rem solid white;
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
+    background-size: 250%;
+    background-position: 51.5% 75%;
 
-    & .adventure-title {
+    .adventure-title {
       font-size: 1.7rem;
       line-height: 2rem;
       transform: translateY(23%);
     }
 
-    & .adventure-button {
+    .adventure-button {
       top: 20px;
     }
   }
 
-  & .adventures-block-right .adventure:nth-child(3) {
+  .adventures-block-right .adventure:nth-child(3) {
     height: 50%;
     width: 50%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
     background-size: 230%;
     background-position: 49% 75%;
 
-    & .adventure-title {
+    .adventure-title {
       font-size: 1.7rem;
       line-height: 2rem;
       transform: translateY(37%);
     }
 
-    & .adventure-button {
+    .adventure-button {
       top: 18px;
     }
   }

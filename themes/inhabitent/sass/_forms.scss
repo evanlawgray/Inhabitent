@@ -21,7 +21,7 @@
   line-height: 1.5;
   padding: .6rem 1rem .4rem 1.35rem;
 
-  & a {
+  a {
     color: black;
     text-decoration: none;
     display: flex;
@@ -33,7 +33,7 @@
       color: black;
     }
 
-    & span .arrow {
+    span .arrow {
       position: relative;
       bottom: 1px;
       left: 2px;
@@ -45,7 +45,7 @@
     background-color: $color__green-brand;
     border: 1px solid $color__green-brand;
 
-    & a {
+    a {
       color: white;
     }
   }
@@ -63,7 +63,7 @@ input[type="submit"] {
   text-transform: uppercase;
   width: auto;
   height: 40px;
-  border: 1px solid $color__green-brand;
+  border: $green-brand-border;
   border-radius: 0;
   background: $color__green-brand;
   box-shadow: none;
@@ -72,7 +72,7 @@ input[type="submit"] {
   padding: .4rem 1rem .4rem;
 
   &:hover {
-    border: $basic__border;
+    border: $green-brand-border-hover;
     background-color: $color__green-brand-hover;
     outline: none;
   }
@@ -80,7 +80,6 @@ input[type="submit"] {
   &:active,
   &:focus {
     outline: none;
-    border: $basic__border;
     background-color: $color__green-brand-hover;
   }
 }
@@ -90,14 +89,14 @@ input[type="submit"] {
   margin-top: 0.5rem;
   margin-bottom: 4.5rem;
 
-  & label {
+  label {
     font-family: 'novcento', Arial, serif;
     font-size: 1.08rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: $color__purple-brand;
 
-    & .asterisk {
+    .asterisk {
       color: $color__orange-brand;
     }
   }
@@ -108,14 +107,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  background-color: #F4F4F4;
-
-  &:focus {
-    color: #111;
-  }
+  @include form-styles();
 }
 
 input[type="search"] {
@@ -148,8 +140,10 @@ textarea {
   border-radius: 0;
 }
 
+/* Comment form styles */
+
 .comment-form-url {
-  & label {
+  label {
     width: 100%;
     font-size: 1.15rem;
     font-family: 'novocento', Arial, serif;
@@ -157,7 +151,7 @@ textarea {
     display: block;
   }
 
-  & input {
+  input {
     width: 97%;
   }
 }
@@ -168,14 +162,14 @@ textarea {
   display: inline-block;
   flex-flow: column nowrap;
 
-  & label {
+  label {
     width: 100%;
     font-size: 1.15rem;
     font-family: 'novocento', Arial, serif;
     text-transform: uppercase;
     display: block;
 
-    & span {
+    span {
       font-size: 1.25rem;
       color: $color__orange-brand;
       position: relative;
@@ -183,7 +177,7 @@ textarea {
     }
   }
 
-  & input {
+  input {
     width: 97%;
     margin-bottom: $base__space-unit;
   }

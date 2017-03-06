@@ -473,7 +473,7 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #1B6661;
     background-color: #1B6661;
     outline: none; }
   button:active, button:focus,
@@ -484,7 +484,6 @@ input[type="submit"] {
   input[type="submit"]:active,
   input[type="submit"]:focus {
     outline: none;
-    border: 1px solid #e1e1e1;
     background-color: #1B6661; }
 
 /* Fields */
@@ -541,6 +540,7 @@ textarea {
   border: 1px solid #e1e1e1;
   border-radius: 0; }
 
+/* Comment form styles */
 .comment-form-url label {
   width: 100%;
   font-size: 1.15rem;
@@ -1068,29 +1068,27 @@ body.home {
     background-size: 275px, cover, 100%;
     margin-bottom: 2.5rem; }
   body.home h2 {
+    width: 100%;
     font-size: 2.4rem;
     font-weight: 100;
     margin-bottom: 3.75rem;
     text-align: center; }
   body.home .shopstuff-container {
     margin: 0 auto 4rem;
-    width: 78%;
+    width: 79.5%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    body.home .shopstuff-container h2 {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 3rem; }
     body.home .shopstuff-container .shop-stuff-item {
-      width: 23%;
+      width: 23.5%;
       border: 1px solid #e1e1e1;
       border-top: 5px solid #e1e1e1;
       padding: 0.75rem 0.75rem 1.75rem;
-      text-align: center; }
+      text-align: center;
+      line-height: 1.7rem; }
       body.home .shopstuff-container .shop-stuff-item:hover {
         border: 1px solid #d99054;
         border-top: 5px solid #d99054; }
@@ -1123,11 +1121,13 @@ body.home {
           background-color: #1B6661; }
   body.home .front-page-posts-wrapper {
     margin: 3rem auto;
-    width: 78%;
+    width: 79.5%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     -ms-flex-align: baseline;
         align-items: baseline; }
     body.home .front-page-posts-wrapper article:nth-child(2) {
@@ -1136,7 +1136,8 @@ body.home {
       border-right: 0;
       border-left: 1rem solid white; }
     body.home .front-page-posts-wrapper article {
-      width: 33.333%;
+      width: 33%;
+      min-height: 300px;
       border-right: 1rem solid white; }
       body.home .front-page-posts-wrapper article .entry-header {
         border: 1px solid #e1e1e1;
@@ -1147,7 +1148,7 @@ body.home {
         -ms-flex-pack: start;
             justify-content: flex-start; }
         body.home .front-page-posts-wrapper article .entry-header img {
-          max-height: 241px;
+          max-height: 240px;
           border-bottom: 4px solid #E1E1E1;
           -ms-flex-order: 0;
               order: 0; }
@@ -1155,6 +1156,8 @@ body.home {
         margin-top: 0.5rem;
         margin-bottom: 1rem;
         margin-left: 0.75rem;
+        padding-right: 1.5rem;
+        font-weight: 900;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
@@ -1182,12 +1185,13 @@ body.home {
       body.home .front-page-posts-wrapper article .read-more-button {
         margin-left: 0.75rem;
         margin-bottom: 0.75rem;
+        padding: 0.55rem 1rem 0rem;
         -ms-flex-order: 4;
             order: 4; }
 
 /********* Adventures area ****/
 .adventures-container {
-  width: 78%;
+  width: 79.5%;
   height: auto;
   margin: 2rem auto 3rem;
   display: -ms-flexbox;
@@ -1224,7 +1228,7 @@ body.home {
       border: 1px solid #1B6661;
       background-color: #1B6661; }
   .adventures-container .adventures-block-left {
-    border-right: 0.75rem solid white;
+    border-right: 0.65rem solid white;
     width: 49.5%; }
   .adventures-container .adventures-block-right {
     width: 50.5%;
@@ -1232,7 +1236,7 @@ body.home {
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    border-left: 0.75rem solid white; }
+    border-left: 0.65rem solid white; }
   .adventures-container .adventures-block-left, .adventures-container .adventures-block-right {
     height: 540px;
     box-sizing: border-box; }
@@ -1247,7 +1251,7 @@ body.home {
         font-weight: 300;
         color: white;
         text-transform: none;
-        letter-spacing: 1px; }
+        letter-spacing: 1.5px; }
         .adventures-container .adventures-block-left .adventure .adventure-title:hover, .adventures-container .adventures-block-right .adventure .adventure-title:hover {
           color: #f0e4d1;
           cursor: pointer; }
@@ -1279,7 +1283,7 @@ body.home {
   .adventures-container .adventures-block-left .adventure {
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center bottom;
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center bottom;
     background-size: 170%;
     background-position: 50% 80%; }
     .adventures-container .adventures-block-left .adventure .adventure-title {
@@ -1290,12 +1294,13 @@ body.home {
   .adventures-container .adventures-block-right .adventure:nth-child(1) {
     height: 50%;
     width: 100%;
-    border-bottom: 1.25rem solid white;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
-    background-size: 125%;
-    background-position: 50% 70%; }
+    border-bottom: 1.2rem solid white;
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
+    background-size: 118%;
+    background-position: 50% 75%; }
     .adventures-container .adventures-block-right .adventure:nth-child(1) .adventure-title {
       font-size: 2.45rem;
+      margin-top: 1.75rem;
       line-height: 3.15rem;
       transform: translate(-1%, 15%); }
     .adventures-container .adventures-block-right .adventure:nth-child(1) .adventure-button {
@@ -1303,10 +1308,10 @@ body.home {
   .adventures-container .adventures-block-right .adventure:nth-child(2) {
     height: 50%;
     width: 50%;
-    border-right: 1.25rem solid white;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
-    background-size: 245%;
-    background-position: 52% 75%; }
+    border-right: 1.2rem solid white;
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
+    background-size: 250%;
+    background-position: 51.5% 75%; }
     .adventures-container .adventures-block-right .adventure:nth-child(2) .adventure-title {
       font-size: 1.7rem;
       line-height: 2rem;
@@ -1316,7 +1321,7 @@ body.home {
   .adventures-container .adventures-block-right .adventure:nth-child(3) {
     height: 50%;
     width: 50%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
     background-size: 230%;
     background-position: 49% 75%; }
     .adventures-container .adventures-block-right .adventure:nth-child(3) .adventure-title {
