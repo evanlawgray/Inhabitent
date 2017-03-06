@@ -1697,7 +1697,7 @@ body.page-template-about .site-main {
           max-width: none;
           border-bottom: 5px solid #e1e1e1;
           position: relative;
-          top: 50%;
+          bottom: 0.5rem;
           left: 0.5%; }
       .shop-content-wrapper article .entry-header .product-entry-meta {
         height: 55px;
@@ -1788,18 +1788,20 @@ body.page-template-about .site-main {
         background-color: #248A83;
         border: 1px solid #248A83; }
 
-body.tax-product_type .site-content {
+.tax-product_type .site-content {
   width: 100%; }
-  body.tax-product_type .site-content .content-area {
+  .tax-product_type .site-content .content-area {
     width: 100%; }
-    body.tax-product_type .site-content .content-area .page-header {
+    .tax-product_type .site-content .content-area .page-header {
       text-align: center;
       padding-top: 2rem;
       padding-bottom: 2rem; }
-    body.tax-product_type .site-content .content-area h1 {
-      font-size: 2.5rem;
-      margin-top: 0.5rem;
-      margin-bottom: 1.75rem; }
+      .tax-product_type .site-content .content-area .page-header h1 {
+        font-size: 2.35rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2.25rem; }
+      .tax-product_type .site-content .content-area .page-header .category-description {
+        margin-bottom: 1.25rem; }
 
 .search .site-main, .search-results .site-main {
   padding-top: 3rem;
