@@ -1059,21 +1059,21 @@ body:not(.home):not(.page-template-about) .site-content {
   padding-top: 50px; }
 
 /* Front page */
-body.home {
+.home {
   /********* Product area ******/
   /********* Blog area ****/ }
-  body.home .hero-image-banner {
+  .home .hero-image-banner {
     height: 100vh;
     background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
     background-size: 275px, cover, 100%;
     margin-bottom: 2.5rem; }
-  body.home h2 {
+  .home h2 {
     width: 100%;
     font-size: 2.4rem;
     font-weight: 100;
     margin-bottom: 3.75rem;
     text-align: center; }
-  body.home .shopstuff-container {
+  .home .shopstuff-container {
     margin: 0 auto 4rem;
     width: 79.5%;
     display: -ms-flexbox;
@@ -1082,20 +1082,20 @@ body.home {
         flex-flow: row wrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    body.home .shopstuff-container .shop-stuff-item {
+    .home .shopstuff-container .shop-stuff-item {
       width: 23.5%;
       border: 1px solid #e1e1e1;
       border-top: 5px solid #e1e1e1;
       padding: 0.75rem 0.75rem 1.75rem;
       text-align: center;
       line-height: 1.7rem; }
-      body.home .shopstuff-container .shop-stuff-item:hover {
+      .home .shopstuff-container .shop-stuff-item:hover {
         border: 1px solid #d99054;
         border-top: 5px solid #d99054; }
-      body.home .shopstuff-container .shop-stuff-item .product-icon-image {
+      .home .shopstuff-container .shop-stuff-item .product-icon-image {
         width: 70px;
         margin: 0 auto; }
-      body.home .shopstuff-container .shop-stuff-item .button-link {
+      .home .shopstuff-container .shop-stuff-item .button-link {
         font-family: novocento,Arial,serif;
         font-size: 13.6px;
         font-size: .85rem;
@@ -1113,13 +1113,13 @@ body.home {
         color: white;
         text-decoration: none;
         padding: 0.8rem 1.5rem; }
-        body.home .shopstuff-container .shop-stuff-item .button-link:hover {
+        .home .shopstuff-container .shop-stuff-item .button-link:hover {
           background-color: #1B6661;
           cursor: pointer; }
-        body.home .shopstuff-container .shop-stuff-item .button-link:active, body.home .shopstuff-container .shop-stuff-item .button-link:focus {
+        .home .shopstuff-container .shop-stuff-item .button-link:active, .home .shopstuff-container .shop-stuff-item .button-link:focus {
           border: 1px solid #1B6661;
           background-color: #1B6661; }
-  body.home .front-page-posts-wrapper {
+  .home .front-page-posts-wrapper {
     margin: 3rem auto;
     width: 79.5%;
     display: -ms-flexbox;
@@ -1130,16 +1130,16 @@ body.home {
         justify-content: space-between;
     -ms-flex-align: baseline;
         align-items: baseline; }
-    body.home .front-page-posts-wrapper article:nth-child(2) {
+    .home .front-page-posts-wrapper article:nth-child(2) {
       border-right: 0; }
-    body.home .front-page-posts-wrapper article:nth-child(3) {
+    .home .front-page-posts-wrapper article:nth-child(3) {
       border-right: 0;
       border-left: 1rem solid white; }
-    body.home .front-page-posts-wrapper article {
+    .home .front-page-posts-wrapper article {
       width: 33%;
       min-height: 300px;
       border-right: 1rem solid white; }
-      body.home .front-page-posts-wrapper article .entry-header {
+      .home .front-page-posts-wrapper article .entry-header {
         border: 1px solid #e1e1e1;
         display: -ms-flexbox;
         display: flex;
@@ -1147,12 +1147,12 @@ body.home {
             flex-flow: column nowrap;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-        body.home .front-page-posts-wrapper article .entry-header img {
+        .home .front-page-posts-wrapper article .entry-header img {
           max-height: 240px;
           border-bottom: 4px solid #E1E1E1;
           -ms-flex-order: 0;
               order: 0; }
-      body.home .front-page-posts-wrapper article .entry-title {
+      .home .front-page-posts-wrapper article .entry-title {
         margin-top: 0.5rem;
         margin-bottom: 1rem;
         margin-left: 0.75rem;
@@ -1166,7 +1166,7 @@ body.home {
             justify-content: flex-start;
         -ms-flex-order: 2;
             order: 2; }
-        body.home .front-page-posts-wrapper article .entry-title a {
+        .home .front-page-posts-wrapper article .entry-title a {
           font-size: 1.3rem;
           line-height: 1.75rem;
           text-align: left;
@@ -1174,15 +1174,15 @@ body.home {
           color: #248A83;
           display: -ms-flexbox;
           display: flex; }
-          body.home .front-page-posts-wrapper article .entry-title a:hover {
+          .home .front-page-posts-wrapper article .entry-title a:hover {
             color: #2f1339; }
-      body.home .front-page-posts-wrapper article .entry-meta {
+      .home .front-page-posts-wrapper article .entry-meta {
         margin-top: 0.75rem;
         margin-left: 0.75rem;
         -ms-flex-order: 1;
             order: 1;
         font-size: 0.8rem; }
-      body.home .front-page-posts-wrapper article .read-more-button {
+      .home .front-page-posts-wrapper article .read-more-button {
         margin-left: 0.75rem;
         margin-bottom: 0.75rem;
         padding: 0.55rem 1rem 0rem;
@@ -1216,7 +1216,7 @@ body.home {
     line-height: 1.5;
     padding: .6rem 1rem .4rem 1.35rem;
     width: auto;
-    margin: 1.5rem 0;
+    margin: 1.75rem 0;
     padding: 0.55rem 1.5rem 2.25rem;
     font-size: 1.15rem;
     font-weight: 100;

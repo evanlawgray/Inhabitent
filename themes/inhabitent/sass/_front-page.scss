@@ -1,6 +1,6 @@
 /* Front page */
 
-body.home {
+.home {
   .hero-image-banner {
     height: 100vh;
     background: url("../../images/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
@@ -152,7 +152,7 @@ body.home {
     @include green-button;
 
     width: auto;
-    margin: $base__space-unit 0;
+    margin: 1.75rem 0;
     padding: 0.55rem $base__space-unit 2.25rem;
     font-size: 1.15rem;
     font-weight: 100;
