@@ -1629,11 +1629,11 @@ body.page-template-about .site-main {
   padding-top: 0;
   width: 100%; }
   .post-type-archive-products .content-area .page-header {
-    margin: 2.75rem auto 2rem; }
+    margin: 2.5rem auto 2rem; }
     .post-type-archive-products .content-area .page-header h1.page-title {
       width: 400px;
       margin: 0 auto;
-      font-size: 2.4rem;
+      font-size: 2.35rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -1668,10 +1668,11 @@ body.page-template-about .site-main {
   -ms-flex-line-pack: center;
       align-content: center; }
   .shop-content-wrapper article {
-    height: auto;
+    height: 300px;
     width: 23%;
     border: 1px solid #e1e1e1; }
     .shop-content-wrapper article .entry-header {
+      height: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: column nowrap;
@@ -1682,7 +1683,8 @@ body.page-template-about .site-main {
           align-items: center; }
       .shop-content-wrapper article .entry-header .product-image-wrapper {
         width: 100%;
-        overflow: auto;
+        border-bottom: 5px solid #e1e1e1;
+        overflow: hidden;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: column nowrap;
@@ -1690,7 +1692,7 @@ body.page-template-about .site-main {
         -ms-flex-align: center;
             align-items: center; }
         .shop-content-wrapper article .entry-header .product-image-wrapper img {
-          height: 260px;
+          height: 255px;
           width: auto;
           max-width: none;
           border-bottom: 5px solid #e1e1e1;
@@ -1700,7 +1702,6 @@ body.page-template-about .site-main {
       .shop-content-wrapper article .entry-header .product-entry-meta {
         height: 55px;
         width: 100%;
-        margin-top: -0.25rem;
         padding: 0 1rem;
         display: -ms-flexbox;
         display: flex;
@@ -1712,12 +1713,13 @@ body.page-template-about .site-main {
             align-items: baseline;
         position: relative; }
         .shop-content-wrapper article .entry-header .product-entry-meta .ellipses {
+          width: 75%;
+          margin-top: 1.05rem;
+          padding: 0 0.3rem;
+          font-size: 0.85rem;
           position: absolute;
           z-index: -1;
-          margin-top: 0.5rem;
-          overflow: hidden;
-          width: 75%;
-          padding: 0 0.3rem; }
+          overflow: hidden; }
         .shop-content-wrapper article .entry-header .product-entry-meta p {
           padding: 0 0.15rem;
           font-size: 0.9rem;
@@ -1726,7 +1728,7 @@ body.page-template-about .site-main {
           background-color: white; }
         .shop-content-wrapper article .entry-header .product-entry-meta .entry-title {
           font-family: 'merriweather', Arial, serif;
-          font-size: 0.95rem;
+          font-size: 1rem;
           font-weight: 100;
           letter-spacing: 0px;
           color: black;

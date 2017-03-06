@@ -15,7 +15,7 @@
 
 @mixin front-page-h2($margin-bottom: 3.75rem) {
     width: 100%;
-    font-size: 2.35rem;
+    font-size: $sub-header-font-size;
     font-weight: 100;
     margin-bottom: $margin-bottom;
     text-align: center;
