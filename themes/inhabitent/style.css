@@ -1905,7 +1905,8 @@ object {
     .error404 .content-area .site-main {
       padding-top: 1rem; }
       .error404 .content-area .site-main .page-title {
-        font-size: 2.4em; }
+        font-size: 2.4rem;
+        letter-spacing: 1.5px; }
       .error404 .content-area .site-main .widgettitle {
         color: #2f1339; }
       .error404 .content-area .site-main .search-form {
