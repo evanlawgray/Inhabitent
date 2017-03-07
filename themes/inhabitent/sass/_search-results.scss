@@ -16,8 +16,8 @@
       }
     }
 
-    & article {
-      padding-top: 1rem;
+    article {
+      padding-top: 1.5rem;
       margin-bottom: 0;
       line-height: 1.75rem;
 
@@ -30,32 +30,28 @@
         border-bottom: none;
       }
 
-      & .read-more-button {
+      .read-more-button {
         margin-bottom: 1.75rem;
       }
 
-      & .entry-title {
+      .entry-title {
         font-size: 2.15rem;
 
-        & a {
+        a {
           color: $color__green-brand;
           text-decoration: none;
         }
+      }
+
+      .entry-meta {
+        font-size: 0.95rem;
+        text-transform: uppercase;
       }
     }
 
     .search-pagination {
       padding-top: $base__space-unit;
       padding-bottom: $base__space-unit;
-
-      .current {
-        background-color: #808080;
-
-        &:hover {
-          background-color: #808080;
-          cursor: default;
-        }
-      }
 
       & a, & span.current {
         @include green-button;
@@ -72,6 +68,15 @@
 
         &:active, &:focus {
           border: none;
+        }
+      }
+
+      & span.current {
+        background-color: $color__page-navigation-inactive;
+
+        &:hover {
+          background-color: $color__page-navigation-inactive;
+          cursor: default;
         }
       }
     }

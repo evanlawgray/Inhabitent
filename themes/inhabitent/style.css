@@ -1781,7 +1781,7 @@ body:not(.home):not(.page-template-about) .site-content {
       margin-bottom: 1rem;
       font-size: 2.35rem; }
   .search .site-main article, .search-results .site-main article {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     margin-bottom: 0;
     line-height: 1.75rem; }
     .search .site-main article:last-of-type, .search-results .site-main article:last-of-type {
@@ -1796,14 +1796,12 @@ body:not(.home):not(.page-template-about) .site-content {
       .search .site-main article .entry-title a, .search-results .site-main article .entry-title a {
         color: #248A83;
         text-decoration: none; }
+    .search .site-main article .entry-meta, .search-results .site-main article .entry-meta {
+      font-size: 0.95rem;
+      text-transform: uppercase; }
   .search .site-main .search-pagination, .search-results .site-main .search-pagination {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
-    .search .site-main .search-pagination .current, .search-results .site-main .search-pagination .current {
-      background-color: #808080; }
-      .search .site-main .search-pagination .current:hover, .search-results .site-main .search-pagination .current:hover {
-        background-color: #808080;
-        cursor: default; }
     .search .site-main .search-pagination a, .search .site-main .search-pagination span.current, .search-results .site-main .search-pagination a, .search-results .site-main .search-pagination span.current {
       font-family: novocento,Arial,serif;
       font-size: 13.6px;
@@ -1834,6 +1832,11 @@ body:not(.home):not(.page-template-about) .site-content {
         background-color: #2f1339; }
       .search .site-main .search-pagination a:active, .search .site-main .search-pagination a:focus, .search .site-main .search-pagination span.current:active, .search .site-main .search-pagination span.current:focus, .search-results .site-main .search-pagination a:active, .search-results .site-main .search-pagination a:focus, .search-results .site-main .search-pagination span.current:active, .search-results .site-main .search-pagination span.current:focus {
         border: none; }
+    .search .site-main .search-pagination span.current, .search-results .site-main .search-pagination span.current {
+      background-color: #808080; }
+      .search .site-main .search-pagination span.current:hover, .search-results .site-main .search-pagination span.current:hover {
+        background-color: #808080;
+        cursor: default; }
 
 /*--------------------------------------------------------------
 # Media
