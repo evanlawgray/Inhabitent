@@ -7,33 +7,33 @@
 .error404 {
   font-size: 16px;
 
-  & .content-area {
+  .content-area {
     padding-bottom: 2.5rem;
 
-    & .site-main {
+    .site-main {
       padding-top: 1rem;
 
-      & .page-title {
+      .page-title {
         font-size: 2.4em;
       }
 
-      & .widgettitle {
+      .widgettitle {
         color: $color__purple-brand;
       }
 
-      & .search-form {
+      .search-form {
         margin-bottom: 2.5rem;
 
-        & fieldset {
+        fieldset {
           border: none;
           padding: 0;
 
-          & .search-submit {
+          .search-submit {
             display: none;
             height: 0;
           }
 
-          & .search-field {
+          .search-field {
             background-color: #F4F4F4;
             height: 30px;
             text-transform: none;
@@ -41,23 +41,23 @@
         }
       }
 
-      & .widget {
+      .widget {
         margin-bottom: 3rem;
 
-        & ul {
+        ul {
           margin: 0;
           padding: 0;
           list-style-type: none;
           line-height: 1.75rem;
 
-          & a {
+          a {
             text-decoration: none;
             color: $color__green-brand;
           }
         }
       }
 
-      & .widget_archive p {
+      .widget_archive p {
         margin-bottom: 0.75rem;
       }
     }

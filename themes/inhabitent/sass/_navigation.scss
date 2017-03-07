@@ -60,7 +60,7 @@ a {
       justify-content: center;
       align-items: center;
 
-      & a {
+      a {
         height: 100%;
         width: 100%;
       }
@@ -91,28 +91,15 @@ a {
         height: 100%;
         list-style: none;
         margin: 0;
-        padding-left: 0;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
         align-items: center;
-
-        ul {
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          float: left;
-          position: absolute;
-          top: $base__space-unit;
-          left: -999rem;
-          z-index: 99999;
-        }
       }
 
       li {
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
-
-        &:hover > a,
-        &.focus > a {}
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
       }
 
       a {
@@ -128,29 +115,27 @@ a {
           cursor: pointer;
         }
       }
-
-      .current_page_item > a,
-      .current-menu-item > a,
-      .current_page_ancestor > a {}
     }
 
     form {
       width: auto;
       display: inline-block;
 
-      & fieldset {
+      fieldset {
         border: none;
         padding: 0;
         width: auto;
 
-        & .search-submit {
+        .search-submit {
           background: none;
           border: none;
+          padding-left: 0.6rem;
           padding-right: 0;
+          padding-bottom: 0.2rem;
           color: $color__green-brand;
           transform: translateY(-2px);
 
-          & i {
+          i {
             font-size: 1rem;
           }
 
@@ -184,7 +169,7 @@ a {
         }
 
 
-        & .search-field {
+        .search-field {
           width: 0;
           height: 100%;
           background: none;
@@ -195,7 +180,7 @@ a {
           transition: width 0.55s ease;
         }
 
-        & .search-field-expand {
+        .search-field-expand {
           width: 190px;
         }
       }
@@ -219,18 +204,19 @@ a {
       background-size: 100%;
     }
 
-    & .header-logo, & .menu-item a, & i {
+    .header-logo, & .menu-item a, & i {
       color: white;
 
       &:hover {
         color: $color__yelow-brand;
       }
     }
-    & .search-form {
 
-      & fieldset {
+    .search-form {
 
-        & .search-field.search-field-expand {
+      fieldset {
+
+        .search-field.search-field-expand {
           color: white;
           font-family: 'novocento', Arial, serif;
         }
@@ -269,7 +255,7 @@ a {
     position: fixed;
 
 
-    & .header-logo-wrapper a {
+    .header-logo-wrapper a {
       width: 100%;
       height: 100%;
 
@@ -278,7 +264,7 @@ a {
       }
     }
 
-    & .fa.fa-search {
+    .fa.fa-search {
       color: $color__green-brand;
 
       &:hover {
@@ -286,7 +272,7 @@ a {
       }
     }
 
-    & .menu li a {
+    .menu a {
       color: $color__green-brand;
 
       &:hover {
@@ -294,11 +280,11 @@ a {
       }
     }
 
-    & .search-form {
+    .search-form {
 
-      & fieldset {
+      fieldset {
 
-        & .search-field.search-field-expand {
+        .search-field.search-field-expand {
           color: $color__text-main;
         }
 
@@ -327,41 +313,5 @@ a {
         }
       }
     }  
-  }
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .main-navigation ul {
-    display: block;
-  }
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-  .site-main & {
-    margin: 0 0 $base__space-unit;
-    overflow: hidden;
-  }
-
-  .nav-previous {
-    float: left;
-    width: 50%;
-  }
-
-  .nav-next {
-    float: right;
-    text-align: right;
-    width: 50%;
   }
 }
