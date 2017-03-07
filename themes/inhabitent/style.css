@@ -419,7 +419,7 @@ table {
   font-weight: 100;
   text-transform: uppercase;
   width: 150px;
-  height: 40px;
+  height: 42px;
   margin-bottom: 4rem;
   border: 1px solid black;
   border-radius: 0;
@@ -1331,28 +1331,27 @@ body:not(.home):not(.page-template-about) .site-content {
     .adventures-container .adventures-block-right .adventure:nth-child(3) .adventure-button {
       top: 18px; }
 
-body.page-template-about .content-area .hero-image-banner {
+.page-template-about .content-area .hero-image-banner {
   height: 100vh;
   width: auto;
   background-size: cover;
   background-position: center bottom;
   position: relative; }
-  body.page-template-about .content-area .hero-image-banner .about-header {
+  .page-template-about .content-area .hero-image-banner .about-header {
     font-size: 3rem;
     color: white;
     position: absolute;
     top: 40%;
     left: 43.5%; }
 
-body.page-template-about .site-main {
+.page-template-about .site-main {
   width: 800px;
   margin: 0 auto;
-  padding-top: 0.75rem;
   padding-bottom: 3rem;
-  line-height: 1.8rem; }
-  body.page-template-about .site-main .entry-header:nth-child(2) {
-    margin-top: 2rem; }
-  body.page-template-about .site-main .entry-header {
+  line-height: 2rem; }
+  .page-template-about .site-main .entry-header:nth-child(2) {
+    margin-top: 2.75rem; }
+  .page-template-about .site-main .entry-header {
     width: 300px;
     margin: 3rem auto 2rem;
     font-size: 2rem;
@@ -1368,13 +1367,13 @@ body.page-template-about .site-main {
   .blog .entry-header img {
     width: 760px; }
   .blog .entry-header .entry-title {
-    width: 550px;
+    width: auto;
+    max-width: 570px;
     height: auto;
-    font-size: 2rem;
-    line-height: 2.25rem;
+    line-height: 2.5rem;
     color: white;
     background-color: #248A83;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 2.25rem 0.75rem 1.5rem;
     position: absolute;
     top: 10px;
     left: 0; }
@@ -1383,12 +1382,12 @@ body.page-template-about .site-main {
       cursor: pointer; }
     .blog .entry-header .entry-title a {
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 2.1rem;
       color: white; }
   .blog .entry-header .entry-meta {
     height: auto;
     font-family: 'novocento', Arial, serif;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: white;
     background-color: #248A83;
     padding: 0.4rem 1.5rem;
@@ -1406,23 +1405,17 @@ body.page-template-about .site-main {
   .single-post .entry-header img {
     width: 760px; }
   .single-post .entry-header .entry-title {
-    width: 550px;
+    width: auto;
+    max-width: 570px;
     height: auto;
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
     color: white;
     background-color: #248A83;
     padding: 0.75rem 1.5rem;
     position: absolute;
     top: 10px;
     left: 0; }
-    .single-post .entry-header .entry-title a:hover {
-      color: #f0e4d1;
-      cursor: pointer; }
-    .single-post .entry-header .entry-title a {
-      text-decoration: none;
-      font-size: 2rem;
-      color: white; }
   .single-post .entry-header .entry-meta {
     height: auto;
     font-family: 'novocento', Arial, serif;

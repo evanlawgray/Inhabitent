@@ -1,14 +1,14 @@
 // About page
 
-body.page-template-about {
-  & .content-area .hero-image-banner {
+.page-template-about {
+  .content-area .hero-image-banner {
     height: 100vh;
     width: auto;
     background-size: cover;
     background-position: center bottom;
     position: relative;
 
-    & .about-header {
+    .about-header {
       font-size: 3rem;
       color: white;
       position: absolute;
@@ -17,18 +17,17 @@ body.page-template-about {
     }
   }
 
-  & .site-main {
+  .site-main {
     width: 800px;
     margin: 0 auto;
-    padding-top: 0.75rem;
     padding-bottom: 3rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
 
-    & .entry-header:nth-child(2) {
-      margin-top: 2rem;
+    .entry-header:nth-child(2) {
+      margin-top: 2.75rem;
     }
 
-    & .entry-header {
+    .entry-header {
       width: 300px;
       margin: 3rem auto 2rem;
       font-size: 2rem;

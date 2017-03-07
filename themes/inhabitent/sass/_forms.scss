@@ -6,13 +6,11 @@
 
 .read-more-button {
   font-family: 'novocento', Arial, serif;
-
   @include font-size(0.85);
-
   font-weight: 100;
   text-transform: uppercase;
   width: 150px;
-  height: 40px;
+  height: 42px;
   margin-bottom: 4rem;
   border: 1px solid black;
   border-radius: 0;
