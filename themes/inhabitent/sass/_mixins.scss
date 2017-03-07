@@ -108,17 +108,17 @@
   right: $offsetx;
 }
 
-@mixin blog-entry-title($offsetx, $offsety) {
-  width: 550px;
+@mixin blog-entry-title($offsetx: 10px, $offsety: 0px) {
+  width: auto;
+  max-width: 570px;
   height: auto;
-  font-size: 2rem;
-  line-height: 2.25rem;
+  line-height: 2.5rem;
   color: white;
   background-color: $color__green-brand;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2.25rem 0.75rem 1.5rem;
   position: absolute;
-  top: 10px;
-  left: 0;
+  top: $offsety;
+  left: $offsetx;
 
   & a:hover {
     color: $color__yelow-brand;
