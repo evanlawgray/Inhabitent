@@ -584,36 +584,30 @@ textarea {
   background-size: 500px, 500px; }
   .site-footer .footer-container {
     margin: 0 auto;
-    padding: 3rem 0 0;
+    padding: 3rem 9.5rem 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     -ms-flex-align: start;
         align-items: flex-start; }
     .site-footer .footer-container .footer-info-container {
       width: 55%;
-      margin-left: 10rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: start;
           align-items: flex-start; }
-      .site-footer .footer-container .footer-info-container div:nth-child(1).footer-contact-column {
-        width: 35%; }
-        .site-footer .footer-container .footer-info-container div:nth-child(1).footer-contact-column i {
-          font-size: 1.25rem;
-          transform: translateY(-2px); }
+      .site-footer .footer-container .footer-info-container p {
+        letter-spacing: 0.25px;
+        margin: 0.5rem 0 1.25rem; }
       .site-footer .footer-container .footer-info-container div:nth-child(1), .site-footer .footer-container .footer-info-container div:nth-child(2) {
-        width: 45%;
+        width: 47%;
         margin: 0; }
         .site-footer .footer-container .footer-info-container div:nth-child(1) h3, .site-footer .footer-container .footer-info-container div:nth-child(2) h3 {
           color: #d99054;
           margin: 1rem 0; }
-        .site-footer .footer-container .footer-info-container div:nth-child(1) p, .site-footer .footer-container .footer-info-container div:nth-child(2) p {
-          letter-spacing: 0.25px;
-          margin: 0.5rem 0 1.5rem; }
         .site-footer .footer-container .footer-info-container div:nth-child(1) .day-of-week, .site-footer .footer-container .footer-info-container div:nth-child(2) .day-of-week {
           font-weight: bold; }
         .site-footer .footer-container .footer-info-container div:nth-child(1) a, .site-footer .footer-container .footer-info-container div:nth-child(2) a {
@@ -621,6 +615,11 @@ textarea {
           text-decoration: none; }
           .site-footer .footer-container .footer-info-container div:nth-child(1) a:hover, .site-footer .footer-container .footer-info-container div:nth-child(2) a:hover {
             text-decoration: underline; }
+      .site-footer .footer-container .footer-info-container div.footer-contact-column {
+        width: 45%; }
+        .site-footer .footer-container .footer-info-container div.footer-contact-column i {
+          font-size: 1.25rem;
+          transform: translateY(-2px); }
     .site-footer .footer-container .footer-branding {
       width: 30%;
       margin-top: 1rem;
@@ -628,11 +627,11 @@ textarea {
       .site-footer .footer-container .footer-branding a {
         height: auto; }
         .site-footer .footer-container .footer-branding a img {
-          width: 278px;
-          margin-right: 10rem; }
+          width: 278px; }
     .site-footer .footer-container .site-info {
       width: 100%;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
       text-transform: uppercase;
       padding: 1.5rem 0;
       text-align: center; }
