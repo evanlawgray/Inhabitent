@@ -1,8 +1,13 @@
-// Journal Page
+//******Journal Page********//
 
 .blog {
   .entry-content {
     width: 760px;
+    line-height: 1.75rem;
+
+    p {
+      margin-bottom: 1rem;
+    }
   }
 
   .entry-header {
@@ -53,20 +58,25 @@
 }
 
 .single-post {
-  & .entry-content {
+  .entry-content {
     width: 760px;
+    line-height: 1.75rem;
+
+    p {
+      margin-bottom: 1.25rem;
+    }
   }
 
-  & .entry-header {
+  .entry-header {
     position: relative;
 
-    & img {
+    img {
       width: 760px;
     }
 
-    & .entry-title {
+    .entry-title {
       width: auto;
-      max-width: 570px;
+      max-width: 670px;
       height: auto;
       font-size: 2.1rem;
       line-height: 2.5rem;
@@ -78,7 +88,7 @@
       left: 0;
     }
 
-    & .entry-meta {
+    .entry-meta {
       height: auto;
       font-family: 'novocento', Arial, serif;
       font-size: 0.9rem;
@@ -91,7 +101,7 @@
       bottom: 8px;
       right: 60px;
 
-      & a {
+      a {
         text-decoration: none;
         color: white;
 
@@ -103,24 +113,29 @@
   }
 }
 
-//********Blog single-page view
+//********Blog single-page view*********//
+
 
 .single-post .post-navigation {
   height: 0;
   display: none;
 }
 
-.single-post .entry-footer {
-  letter-spacing: 0.5px;
+.single-post .entry-header .entry-title {
+  top: 13px;
+}
 
-  & .cat-links {
+.single-post .entry-footer {
+  margin-top: $base__space-unit;
+
+  .cat-links {
     margin-right: $base__space-unit;
   }
 
-  & .social-buttons button {
+  .social-buttons button {
     width: auto;
-    margin: 2rem 0 2rem;
-    padding: 0.25rem $base__space-unit;
+    margin: 1.75rem 0 2rem;
+    padding: 0.25rem 1.65rem;
     border: 1px solid $color__border-abbr;
     color: black;
     background-color: white;
@@ -133,12 +148,12 @@
     }
   }
 
-  & span {
+  span {
     font-family: 'novocento', Arial, serif;
     font-size: 0.95rem;
     text-transform: uppercase;
 
-    & a {
+    a {
       text-decoration: none;
       color: $color__green-brand;
 
@@ -154,12 +169,12 @@
 .comments-area {
   width: 93%;
 
-  & h3 {
+  h3 {
     margin-top: 1rem;
     font-size: 1.75rem;
   }
 
-  & h2 {
+  h2 {
     font-size: 2rem;
     color: $color__purple-brand;
   }
@@ -170,53 +185,53 @@
     border-bottom: $basic__border;
     list-style-type: none;
 
-    & li:first-child {
+    li:first-child {
       border-top: none;
     }
 
-    & li {
+    li {
       padding-top: $base__space-unit;
       border-top: $basic__border;
 
-      & .children {
+      .children {
         border-top: $basic__border;
         list-style-type: none;
 
-        & .comment-author-avatar img {
+        .comment-author-avatar img {
           min-width: 50px;
         }
       }
 
       .comment-body {
-        width: 92%;
+        width: 93%;
         display: flex;
         padding-bottom: $base__space-unit;
 
-        & .comment-author-avatar {
+        .comment-author-avatar {
           margin-right: $base__space-unit;
 
-          & img {
+          img {
             border-radius: 50px;
           }
         }
 
-        & .comment-content .comment-author cite {
+        .comment-content .comment-author cite {
           text-transform: uppercase;
           font-weight: bold;
           font-style: normal;
         }
 
-        & .comment-metadata {
+        .comment-metadata {
           margin-top: 0.3rem;
           color: #808080;
 
-          & a {
+          a {
             text-decoration: none;
             color: $color__green-brand;
           }
         }
 
-        & .reply a {
+        .reply a {
           text-decoration: none;
           color: $color__green-brand;
         }
@@ -229,12 +244,12 @@
     font-family: 'novocento', Arial, serif;
     text-transform: uppercase;
 
-    & label {
+    label {
       font-size: 1.1rem;
       letter-spacing: 0.5px;
     }
 
-    & .form-submit {
+    .form-submit {
       margin-bottom: 1rem;
     }
   }
@@ -249,29 +264,28 @@
     padding-bottom: 3rem;
 
     .site-main {
-      width: 760px;
+      width: 93%;
 
       .page-header {
-        width: 640px;
-        margin-top: 0.75rem;
+        width: 100%;
         margin-bottom: 3rem;
         border-bottom: $basic__border;
 
         .page-title {
-          font-size: 2.4rem;
+          font-size: $sub-header-font-size;
         }
       }
 
       .entry-header {
         position: relative;
 
-        & img {
-          width: 93%;
+        img {
+          width: 100%;
         }
 
         .entry-title {
-          width: 550px;
-          height: auto;
+          width: auto;
+          max-width: 570px;
           font-size: 2rem;
           line-height: 2.25rem;
           color: #fff;
@@ -281,7 +295,7 @@
           top: 10px;
           left: 0;
 
-          & a {
+          a {
             text-decoration: none;
             color: white;
 
@@ -292,7 +306,7 @@
         }
 
         & .entry-meta {
-          @include blog-entry-meta(53px, 7px);
+          @include blog-entry-meta(0px, 7px);
         }
       }
     }

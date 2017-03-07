@@ -67,7 +67,7 @@ input[type="submit"] {
   box-shadow: none;
   color: white;
   line-height: 1.5;
-  padding: .4rem 1rem .4rem;
+  padding: .4rem $base__space-unit;
 
   &:hover {
     border: $green-brand-border-hover;
