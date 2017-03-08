@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying products archive (custom post type).
+ * Template part for displaying the content of the products archive (custom post type).
  *
  * @package RED_Starter_Theme
  */

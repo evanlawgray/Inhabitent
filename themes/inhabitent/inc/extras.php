@@ -107,7 +107,7 @@ add_action('wp_enqueue_scripts', 'inhabitent_about_image_css');
 
 // Insert custom query for the shop/products archives page
 
-function make_custom_archive_query($query){
+function make_shop_archive_query($query){
     if ( $query->is_main_query() && (is_post_type_archive('products') || is_tax() ) ){
 
             $query->set('orderby', 'title');
@@ -117,7 +117,7 @@ function make_custom_archive_query($query){
     }
 }
 
-add_action('pre_get_posts', 'make_custom_archive_query');
+add_action('pre_get_posts', 'make_shop_archive_query');
 
 
 // Get title for product archive page
@@ -151,6 +151,19 @@ function modify_product_single_title($title) {
 
     return $title;
 }
+
+// Insert custom query for the shop/products archives page
+
+function make_adventures_archive_query($query){
+    if ( $query->is_main_query() && (is_post_type_archive('adventures') ) ){
+
+            $query->set('orderby', 'date');
+            $query->set('post_type', 'adventures');
+            $query->set('posts_per_page', '0');
+    }
+}
+
+add_action('pre_get_posts', 'make_adventures_archive_query');
 
 // Alter the text excerpt for blog posts to add ellipses and read more link.
 
