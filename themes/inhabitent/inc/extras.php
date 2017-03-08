@@ -152,7 +152,7 @@ function modify_product_single_title($title) {
     return $title;
 }
 
-// Insert custom query for the shop/products archives page
+// Insert custom query for the adventures archives page
 
 function make_adventures_archive_query($query){
     if ( $query->is_main_query() && (is_post_type_archive('adventures') ) ){
@@ -164,6 +164,18 @@ function make_adventures_archive_query($query){
 }
 
 add_action('pre_get_posts', 'make_adventures_archive_query');
+
+// Customize title for the adventures archives page
+
+function modify_adventures_archive_title($title) {
+    if ( is_post_type_archive('adventures') ) {
+        $title = 'Latest Adventures';
+    }
+
+    return $title;
+}
+
+add_filter('get_the_archive_title', 'modify_adventures_archive_title');
 
 // Alter the text excerpt for blog posts to add ellipses and read more link.
 
