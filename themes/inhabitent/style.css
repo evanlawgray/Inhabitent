@@ -1004,21 +1004,21 @@ a {
 .bypostauthor {
   display: block; }
 
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventure) .site-content {
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product_type):not(.single-product):not(.single-adventures) .site-content {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: 1120px; }
 
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.search):not(.search-results):not(.error404):not(.page-template-default) .content-area,
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.post-type-archive-products):not(.search):not(.search-results):not(.error404):not(.page-template-default) .widget-area {
+body:not(.home):not(.page-template-about):not(.single-adventures):not(.archive):not(.tax-product_type):not(.search):not(.search-results):not(.error404):not(.page-template-default) .content-area,
+body:not(.home):not(.page-template-about):not(.single-adventures):not(.post-type-archive-products):not(.search):not(.search-results):not(.error404):not(.page-template-default) .widget-area {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-body:not(.home):not(.page-template-about):not(.single-adventure):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
+body:not(.home):not(.page-template-about):not(.single-adventures):not(.archive):not(.tax-product_type):not(.single-products) .content-area {
   width: 74%; }
 
-body:not(.home):not(.page-template-about) .site-content {
+body:not(.home):not(.page-template-about):not(.single-adventures) .site-content {
   padding-top: 50px; }
 
 /* Front page */
@@ -1148,7 +1148,7 @@ body:not(.home):not(.page-template-about) .site-content {
       .home .front-page-posts-wrapper article .read-more-button {
         margin-left: 0.75rem;
         margin-bottom: 0.75rem;
-        padding: 0.55rem 1rem 0rem;
+        padding: 0.67rem 1rem 0rem;
         -ms-flex-order: 4;
             order: 4; }
 
@@ -1222,16 +1222,17 @@ body:not(.home):not(.page-template-about) .site-content {
         font-family: 'novocento', Arial, serif;
         font-size: 13.6px;
         font-size: 0.85rem;
-        font-weight: 100;
-        text-transform: uppercase;
         width: auto;
         height: 40px;
+        padding: 0.25rem 1.5rem;
         border: 1px solid #FFF;
         border-radius: 0;
         box-shadow: none;
-        color: white;
+        background: none;
+        color: #FFF;
+        font-weight: 100;
+        text-transform: uppercase;
         line-height: 1.5;
-        padding: .4rem 1rem .4rem;
         letter-spacing: 0.25px;
         padding: 0.8rem 1.5rem;
         text-decoration: none;
@@ -1241,8 +1242,7 @@ body:not(.home):not(.page-template-about) .site-content {
           background-color: #248A83;
           cursor: pointer; }
         .adventures-container .adventures-block-left .adventure .adventure-button:active, .adventures-container .adventures-block-left .adventure .adventure-button:focus, .adventures-container .adventures-block-right .adventure .adventure-button:active, .adventures-container .adventures-block-right .adventure .adventure-button:focus {
-          border: 1px solid #248A83;
-          background-color: #248A83; }
+          border: 1px solid #248A83; }
   .adventures-container .adventures-block-left .adventure {
     height: 100%;
     width: 100%;
@@ -1854,16 +1854,17 @@ body:not(.home):not(.page-template-about) .site-content {
             font-family: 'novocento', Arial, serif;
             font-size: 13.6px;
             font-size: 0.85rem;
-            font-weight: 100;
-            text-transform: uppercase;
             width: auto;
             height: 40px;
+            padding: 0.25rem 1.5rem;
             border: 1px solid #FFF;
             border-radius: 0;
             box-shadow: none;
-            color: white;
+            background: none;
+            color: #FFF;
+            font-weight: 100;
+            text-transform: uppercase;
             line-height: 1.5;
-            padding: .4rem 1rem .4rem;
             letter-spacing: 0.25px;
             padding: 0.8rem 1.5rem; }
             .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:hover {
@@ -1871,8 +1872,56 @@ body:not(.home):not(.page-template-about) .site-content {
               background-color: #248A83;
               cursor: pointer; }
             .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:active, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:focus {
-              border: 1px solid #248A83;
-              background-color: #248A83; }
+              border: 1px solid #248A83; }
+
+.single-adventures .adventures-hero-banner {
+  height: auto;
+  width: 100%; }
+  .single-adventures .adventures-hero-banner img {
+    height: auto;
+    width: 100%; }
+
+.single-adventures .site-main {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 4.5rem; }
+  .single-adventures .site-main .entry-title {
+    margin: 0 auto 0.75rem;
+    font-size: 2.35rem;
+    text-align: left;
+    line-height: 3rem; }
+  .single-adventures .site-main .author {
+    font-size: 1.15rem;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; }
+  .single-adventures .site-main article {
+    line-height: 1.75rem; }
+  .single-adventures .site-main .social-buttons button {
+    font-family: 'novocento', Arial, serif;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    width: auto;
+    height: 40px;
+    padding: 0.25rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    color: black;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.25px; }
+    .single-adventures .site-main .social-buttons button:hover {
+      border: 1px solid #248A83;
+      background-color: #248A83;
+      cursor: pointer; }
+    .single-adventures .site-main .social-buttons button:active, .single-adventures .site-main .social-buttons button:focus {
+      border: 1px solid #248A83; }
+    .single-adventures .site-main .social-buttons button:hover {
+      color: white; }
 
 .search .site-main, .search-results .site-main {
   padding-top: 3rem;

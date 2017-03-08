@@ -36,21 +36,22 @@
 
 //Buttons
 
-@mixin transparent-button($border-color) {
+@mixin transparent-button($font-color) {
   font-family: 'novocento', Arial, serif;
 
   @include font-size(0.85);
 
-  font-weight: 100;
-  text-transform: uppercase;
   width: auto;
   height: 40px;
-  border: 1px solid $border-color;
+  padding: 0.25rem $base__space-unit;
+  border: 1px solid $font-color;
   border-radius: 0;
   box-shadow: none;
-  color: white;
+  background: none;
+  color: $font-color;
+  font-weight: 100;
+  text-transform: uppercase;
   line-height: 1.5;
-  padding: .4rem 1rem .4rem;
   letter-spacing: 0.25px;
 
   &:hover {
@@ -62,7 +63,6 @@
   &:active,
   &:focus {
     border: 1px solid $color__green-brand;
-    background-color: $color__green-brand;
   }
 }
 

@@ -98,3 +98,51 @@
 	  }
 	}
 }
+
+//Single adventures view 
+
+.single-adventures {
+
+	.adventures-hero-banner {
+		height: auto;
+		width: 100%;
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.site-main {
+		width: 800px;
+		margin: 0 auto;
+		padding-top: 3rem;
+		padding-bottom: 4.5rem;
+
+		.entry-title {
+			margin: 0 auto 0.75rem;
+			font-size: $sub-header-font-size;
+			text-align: left;
+			line-height: 3rem;
+		}
+
+		.author {
+			font-size: 1.15rem;
+			text-align: left;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+		}
+
+		article {
+			line-height: 1.75rem;
+		}
+
+		.social-buttons button {
+			@include transparent-button(black);
+
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
