@@ -1593,10 +1593,10 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
     right: 0px; }
 
 .post-type-archive-products .content-area {
-  padding-top: 0;
+  padding-top: 1.5rem;
   width: 100%; }
   .post-type-archive-products .content-area .page-header {
-    margin: 2.5rem auto 2rem; }
+    margin: 1.5rem auto 3.25rem; }
     .post-type-archive-products .content-area .page-header h1.page-title {
       width: 400px;
       margin: 0 auto;
@@ -1617,8 +1617,11 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
           justify-content: space-around;
       text-transform: uppercase; }
       .post-type-archive-products .content-area .page-header .shop-terms-container a {
+        margin: 0 1.5rem;
         text-decoration: none;
         color: #248A83; }
+        .post-type-archive-products .content-area .page-header .shop-terms-container a:hover {
+          color: #2f1339; }
 
 .shop-content-wrapper {
   width: 78%;
@@ -1635,7 +1638,7 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
   -ms-flex-line-pack: center;
       align-content: center; }
   .shop-content-wrapper article {
-    height: 300px;
+    height: 305px;
     width: 23%;
     border: 1px solid #e1e1e1; }
     .shop-content-wrapper article .entry-header {
@@ -1664,8 +1667,7 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
           max-width: none;
           border-bottom: 5px solid #e1e1e1;
           position: relative;
-          bottom: 0.5rem;
-          left: 0.5%; }
+          bottom: 0.2rem; }
       .shop-content-wrapper article .entry-header .product-entry-meta {
         height: 55px;
         width: 100%;
