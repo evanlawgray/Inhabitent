@@ -86,12 +86,6 @@
     background-color: $color__green-brand-hover;
     cursor: pointer;
   }
-
-  &:active,
-  &:focus {
-    border: 1px solid $color__green-brand-hover;
-    background-color: $color__green-brand-hover;
-  }
 }
 
 @mixin blog-entry-meta($offsetx, $offsety) {

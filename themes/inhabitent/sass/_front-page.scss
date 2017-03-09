@@ -20,7 +20,7 @@
 
   .shopstuff-container {
     margin: 0 auto 4rem;
-    width: 79%;
+    width: 78%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -63,7 +63,7 @@
 
   .front-page-posts-wrapper {
     margin: 3rem auto;
-    width: 79%;
+    width: 78%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -141,12 +141,13 @@
 /********* Adventures area ****/
 
 .front-page-adventures-container {
-  height: 540px;
-  width: 79%;
-  margin: 2rem auto 7rem;
+  height: auto;
+  width: 78%;
+  margin: 2rem auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  position: relative;
 
   .more-adventures-button {
     @include green-button;
@@ -157,14 +158,20 @@
     font-size: 1.15rem;
     font-weight: 100;
     color: white;
+    text-decoration: none;
   }
 
   article.adventures.type-adventures:nth-child(1) {
+    height: 540px;
     border-right: $front-page-adventures-border;
 
-    .adventure-image-wrapper img {
-      height: 625px;
-      transform: translateY(-10%);
+    .adventure-image-wrapper {
+      height: 100%;
+
+      img {
+        height: 625px;
+        transform: translateY(-10%);
+      }
     }
 
     .adventure-title {
@@ -177,7 +184,7 @@
   }
 
   article.adventures.type-adventures:nth-child(2) {
-    height: 50%;
+    height: 270px;
     border-bottom: $front-page-adventures-border;
 
     .adventure-image-wrapper img {
@@ -194,7 +201,9 @@
   }
 
   article.adventures.type-adventures:nth-child(3) {
+    height: 270px;
     border-right: $front-page-adventures-border; 
+    left: 50%;
 
     .adventure-image-wrapper img {
       height: 430px;
@@ -202,14 +211,16 @@
     }
 
     .adventure-entry-meta .adventure-title {
-      margin-bottom: 2.5rem;
-      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      font-size: 1.55rem;
       line-height: 1.9rem;
-      transform: translateY(9%);
+      transform: translateY(8%);
     }
   }
 
   article.adventures.type-adventures:nth-child(4) {
+    height: 270px;
+    left: 75%;
 
     .adventure-image-wrapper img {
       height: 420px;
@@ -217,27 +228,28 @@
     }
 
     .adventure-entry-meta .adventure-title {
-      margin-bottom: 2.5rem;
-      font-size: 1.7rem;
-      line-height: 1.75rem;
-      transform: translateY(15%);
+      margin-bottom: 2rem;
+      font-size: 1.55rem;
+      line-height: 2rem;
+      transform: translateY(12.5%);
     }  
   }
 
   article.adventures:nth-child(3), article.adventures:nth-child(4) {
     height: 50%;
     width: 25%;
-    position: relative;
-    bottom: 54.5%;
-    left: 50%; 
+    position: absolute;
+    bottom: 15.7%;
   }
 
   article {
     box-sizing: border-box;
     height: 100%;
     width: 50%;
+    margin: 0;
 
     .entry-header {
+      height: 100%;
       max-height: 100%;
       overflow: hidden;
       display: flex;

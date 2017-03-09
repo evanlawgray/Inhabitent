@@ -70,7 +70,7 @@ get_header(); ?>
 		  <?php get_template_part( 'template-parts/content-front-page-adventures' ); ?>
 			<?php endforeach; wp_reset_postdata(); ?>
 
-		  <a class="more-adventures-button">More Adventures</a>
+		  <a href="<?php echo esc_url( home_url( '/' ) ); ?>adventures" class="more-adventures-button">More Adventures</a>
 
 		</div>
 		</main><!-- #main -->
