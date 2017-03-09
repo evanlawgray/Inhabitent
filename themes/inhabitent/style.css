@@ -1038,7 +1038,7 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
     text-align: center; }
   .home .shopstuff-container {
     margin: 0 auto 4rem;
-    width: 79.5%;
+    width: 79%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -1084,7 +1084,7 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
           background-color: #1B6661; }
   .home .front-page-posts-wrapper {
     margin: 3rem auto;
-    width: 79.5%;
+    width: 79%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -1153,17 +1153,17 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
             order: 4; }
 
 /********* Adventures area ****/
-.adventures-container {
-  width: 79.5%;
-  height: auto;
-  margin: 2rem auto 3rem;
+.front-page-adventures-container {
+  height: 540px;
+  width: 79%;
+  margin: 2rem auto 7rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   -ms-flex-pack: start;
       justify-content: flex-start; }
-  .adventures-container .more-adventures-button {
+  .front-page-adventures-container .more-adventures-button {
     font-family: novocento,Arial,serif;
     font-size: 13.6px;
     font-size: .85rem;
@@ -1184,115 +1184,134 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
     font-size: 1.15rem;
     font-weight: 100;
     color: white; }
-    .adventures-container .more-adventures-button:hover {
+    .front-page-adventures-container .more-adventures-button:hover {
       background-color: #1B6661;
       cursor: pointer; }
-    .adventures-container .more-adventures-button:active, .adventures-container .more-adventures-button:focus {
+    .front-page-adventures-container .more-adventures-button:active, .front-page-adventures-container .more-adventures-button:focus {
       border: 1px solid #1B6661;
       background-color: #1B6661; }
-  .adventures-container .adventures-block-left {
-    border-right: 0.65rem solid white;
-    width: 49.5%; }
-  .adventures-container .adventures-block-right {
-    width: 50.5%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    border-left: 0.65rem solid white; }
-  .adventures-container .adventures-block-left, .adventures-container .adventures-block-right {
-    height: 540px;
-    box-sizing: border-box; }
-    .adventures-container .adventures-block-left .adventure, .adventures-container .adventures-block-right .adventure {
-      box-sizing: border-box;
-      overflow: hidden;
-      text-align: left;
-      padding: 0 1.5rem;
-      postion: absolute; }
-      .adventures-container .adventures-block-left .adventure .adventure-title, .adventures-container .adventures-block-right .adventure .adventure-title {
-        font-family: 'merriweather', Arial, serif;
-        font-weight: 300;
-        color: white;
-        text-transform: none;
-        letter-spacing: 2px; }
-        .adventures-container .adventures-block-left .adventure .adventure-title:hover, .adventures-container .adventures-block-right .adventure .adventure-title:hover {
-          color: #f0e4d1;
-          cursor: pointer; }
-      .adventures-container .adventures-block-left .adventure .adventure-button, .adventures-container .adventures-block-right .adventure .adventure-button {
-        font-family: 'novocento', Arial, serif;
-        font-size: 13.6px;
-        font-size: 0.85rem;
-        width: auto;
-        height: 40px;
-        padding: 0.25rem 1.5rem;
-        border: 1px solid #FFF;
-        border-radius: 0;
-        box-shadow: none;
-        background: none;
-        color: #FFF;
-        font-weight: 100;
-        text-transform: uppercase;
-        line-height: 1.5;
-        letter-spacing: 0.25px;
-        padding: 0.8rem 1.5rem;
-        text-decoration: none;
-        position: relative; }
-        .adventures-container .adventures-block-left .adventure .adventure-button:hover, .adventures-container .adventures-block-right .adventure .adventure-button:hover {
-          border: 1px solid #248A83;
-          background-color: #248A83;
-          cursor: pointer; }
-        .adventures-container .adventures-block-left .adventure .adventure-button:active, .adventures-container .adventures-block-left .adventure .adventure-button:focus, .adventures-container .adventures-block-right .adventure .adventure-button:active, .adventures-container .adventures-block-right .adventure .adventure-button:focus {
-          border: 1px solid #248A83; }
-  .adventures-container .adventures-block-left .adventure {
+  .front-page-adventures-container article.adventures.type-adventures:nth-child(1) {
+    border-right: 1.25rem solid white; }
+    .front-page-adventures-container article.adventures.type-adventures:nth-child(1) .adventure-image-wrapper img {
+      height: 625px;
+      transform: translateY(-10%); }
+    .front-page-adventures-container article.adventures.type-adventures:nth-child(1) .adventure-title {
+      margin-top: 1.25rem;
+      margin-bottom: 3rem;
+      font-size: 3.05rem;
+      line-height: 3.75rem;
+      transform: translateY(2%); }
+  .front-page-adventures-container article.adventures.type-adventures:nth-child(2) {
+    height: 50%;
+    border-bottom: 1.25rem solid white; }
+    .front-page-adventures-container article.adventures.type-adventures:nth-child(2) .adventure-image-wrapper img {
+      height: 430px;
+      transform: translateY(-31.5%); }
+    .front-page-adventures-container article.adventures.type-adventures:nth-child(2) .adventure-entry-meta .adventure-title {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 2.35rem;
+      line-height: 3.15rem; }
+  .front-page-adventures-container article.adventures.type-adventures:nth-child(3) {
+    border-right: 1.25rem solid white; }
+    .front-page-adventures-container article.adventures.type-adventures:nth-child(3) .adventure-image-wrapper img {
+      height: 430px;
+      transform: translateY(-28%); }
+    .front-page-adventures-container article.adventures.type-adventures:nth-child(3) .adventure-entry-meta .adventure-title {
+      margin-bottom: 2.5rem;
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+      transform: translateY(9%); }
+  .front-page-adventures-container article.adventures.type-adventures:nth-child(4) .adventure-image-wrapper img {
+    height: 420px;
+    transform: translateY(-27%); }
+  .front-page-adventures-container article.adventures.type-adventures:nth-child(4) .adventure-entry-meta .adventure-title {
+    margin-bottom: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 1.75rem;
+    transform: translateY(15%); }
+  .front-page-adventures-container article.adventures:nth-child(3), .front-page-adventures-container article.adventures:nth-child(4) {
+    height: 50%;
+    width: 25%;
+    position: relative;
+    bottom: 54.5%;
+    left: 50%; }
+  .front-page-adventures-container article {
+    box-sizing: border-box;
     height: 100%;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center bottom;
-    background-size: 170%;
-    background-position: 50% 80%; }
-    .adventures-container .adventures-block-left .adventure .adventure-title {
-      font-size: 3rem;
-      line-height: 4rem; }
-    .adventures-container .adventures-block-left .adventure .adventure-button {
-      bottom: 12px; }
-  .adventures-container .adventures-block-right .adventure:nth-child(1) {
-    height: 50%;
-    width: 100%;
-    border-bottom: 1.2rem solid white;
-    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
-    background-size: 118%;
-    background-position: 50% 75%; }
-    .adventures-container .adventures-block-right .adventure:nth-child(1) .adventure-title {
-      font-size: 2.45rem;
-      margin-top: 1.75rem;
-      line-height: 3.15rem;
-      transform: translate(-1%, 15%); }
-    .adventures-container .adventures-block-right .adventure:nth-child(1) .adventure-button {
-      top: 10px; }
-  .adventures-container .adventures-block-right .adventure:nth-child(2) {
-    height: 50%;
-    width: 50%;
-    border-right: 1.2rem solid white;
-    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
-    background-size: 250%;
-    background-position: 51.5% 75%; }
-    .adventures-container .adventures-block-right .adventure:nth-child(2) .adventure-title {
-      font-size: 1.7rem;
-      line-height: 2rem;
-      transform: translateY(23%); }
-    .adventures-container .adventures-block-right .adventure:nth-child(2) .adventure-button {
-      top: 20px; }
-  .adventures-container .adventures-block-right .adventure:nth-child(3) {
-    height: 50%;
-    width: 50%;
-    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
-    background-size: 230%;
-    background-position: 49% 75%; }
-    .adventures-container .adventures-block-right .adventure:nth-child(3) .adventure-title {
-      font-size: 1.7rem;
-      line-height: 2rem;
-      transform: translateY(37%); }
-    .adventures-container .adventures-block-right .adventure:nth-child(3) .adventure-button {
-      top: 18px; }
+    width: 50%; }
+    .front-page-adventures-container article .entry-header {
+      max-height: 100%;
+      overflow: hidden;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-align: center;
+          align-items: center;
+      position: relative; }
+      .front-page-adventures-container article .entry-header .adventure-image-wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        overflow: hidden; }
+        .front-page-adventures-container article .entry-header .adventure-image-wrapper::before {
+          content: "";
+          min-height: 100%;
+          min-width: 100%;
+          background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1; }
+        .front-page-adventures-container article .entry-header .adventure-image-wrapper img {
+          width: auto;
+          max-width: none; }
+      .front-page-adventures-container article .entry-header .adventure-entry-meta {
+        position: absolute;
+        top: 5%;
+        left: 1.5rem;
+        z-index: 1000; }
+        .front-page-adventures-container article .entry-header .adventure-entry-meta a {
+          text-decoration: none; }
+          .front-page-adventures-container article .entry-header .adventure-entry-meta a .adventure-title {
+            max-width: 95%;
+            font-family: 'merriweather', Arial, serif;
+            font-weight: 300;
+            color: white;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: 2px; }
+            .front-page-adventures-container article .entry-header .adventure-entry-meta a .adventure-title:hover {
+              color: #f0e4d1;
+              cursor: pointer; }
+        .front-page-adventures-container article .entry-header .adventure-entry-meta .adventure-button {
+          font-family: 'novocento', Arial, serif;
+          font-size: 13.6px;
+          font-size: 0.85rem;
+          width: auto;
+          height: 40px;
+          padding: 0.25rem 1.5rem;
+          border: 1px solid #FFF;
+          border-radius: 0;
+          box-shadow: none;
+          background: none;
+          color: #FFF;
+          font-weight: 100;
+          text-transform: uppercase;
+          line-height: 1.5;
+          letter-spacing: 0.25px;
+          padding: 0.8rem 1.5rem; }
+          .front-page-adventures-container article .entry-header .adventure-entry-meta .adventure-button:hover {
+            border: 1px solid #248A83;
+            background-color: #248A83;
+            cursor: pointer; }
+          .front-page-adventures-container article .entry-header .adventure-entry-meta .adventure-button:active, .front-page-adventures-container article .entry-header .adventure-entry-meta .adventure-button:focus {
+            border: 1px solid #248A83; }
 
 .page-template-about .content-area .hero-image-banner {
   height: 100vh;
@@ -1772,15 +1791,15 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
       .tax-product_type .site-content .content-area .page-header .category-description {
         margin-bottom: 1.25rem; }
 
-.post-type-archive-adventures {
+.home, .post-type-archive-adventures {
   margin-bottom: 3rem; }
-  .post-type-archive-adventures .page-header {
+  .home .page-header, .post-type-archive-adventures .page-header {
     width: 100%;
     text-align: center; }
-    .post-type-archive-adventures .page-header h1 {
+    .home .page-header h1, .post-type-archive-adventures .page-header h1 {
       margin: 2.75rem auto 1.85rem;
       font-size: 2.35rem; }
-  .post-type-archive-adventures .adventures-archive-wrapper {
+  .home .adventures-archive-wrapper, .post-type-archive-adventures .adventures-archive-wrapper {
     width: 78%;
     margin: 0 auto;
     padding-top: 3rem;
@@ -1794,10 +1813,10 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
         justify-content: space-between;
     -ms-flex-line-pack: center;
         align-content: center; }
-    .post-type-archive-adventures .adventures-archive-wrapper article.adventures {
+    .home .adventures-archive-wrapper article.adventures, .post-type-archive-adventures .adventures-archive-wrapper article.adventures {
       height: 540px;
       width: 49%; }
-      .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header {
+      .home .adventures-archive-wrapper article.adventures .entry-header, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header {
         overflow: hidden;
         display: -ms-flexbox;
         display: flex;
@@ -1806,7 +1825,7 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
         -ms-flex-align: center;
             align-items: center;
         position: relative; }
-        .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper {
+        .home .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper {
           height: 100%;
           width: 150%;
           background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
@@ -1817,7 +1836,7 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
           -ms-flex-align: center;
               align-items: center;
           position: relative; }
-          .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper::before {
+          .home .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper::before, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper::before {
             content: "";
             min-height: 100%;
             min-width: 100%;
@@ -1826,19 +1845,19 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
             top: 0;
             left: 0;
             z-index: 1; }
-          .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper img {
+          .home .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper img, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-image-wrapper img {
             height: 540px;
             width: auto;
             max-width: none;
             background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%); }
-        .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta {
+        .home .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta {
           position: absolute;
           top: 5%;
           left: 5%;
           z-index: 1000; }
-          .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a {
+          .home .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a {
             text-decoration: none; }
-            .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a .adventure-title {
+            .home .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a .adventure-title, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a .adventure-title {
               max-width: 95%;
               margin-bottom: 4.5rem;
               font-family: 'merriweather', Arial, serif;
@@ -1849,10 +1868,10 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
               text-transform: none;
               line-height: 3.75rem;
               letter-spacing: 2px; }
-              .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a .adventure-title:hover {
+              .home .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a .adventure-title:hover, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta a .adventure-title:hover {
                 color: #f0e4d1;
                 cursor: pointer; }
-          .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button {
+          .home .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button {
             font-family: 'novocento', Arial, serif;
             font-size: 13.6px;
             font-size: 0.85rem;
@@ -1869,11 +1888,11 @@ body:not(.home):not(.page-template-about):not(.single-adventures) .site-content 
             line-height: 1.5;
             letter-spacing: 0.25px;
             padding: 0.8rem 1.5rem; }
-            .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:hover {
+            .home .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:hover, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:hover {
               border: 1px solid #248A83;
               background-color: #248A83;
               cursor: pointer; }
-            .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:active, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:focus {
+            .home .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:active, .home .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:focus, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:active, .post-type-archive-adventures .adventures-archive-wrapper article.adventures .entry-header .adventure-entry-meta .adventure-button:focus {
               border: 1px solid #248A83; }
 
 .single-adventures .adventures-hero-banner {

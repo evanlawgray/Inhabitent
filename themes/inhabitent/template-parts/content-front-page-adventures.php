@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?>
 
 
@@ -13,17 +12,16 @@
 		
 			<div class="adventure-image-wrapper">
 				<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail( 'large' ); ?>
+					<?php the_post_thumbnail( 'full' ); ?>
 				<?php endif; ?>
 			</div>
 
 			<div class="adventure-entry-meta">
 				<a href="<?php echo get_permalink(); ?>">
-					<h1 class="adventure-title"><?php echo the_title(); ?></h1>
+					<h3 class="adventure-title"><?php echo the_title(); ?></h1>
 				</a>
 				<a class="adventure-button" href="<?php echo get_permalink();?>">Read More</a>	
 			</div><!-- .adventure-entry-meta -->
 
 		</header><!-- .entry-header -->
 	</article><!-- #post-## -->
-

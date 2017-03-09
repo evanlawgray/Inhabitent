@@ -28,13 +28,12 @@ get_header(); ?>
 
 			<div class="shop-stuff-item">
 	      <div class="product-icon-image">       
-	        <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
+	        <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg">
 	      </div>
 
-	      <p> <?php echo $term->description; ?> </p>
+	      <p><?php echo $term->description; ?></p>
 	         
 	      <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?> Stuff</a>
-
 	    </div>
 
 	    <?php endforeach; ?>
@@ -58,35 +57,22 @@ get_header(); ?>
 
 		<h2>Latest Adventures</h2>
 
-		<div class="adventures-container">
+		
 
-	  	<div class="adventures-block-left">
-	  		<div class="adventure">
-		  		<h3 class="adventure-title">Getting Back to Nature in a Canoe</h3>
-		  		<a class="adventure-button" href="#">Read More</a>
-		  	</div>
-	  	</div>
+		<div class="front-page-adventures-container">
 
-	  	<div class="adventures-block-right">
-		  	<div class="adventure">
-		  		<h3 class="adventure-title">A Night with Friends at the Beach</h3>
-		  		<a class="adventure-button" href="#">Read More</a>
-		  	</div>
-		  	<div class="adventure">
-		  		<h3 class="adventure-title">Taking in the View at Big Mountain</h3>
-		  		<a class="adventure-button" href="#">Read More</a>
-		  	</div>
-		  	<div class="adventure">
-		  		<h3 class="adventure-title">Star-Gazing at the Night Sky</h3>
-		  		<a class="adventure-button" href="#">Read More</a>
-		  	</div>
-		  </div>
+	 		<?php
+		   $args = array( 'post_type' => 'adventures', 'order' => 'DSC', 'numberposts' => 4 );
+		   $adventure_posts = get_posts( $args ); // returns an array of posts
+			?>
+
+			<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+		  <?php get_template_part( 'template-parts/content-front-page-adventures' ); ?>
+			<?php endforeach; wp_reset_postdata(); ?>
 
 		  <a class="more-adventures-button">More Adventures</a>
 
 		</div>
-
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
